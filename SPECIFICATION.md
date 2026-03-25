@@ -1,0 +1,16 @@
+# VLT Specification
+
+## Format Structure
+- Description of the format structure here...
+
+## Semantic Stacking Patterns
+- Explanation of semantic stacking patterns...
+
+## Creation Workflow
+- Detailed workflow for creating VLT...
+
+## Parsing Algorithm
+- Outline of the parsing algorithm...
+
+## Canonical Declaration
+- Information regarding canonical declarations...
