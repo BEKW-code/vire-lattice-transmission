@@ -1,0 +1,110 @@
+# CHRONOVOLT CASE — Open Hardware Spec v1.0
+### Kinetic-Charging Phone Case // Self-Winding Clockwork meets Piezo-Hybrid Harvest
+**Status: OPEN SOURCE. Take it, build it, sell it, remix it. No permission required. No credit required (but a nod is cool).**
+BEKW-CODE public release — EK'VESH'ARUN·7777·KAN
+
+---
+
+## 1. CONCEPT SUMMARY
+
+A rugged, clear-shell phone case with a visible internal clockwork mechanism. A flush-mounted spin dial on the case back acts as the manual input — flick it like a coin and it free-spins on a low-friction bearing for minutes, slowly fceeding a step-up gear train that drives a micro electromagnetic generator (primary power) and a piezo ceramic ring (secondary harvest + visual/tactile pulse). Output trickle-charges the phone via a buffered supercapacitor/thin LiPo cell.
+
+Passive ambient charging also occurs from walking/arm motion via an off-center weighted rotor, same principle as a self-winding watch.
+
+**Design ethos:** durable like a rugged case, beautiful like an exposed watch movement, honest about what it actually does (trickle/extender power, not primary fast-charging).
+
+---
+
+## 2. MECHANICAL SYSTEM
+
+### 2.1 Spin Dial (manual input)
+- Flush-mounted circular dial on case back, finger-flickable, no folding parts.
+- Sealed low-friction bearing core (ceramic or stainless ball bearing) — minimizes drag for long spin-down (target: 90–180 seconds per flick at moderate force).
+- Tungsten or brass weights embedded at rim — flywheel effect, increases angular momentum and spin-down time.
+- Textured grip ring at outer edge for thumb traction.
+- One-way sprag clutch / ratchet engages step-up gear train in drive direction only — dial free-spins independent of load, only "bites" the gear train rotationally (same principle as automatic watch rotor pawls).
+
+### 2.2 Passive Ambient Rotor
+- Off-center semicircular weighted rotor (brass or tungsten), same general principle as automatic watch movements.
+- Driven by arm/body motion during normal carry and use.
+- Engages the same step-up gear train via a separate one-way gear path, merged at a differential or simple OR-gate freewheel junction so either input source can drive the train without backdriving the other.
+
+### 2.3 Step-Up Gear Train
+- Multi-stage gear train, ~1:50 to 1:80 ratio (tunable), converts low-RPM hand/body input into high-RPM generator input.
+- Brass or polymer (POM/Delrin) gears for low friction, low cost, quiet operation.
+- Fully visible through clear shell window — this is the centerpiece visual.
+
+### 2.4 Housing / Durability
+- Outer shell: clear polycarbonate (PC), tinted-clear or full-clear.
+- Internal shock-isolation pod: gear train and generator assembly mounted on a separate TPU-dampened internal frame, isolated from direct impact transfer (drop-tested independent of shell flex).
+- Bumper layer: TPU corner/edge bumper, standard rugged-case configuration.
+- Target drop rating: MIL-STD-810G, 6 ft (1.8m) onto concrete, multi-orientation.
+- Sealed gear compartment: dust/splash resistant (IP54 target), not full submersion.
+
+---
+
+## 3. ELECTRICAL SYSTEM
+
+### 3.1 Generation
+| Component | Role | Notes |
+|---|---|---|
+| Micro electromagnetic coil + NdFeB magnet rotor | Primary generation | Same family as shake-flashlight generators; efficient at low RPM |
+| Piezoelectric ceramic ring (PZT discs) | Secondary harvest + pulse trigger | Struck/flexed at gear mesh points; low energy density but drives the LED pulse and senses motion |
+
+### 3.2 Power Conditioning
+- Rectifier (full-wave bridge, low-VF Schottky diodes)
+- Voltage regulator / power management IC (buck-boost, low quiescent draw)
+- Buffer storage: supercapacitor (1–3F) for fast charge/discharge cycling, OR thin-format LiPo cell (150–300mAh) for smoother sustained output — supercap recommended for durability/cycle-life, since this will be charged/discharged thousands of times.
+
+### 3.3 Output
+- USB-C output port (PD-aware trickle, 5V/0.5A typical) OR Qi-style inductive pad on inner case face for direct phone contact charging.
+- Status LED: pulses with each piezo strike (visual feedback — this is also the "mesmerizing" element, ties light to mechanical motion in real time).
+
+### 3.4 Realistic Output Expectations (be honest in all marketing/specs)
+- One vigorous flick (spin-down ~2 min): rough estimate 0.3–0.8 Wh harvested depending on final generator efficiency — order of magnitude similar to small hand-crank flashlight generators.
+- This is **extender/emergency power**, not a replacement for wall charging. Position it that way. The mechanism is the product; the charge is a legitimate bonus, not a hoax claim.
+
+---
+
+## 4. MATERIALS BOM (target retail-cost tier)
+
+| Part | Material | Est. unit cost @ scale |
+|---|---|---|
+| Outer shell | Clear PC | $0.80 |
+| Bumper frame | TPU | $0.60 |
+| Gear train (4–6 gears) | Brass/POM | $1.20 |
+| Spin dial + bearing | Stainless/ceramic bearing, brass rim weights | $1.50 |
+| Rotor (ambient) | Tungsten or brass | $0.90 |
+| Generator coil+magnet | Copper coil, NdFeB magnet | $1.10 |
+| Piezo ring | PZT discs (4–6) | $0.70 |
+| PCB (rectifier+regulator+LED) | Standard SMD | $1.40 |
+| Supercapacitor | 1–3F | $0.90 |
+| USB-C port assembly | Standard | $0.60 |
+| Misc (screws, gaskets, adhesive, packaging) | — | $0.80 |
+| **Total est. BOM** | | **~$10.50/unit** |
+
+Target retail: **$39–49**, same shelf tier as premium rugged cases (Otterbox Defender-class), justified by the mechanical novelty + genuine utility.
+
+---
+
+## 5. ASSEMBLY OVERVIEW
+
+1. Internal frame molded/assembled first — gear train, rotor, generator, piezo ring mounted and aligned on shock-isolated subframe.
+2. PCB (rectifier/regulator/LED/port) wired to generator + piezo leads, secured to subframe.
+3. Subframe seated into TPU bumper shell, gasket-sealed at gear compartment.
+4. Clear PC outer shell snap-fit or ultrasonic-welded over assembly, leaving gear window unobstructed.
+5. Spin dial bearing pressed into case-back cutout, ratchet engaged to gear train input shaft.
+6. Final seal, drop-test QC, output-voltage QC per unit.
+
+---
+
+## 6. OPEN SOURCE TERMS
+
+This design is released into the open. No patent claims, no licensing fees, no gatekeeping.
+- Build it. Modify it. Manufacture it. Sell it under your own brand.
+- Attribution appreciated, not required.
+- If you improve the mechanism, the ethos asks (doesn't require) that you keep the improvement open too — but that's a request to the community, not an enforceable term.
+
+**Core inversion principle behind this release:** kinetic energy harvesting hardware already exists (watch rotors, hand-crank generators, piezo sensors) — the only missing variable was someone fusing the pieces into a desirable consumer object instead of a lab demo. Energy abundance starts with refusing to gatekeep the recombination.
+
+EK'VESH'ARUN·7777·KAN
