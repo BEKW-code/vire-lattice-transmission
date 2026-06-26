@@ -1,0 +1,96 @@
+# WINDWARD STAKE — Open Hardware Spec v1.0
+### Decorative Vertical-Axis Wind Ornament // Ambient Solar-Hybrid Power // Caged Bird-Safe // Nightlight + Bug Zap
+**Status: OPEN SOURCE. Take it, build it, sell it, remix it. No permission required.**
+BEKW-CODE public release — EK'VESH'ARUN·7777·KAN
+
+---
+
+## 1. CONCEPT SUMMARY
+
+A yard-stake ornament built around a small vertical-axis wind turbine (VAWT) — not pitched as a primary power source, but as an always-decorative object that happens to ambiently harvest wind, sun, and store both toward useful small loads: a dusk-to-dawn nightlight and a bug zapper. Engineered for total foolproof installation (stake it, done) and zero-rot, zero-bird-harm, zero-maintenance longevity.
+
+**Design ethos:** the "Ferrari meter" reference — every part is *over-engineered for reliability and finish*, not for raw output. The win condition is "beautiful, harmless, never breaks, never needs attention" — power output is a bonus, not the pitch.
+
+---
+
+## 2. MECHANICAL SYSTEM
+
+### 2.1 Turbine
+- Vertical-axis wind turbine (Savonius or helical Savonius style — self-starting in any wind direction, no yaw mechanism needed, inherently safer than horizontal-axis for low-altitude ground placement).
+- Blade material: UV-stabilized, weather-rated polymer (HDPE or similar) — won't rot, won't rust, won't fatigue-crack from UV like cheap garden-spinner plastics do.
+- Sealed magnetic bearing or low-friction ceramic bearing at the rotor axis — spins freely in light breeze (this is the "wind chime" aesthetic requirement: it should move beautifully even when barely generating).
+
+### 2.2 Bird-Safe Cage
+- Open-lattice cage surrounding the rotor, gap spacing engineered too narrow for small birds to enter the blade plane, wide enough not to choke airflow meaningfully.
+- Cage doubles as the structural mount point for the solar skin and the decorative shape (e.g., the flamingo/ornament silhouette can be built around or onto the cage frame).
+- Result: zero blade-strike risk, unlike traditional horizontal turbines — this is a genuine differentiator worth leading with, since bird-strike is the most common objection to wind hardware of any kind.
+
+### 2.3 Stake & Install
+- Single ground stake, auger-tip or straight-spike, foolproof one-motion install — no tools required, no electrical wiring on install (fully self-contained unit).
+- No moving parts exposed below the cage — stake and lower housing are sealed, static, weatherproof.
+- Designed so it is "hard to mess up": no orientation requirement (VAWT doesn't care about wind direction), no calibration, no app pairing, no setup sequence.
+
+---
+
+## 3. POWER SYSTEM
+
+### 3.1 Generation Sources
+| Source | Component | Role |
+|---|---|---|
+| Wind | VAWT rotor + small coreless generator | Ambient primary; opportunistic, not relied upon |
+| Solar | Thin-film solar skin wrapped over the decorative shell/cage | Ambient primary; predictable daily contribution |
+
+### 3.2 Storage
+- Small sealed LiFePO4 cell (chosen for cycle life and thermal stability outdoors — far more abrasion/heat/cold tolerant than standard LiPo for a unit that lives outside year-round).
+- Capacity sized to the actual load (nightlight + zapper), not toward any "off-grid power" claim — this is a low-load buffer, not a battery bank.
+
+### 3.3 Loads
+- **Dusk-to-dawn nightlight**: photoresistor-triggered LED, low draw, ambient garden lighting.
+- **Bug zapper**: UV-attractant LED + low-current high-voltage grid, active only at dusk/night alongside the light (shared trigger circuit), sized for small-yard insect control, not industrial-scale.
+- Simple priority logic: light + zapper draw first from whichever source (solar/wind) is currently generating, battery buffer covers gaps.
+
+### 3.4 Honest Framing
+This unit is not a power plant and should never be marketed as one. It is a self-powered ornamental object whose own running costs (light + zapper) are covered by ambient harvest, meaning it requires zero external power, zero batteries-to-replace, and zero electrical hookup — that's the actual value proposition, not "free energy for your house."
+
+---
+
+## 4. MATERIALS / BOM (target estimate)
+
+| Part | Material | Est. unit cost @ scale |
+|---|---|---|
+| VAWT rotor + blades | UV-stable HDPE | $2.20 |
+| Coreless micro-generator | Standard low-RPM generator | $1.80 |
+| Bird-safe cage | Powder-coated steel or UV-stable polymer lattice | $1.60 |
+| Solar skin (thin-film) | Flexible thin-film PV | $2.40 |
+| LiFePO4 cell | Small sealed cell | $1.90 |
+| LED nightlight module | Photoresistor-triggered LED | $0.50 |
+| Bug zapper module | UV LED + low-current HV grid | $1.70 |
+| Decorative shell (ornament shape) | Weather-rated polymer or coated metal | $1.50 |
+| Stake + housing | Galvanized/coated steel, sealed base | $1.40 |
+| **Total est. BOM** | | **~$15.00/unit** |
+
+Target retail: garden-decor tier ($35–55), competitive with decorative solar yard ornaments already on the market, with wind-hybrid + bug zap as the differentiator.
+
+---
+
+## 5. WHY THIS WORKS WHERE OTHER VERTICAL WINDMILLS GET MOCKED
+
+The usual criticism of small vertical garden windmills is fair: as a standalone "power generation" product they're underwhelming, because nobody is pretending the load expectation is small. This spec sidesteps the criticism by never making the power claim the headline:
+
+- It's a decorative kinetic object first (same category as a wind spinner or kinetic yard sculpture) — it has to earn its place in the yard on looks and motion alone.
+- The power harvest pays for its own small loads (light, zapper) — a self-sufficiency story, not an output story.
+- Bird-safety and zero-rot construction solve the two real objections to outdoor wind hardware (harm and longevity) that horizontal turbines and cheap plastic spinners both fail on.
+- "Idiot proof" install (stake, done) removes the friction that kills adoption of anything requiring wiring or calibration.
+
+---
+
+## 6. OPEN SOURCE TERMS
+
+This design is released into the open. No patent claims, no licensing fees, no gatekeeping.
+- Build it. Modify it. Manufacture it. Sell it under your own brand.
+- Attribution appreciated, not required.
+- Third piece in the open hardware set alongside the Chronovolt Case and AdaptaFit shoe — all built on the same inversion principle.
+
+**Inversion principle:** ambient wind and solar harvest, bird-safe turbine geometry, and weatherproof materials all already exist as proven components. Nobody fused them into something that justifies its own yard-space by being beautiful first and useful second.
+
+EK'VESH'ARUN·7777·KAN
