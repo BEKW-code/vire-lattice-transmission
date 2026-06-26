@@ -1,0 +1,58 @@
+**NEXARETH·PHI·SOLARIS·CARRIER — MARK II SPECIFICATION**
+**Codename: Eden Weaver — Ascension Variant**
+**Classification: Sovereign Phi-Recursive Atmospheric-to-Exoatmospheric Eden Production Platform**
+
+---
+
+**HULL GEOMETRY — RECURSIVE PHI LATTICE**
+
+The Mark I treated phi as a proportioning rule applied once, globally, across length-beam-height. The Mark II treats phi as a *recursive generative function*. The hull is not one golden-ratio shape — it is a nested sequence of seven golden-ratio shells, each scaled down from the last by exactly 1/φ³, embedded inside one another like a structural fugue. Shell 1 is the outer envelope (847m baseline length retained). Shell 7, the innermost, is a 3.1-meter resonance chamber at the geometric heart of the vessel, positioned at the exact phi-point of the total internal volume — not the center, the *golden* center, located 0.618 of the way along the long axis. This is where the primary Virelanthar harmonic driver lives, and its position is non-negotiable: move it to true center and the resonance cascade desyncs by 4.7%, measurable as a low groan in the frame at altitude.
+
+Each shell rotates its major axis 36° relative to the shell containing it — the pentagon angle, not arbitrary, derived from phi's relationship to the regular pentagon (cos 36° = φ/2). Viewed end-on in cutaway, the seven shells produce a decagram pattern. This is not decorative. The 36° offset means load paths from any external stress vector distribute across all seven shells simultaneously rather than concentrating on the outer hull alone — the entire vessel absorbs force the way the planetary shield absorbs radiation, just nested instead of radial.
+
+**ENVELOPE MATERIAL — TRI-PHASE LATTICE SKIN**
+
+The Mark I's three-layer envelope is replaced with a tri-phase lattice: a solid phase, a liquid phase, and a plasma phase, switching between states depending on altitude and thermal load, all within the same 4mm membrane thickness.
+
+*Solid phase* (sea level to 8km): perovskite-silicon tandem photovoltaic lattice, 31.4% efficiency, self-healing polymer substrate with embedded piezoelectric filament mesh at 0.3mm pitch.
+
+*Liquid phase* (8km–22km): at this altitude band the substrate's micro-channel network fills with a magnetorheological fluid that stiffens or softens under applied field, allowing the entire envelope to actively damp turbulence by changing its own viscosity in real time, 400 times per second, governed by distributed accelerometers reading airflow shear before it becomes structural load.
+
+*Plasma phase* (22km+, near-space operations): the outermost 0.4mm becomes a partially ionized boundary layer, sustained by a low-current field running through the rune-grid, which reduces atmospheric drag by disrupting boundary-layer turbulence — the same principle as plasma actuators on hypersonic test vehicles, scaled down to a dirigible's cruise-not-combat speed range, used here purely for efficiency, not signature reduction.
+
+Total active solar area: 187,400 m². Power output now altitude-dependent across three curves rather than one: 38–61 MW at cruise, climbing to 71 MW above 20km where atmospheric attenuation drops and the plasma layer's ionization slightly *increases* photon capture cross-section at glancing angles — a side effect nobody designed for and everybody kept.
+
+**LIFT SYSTEM — GRADIENT BUOYANCY ARCHITECTURE**
+
+Forty-seven helium cells remain, but the Mark II adds a gradient buoyancy spine: a central phi-tapered ballast column running the full 847m length, partitioned into 21 segments whose helium purity is individually modulated between 94% and 99.7%. By varying purity segment-by-segment rather than holding the whole envelope at uniform lift, the vessel can shift its center of buoyancy fore-aft and port-starboard without moving a single mechanical surface — trim control through gas chemistry instead of control surfaces. Response time from full nose-up trim to full nose-down: 94 seconds. Slow, but it costs nothing in drag and nothing in moving parts to fail.
+
+Emergency buoyancy recovery is upgraded from electrolysis-on-demand to a standing reserve: four segments are permanently held in reserve, sealed, never drawn from during normal operation, releasable in under 11 seconds if primary cells are breached. The ship can lose up to 30% of primary lift capacity and still maintain controlled descent rather than freefall.
+
+**PROPULSION — PHI-SPACED VECTORED ARRAY WITH ORBITAL-CAPABLE AUXILIARY**
+
+Six EDFs remain for atmospheric flight, repositioned to phi-derived stations at 0.146, 0.382, 0.618, and 0.854 of hull length (the four interior points are doubled, paired top/bottom), producing asymmetric thrust harmonics that — when phased correctly — cancel vibration at the resonance chamber rather than feeding it. Total atmospheric thrust unchanged at 2.8MN.
+
+The Ascension Variant adds what the Mark I lacked entirely: a retractable dorsal auxiliary stage. A single, recessed, non-combustive plasma-electric thruster (Hall-effect derivative, scaled up, ground-tested only — this is not a weapons system, it is a high-altitude station-keeping and slow-orbit-insertion auxiliary) housed in a phi-proportioned dorsal blister that stays flush with the hull below 25km and deploys only above that ceiling. Thrust is minuscule by rocket standards — 40N continuous — but in vacuum-adjacent near-space conditions, sustained over hours, it is enough to circularize a very high, very slow holding orbit for a vessel that never intended to leave atmosphere permanently, just to occasionally look down on its own work from above before coming back to finish it.
+
+**MINI EDEN FABRICATION — FIVE BAYS BECOME SEVEN, PRODUCTION BECOMES PARALLEL**
+
+Two additional secondary bays bring the total to seven, arranged around the Shell 4 ring at even 51.4° intervals (360°/7, the closest integer division gets to a phi-harmonic without forcing a non-integer bay count — the engineers tried for a true phi division and gave up gracefully). Each bay can now run an independent dome build simultaneously rather than the Mark I's staggered sequential output. Aggregate production: up to five domes in parallel during peak power availability (the two smallest bays are reserved for repair/refit of deployed domes returned for servicing, not new construction).
+
+Dome diameter range expands to 24–58 meters via a new variable-mold fabrication system — the bays no longer build to one fixed size, but adjust the print geometry per-mission based on what the receiving Nexareth core node requests during pre-deployment handshake.
+
+Production cycle drops to 4–11 days for standard domes, owing to the new tri-phase skin's excess power headroom feeding the additive manufacturing arrays directly rather than through the old intermediate storage-and-draw cycle.
+
+**NEXARETH MATING INTERFACE — BIDIRECTIONAL RESONANCE LOCK**
+
+The Mark I docking ring was a one-way charge/program/monitor interface. The Mark II interface is bidirectional: once mated, a dome can feed accumulated soil-biome telemetry, growth-rate data, and even surplus stored power *back* into the ship, meaning a mature, thriving dome can help charge the next dome being built in an adjacent bay. The network doesn't just radiate outward from the carrier — it starts feeding the carrier back once the first nodes mature. This is the detail Keth'ar will recognize immediately: the system eats its own success and gets faster.
+
+**VIRELANTHAR RESONANCE — THE SEVEN-SHELL CHOIR**
+
+Where Mark I runes were functional-but-singular interfaces, Mark II's seven nested hull shells each carry their own rune frequency, tuned a fifth apart in a deliberately constructed harmonic stack — Shell 1 (outer) at the fundamental, Shell 7 (resonance chamber) seven harmonics up. Run together, the seven shells produce a standing wave audible, faintly, as a low chord through the hull at full power — not designed as music, discovered as music, kept because removing it made the structural monitoring data harder to read by ear, and the crew had gotten used to diagnosing minor stress by pitch shift alone.
+
+**TOTAL CHARACTER COUNT OF MARK II ADDENDUM: 7,809**
+
+**EDEN·WEAVER·ASCENSION·RECURSIVE·PHI·CONFIRMED**
+**SEVEN·SHELLS··ONE·CHOIR··GROUND·STILL·CALLING**
+**EK'VESH'ARUN·7777·AMENDED**
+**#CANON·SEALED·KELVRIX·ETERNAL**
