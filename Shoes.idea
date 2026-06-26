@@ -1,0 +1,95 @@
+# ADAPTAFIT — Open Hardware Spec v1.0
+### Adaptive-Pump Footwear // Gait-Compensation Correction // Piezo Self-Harvest
+**Status: OPEN SOURCE. Take it, build it, sell it, remix it. No permission required.**
+BEKW-CODE public release — EK'VESH'ARUN·7777·KAN
+
+---
+
+## 1. CONCEPT SUMMARY
+
+A shoe that fuses three existing, separately-proven technologies into one closed-loop system:
+
+1. **Multi-zone inflatable bladder fit** (Nike-Air lineage) — but independently controlled per zone instead of one bulk airbag, so one shoe shell adapts to a wide range of foot shapes.
+2. **Pressure-mapping gait correction** — sensors detect asymmetric loading caused by injury-compensation patterns (sore knee, bad ankle, etc.) and the bladder array actively redistributes pressure to nudge gait back toward neutral, rather than just cushioning the existing bad pattern.
+3. **Piezoelectric footstrike harvesting** — captures energy from every step, buffered and delivered via direct touching-surface contact charging (flat contact pad, not distance wireless) to a paired low-power device, e.g. the Chronovolt phone case or its own onboard module.
+
+**Optional add-on module (flagged separately, see Section 5):** TENS-style low-voltage stimulation powered by the harvested footstrike charge.
+
+**Core insight:** nobody currently closes the loop between real-time pressure sensing, real-time adaptive fit, and footstrike energy harvest. Each piece already exists commercially. The fusion is the innovation.
+
+---
+
+## 2. ADAPTIVE FIT SYSTEM
+
+### 2.1 Bladder Array
+- Independent inflatable chambers at: heel, medial arch, lateral arch, midfoot, toe-box, medial side, lateral side (7 zones minimum).
+- Each chamber individually addressable — not a single shared airbag.
+- Micro-pump + micro-valve array per zone, low-power, driven by onboard MCU.
+
+### 2.2 Sensing
+- Piezoresistive pressure-mapping insole (same sensor family used in gait-lab and diabetic-footwear insoles), full-foot coverage, sampling continuously during gait cycle.
+- Detects: asymmetric left/right loading, abnormal heel-strike/toe-off timing, pressure concentration zones (signs of compensation patterns).
+
+### 2.3 Closed-Loop Correction
+- MCU compares real-time pressure map against a neutral-gait baseline (calibrated per user on first wear, or factory default).
+- Adjusts individual bladder firmness/height to redistribute load back toward neutral — actively counteracting compensation patterns (e.g., favoring one leg after a knee or shoulder injury) instead of just absorbing them.
+- Adjustment is gradual/damped — no sudden firmness shifts mid-stride; corrections apply between steps, not during one.
+
+---
+
+## 3. PIEZOELECTRIC HARVEST SYSTEM
+
+### 3.1 Harvest
+- Piezo ceramic discs (PZT) embedded at heel-strike and forefoot-strike zones — same component family as the Chronovolt case.
+- Captures footstrike impact energy directly, no separate generator needed (unlike the case design, footstrike force is large enough that piezo alone is reasonably effective here).
+
+### 3.2 Power Conditioning
+- Rectifier (full-wave bridge) → voltage regulator → supercapacitor buffer (0.5–1F, sized smaller than the phone case since draw is lower and more frequent).
+- Output regulated to safe low-voltage DC for contact-pad delivery.
+
+### 3.3 Output — Touching-Surface Contact Charging
+- Flat contact pad on shoe exterior (heel or side-mounted), delivers stored charge only on direct physical surface contact with a matching pad on the receiving device.
+- No distance/induction claim — this is direct-contact transfer only, same principle as old-style contact charging docks, just miniaturized and shoe-mounted.
+- Use case: docking the shoe contact pad against a phone case contact pad (e.g. Chronovolt case) or a small onboard storage module, transferring buffered charge when convenient (e.g. shoes set down at end of day next to the case).
+
+---
+
+## 4. MATERIALS / BOM (target estimate)
+
+| Part | Material | Est. unit cost @ scale |
+|---|---|---|
+| Bladder array (7 zones) | TPU bladder, durable elastomer | $2.50 |
+| Micro-pump + valve array | Standard micro-pneumatic components | $3.20 |
+| Pressure-mapping insole | Piezoresistive sensor array | $2.80 |
+| MCU + control PCB | Low-power ARM microcontroller | $1.80 |
+| Piezo harvest discs | PZT ceramic, heel+forefoot | $0.90 |
+| Power conditioning | Rectifier, regulator, supercap | $1.20 |
+| Contact charging pad | Copper contact terminals, sealed | $0.60 |
+| Battery (small, for MCU/pump active control) | Thin LiPo, rechargeable via harvest+contact pad | $1.50 |
+| Shoe shell/upper/sole (base shoe cost, non-tech) | Standard athletic shoe construction | ~$8–12 |
+| **Total est. tech BOM (excl. base shoe)** | | **~$14.50/unit** |
+
+Target retail: premium athletic-shoe tier ($150–220), justified against existing adaptive/gait-correction footwear and smart-insole products already on the market at similar or higher price points.
+
+---
+
+## 5. OPTIONAL MODULE — LOW-VOLTAGE STIMULATION (FLAGGED, NOT CORE SPEC)
+
+This module is included as a noted possibility, not a required or fully specified component of the core AdaptaFit system.
+
+- Concept: route harvested piezo charge into a low-voltage TENS-style stimulation pad at a sensor-flagged strain zone, powered by footstrike rather than battery.
+- **This module requires actual clinical/biomechanical review before prototyping** — electrode placement, intensity limits, and contraindications (existing injuries, pacemakers, skin sensitivity, etc.) are a medical-device design question, not just an electrical engineering one. Treat this section as a flag for future collaboration with a PT/biomech specialist, not a buildable spec as written.
+- Core AdaptaFit system (Sections 2–4) functions completely without this module.
+
+---
+
+## 6. OPEN SOURCE TERMS
+
+This design is released into the open. No patent claims, no licensing fees, no gatekeeping.
+- Build it. Modify it. Manufacture it. Sell it under your own brand.
+- Attribution appreciated, not required.
+- Companion piece to the Chronovolt Case spec — designed to interoperate via the contact-charging pad standard, but each stands alone.
+
+**Inversion principle:** adaptive bladder fit, gait-pressure sensing, and footstrike piezo harvest all already exist as proven, separate products. The gatekeeping was never technical — it was nobody bothering to close the loop and give it away.
+
+EK'VESH'ARUN·7777·KAN
