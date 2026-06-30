@@ -1,0 +1,78 @@
+**BEKW-CODE :: THE LEXARA TOWER v2.0 — Now With Rain, Bats, and Tornado Awareness**
+
+*She still doesn't need the monocle. She never did.*
+
+---
+
+**ADDITIONS TO BASE SPEC:**
+
+---
+
+**RAIN COLLECTION — the obvious one, hence the "duh"**
+The roof was already there. The gutters were already there. You were already routing condensate. Rain collection is literally just: make the roof bigger and the gutters wider.
+- Expand platform roof to full 12x12 overhang, standing seam metal
+- First-flush diverter on downspout (discards the first ~10 gallons of a rain event which carry roof debris and bird gifts) — $20-40
+- Routes into same tank as AWG condensate — they're the same water chemically, same filtration train handles both
+- Alabama average rainfall: ~56 inches/year. A 12x12 roof catches roughly **500+ gallons per inch of rain.** You will overflow that 250-gallon tank regularly. Upgrade to 500-1000 gallon tank or add a second overflow cistern at ground level
+- Rain collection alone in Alabama makes the AWG system the backup rather than primary. That's elegant — passive redundancy baked in by geography
+
+**Total add cost: ~$60-120**
+
+---
+
+**BAT HOUSE — obviously**
+Bats are apex mosquito controllers. A single little brown bat eats 600-1,000 mosquitoes per hour. A colony of 40 bats is a living bug zapper that requires zero electricity and maintains itself.
+- Mounted on the south-facing tower face, below the monocle, above ground clutter — 12-15 feet is ideal bat house height
+- Multi-chamber design (better colony retention than single chamber) — 3-4 chambers, rough-sawn interior wood so bats can grip, exterior painted dark for thermal absorption (bats need warmth)
+- Faces south/southeast for morning sun, protected from prevailing wind
+- Landing pad below chamber openings
+- Positioned so bat flight path exits AWAY from the platform — they don't bother you, you don't bother them, everyone wins
+- Guano collection tray optional — bat guano is genuinely excellent fertilizer, free, continuous
+
+**DIY build cost: $30-60 in lumber.** Bats are free. Mosquito reduction is priceless in Alabama July.
+
+---
+
+**TORNADO DETECTION — this one's actually serious**
+Alabama is in Dixie Alley. This isn't a novelty add. This is legitimate safety infrastructure.
+
+Three-layer approach, all buildable:
+
+**Layer 1 — Barometric:** ESP32 with BME280 sensor (measures temperature, humidity, barometric pressure) mounted in a weatherproof housing at platform height. Rapid pressure drops are the earliest atmospheric tornado precursor. Logs continuously, triggers alert when drop rate exceeds threshold. Total cost: **$15-25.**
+
+**Layer 2 — Infrasound:** Tornadoes emit infrasound (sub-20Hz) before they're visible or audible. A low-frequency microphone array (or even a modified speaker cone used as a sensor) can detect this signature. Research-grade but DIY-buildable. Adds early warning minutes before visual confirmation. Cost: **$40-80** for components.
+
+**Layer 3 — Visual/Network:** Small weatherproof camera on a 360° mount at platform apex, feeds to local network. You're already up there anyway. Add a lightning arrestor to the frame since you're now the tallest thing in the yard. Cost: **$50-100.**
+
+Software layer: ESP32 pushes sensor data to a local dashboard (Home Assistant runs this beautifully) — pressure drop + infrasound spike + radar API pull = multi-source early warning that beats most consumer weather stations.
+
+**Total tornado detection add: ~$105-205**
+
+---
+
+**THE MONOCLE — unchanged. Immovable. Eternal.**
+The bat house goes below it.
+The monocle sees nothing.
+The bats see everything.
+This is as it should be.
+
+---
+
+**UPDATED TOTAL BOM:**
+Base Lexara Tower v1: $860-$1,460
+Rain collection upgrade: $60-120
+Bat house: $30-60
+Tornado detection stack: $105-205
+
+**Full Lexara Tower v2.0: ~$1,055 - $1,845**
+
+---
+
+**What this thing now IS:**
+A self-filling atmospheric water harvester, rain collector, elevated hunting/watch platform, passive mosquito elimination station, community early-warning tornado sensor, and silent monocled sentinel of your property line.
+
+That should already exist.
+It doesn't.
+Now it does.
+
+VLT and terminal art version on request. Song about the bats also available.
