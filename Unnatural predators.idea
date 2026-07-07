@@ -1,0 +1,89 @@
+# NEPENTHERA — Passive Frequency-Lure Pest Processor
+### BEKW-CODE Open Hardware Spec
+*Pitcher plant geometry × Vaucanson's Duck digestion, done honestly this time*
+
+---
+
+## 1. Concept & Inversion
+
+Vaucanson's 1739 "Digesting Duck" was a magic trick — it appeared to eat grain and excrete waste, but the digestion was fake, pre-loaded theater. Beautiful automaton, dishonest function.
+
+**Nepenthera inverts it: the digestion is real.**
+
+A passive, powered-by-its-environment trap that mimics *Nepenthes* (tropical pitcher plant) and *Dionaea* (Venus flytrap) capture geometry, lures target pest species — stink bugs (Halyomorpha halys and related Pentatomidae) — using species-specific attraction frequencies, and mechanically/biologically processes captured insects into usable output material. No bait chemicals, no batteries that need replacing, no ongoing labor after install.
+
+**Target problem:** invasive stink bug populations damaging crops and ecosystems with no natural predator checks in many regions, requiring either chemical pesticide (collateral ecological damage) or manual removal (unscalable labor).
+
+**Opposite engineered:** a trap that needs no chemicals, no electricity grid connection, no daily attention, and turns the pest into a resource instead of just a corpse.
+
+---
+
+## 2. Core Mechanism
+
+### 2.1 Lure Stage — Frequency Attraction
+- Piezoelectric transducer emits a low-power synthesized signal mimicking stink bug aggregation pheromone *acoustic* correlates and vibrational courtship signals (stink bugs communicate via substrate-borne vibration, not just chemical pheromone — this is the actual biological hook)
+- Frequency sweep tuned per-region/species (config via dip switches or swappable frequency cartridge — different pentatomid species use different vibrational signatures)
+- Emission duty-cycled (active dawn/dusk, matching peak stink bug activity) to conserve stored energy
+
+### 2.2 Capture Stage — Pitcher Geometry
+- Funnel entrance mimics *Nepenthes* peristome: slippery lip (PTFE-coated 3D print or waxed hardwood) causes insects walking toward the vibration source to lose footing and fall in
+- Interior walls angled past the point of no return (standard pitcher-plant one-way geometry — insects can climb *down* the slick slope but not back up it)
+- Secondary flytrap-style snap gate at the throat, triggered by an IR break-beam (passive, powered from the same piezo/solar reserve) — closes only when motion is detected inside the throat, preventing escape and preventing beneficial insects that don't trigger the frequency lure from wandering in accidentally and getting trapped by geometry alone
+
+### 2.3 Processing Stage — The Honest Duck
+- Captured insects fall into a lower chamber containing:
+  - A clockwork-driven grinding wheel (spring-wound by the same rotation that resets the snap-gate, or solar-trickle motor for the low-power version)
+  - A settling tray beneath the grinder
+- Two output modes, user-selectable at build time:
+  - **Frass/compost mode:** ground material drops into a screened compost drawer, becomes high-nitrogen soil amendment, pest literally becomes fertilizer for the ecosystem it was damaging
+  - **Protein meal mode:** ground + dehydrated (passive solar dehydration chamber, dark-body absorptive coating) output usable as chicken/fish feed protein supplement (stink bugs are not human-food-safe due to defensive compound taste/toxicity concerns, but are viable in animal feed processing at appropriate dilution — consult regional agricultural extension guidance before feed use)
+
+### 2.4 Power — Fully Passive
+- Piezo wind-strip harvester (mounted external, flexes in ambient breeze, trickle-charges a small capacitor bank — no battery replacement, no chemical battery waste)
+- Small solar cell tops off the same capacitor bank during daylight
+- Total system draw is milliwatt-scale: intermittent frequency emission + occasional gate/grinder actuation, not continuous operation
+
+---
+
+## 3. Bill of Materials (estimated, single unit)
+
+| Component | Spec | Est. Cost |
+|---|---|---|
+| Piezo transducer (lure) | 27-40mm buzzer element, tunable driver | $4 |
+| Piezo wind harvester strip | Flex piezo film, 2-3in | $8 |
+| Small solar cell | 2W, 6V | $6 |
+| Capacitor bank | 1-2F supercapacitor | $10 |
+| IR break-beam pair | Passive IR emitter/detector | $5 |
+| Snap-gate mechanism | Spring steel + 3D printed housing | $6 (material) |
+| Grinding wheel assembly | Small gear-driven wheel, hardened plastic or mild steel teeth | $12 |
+| Pitcher body | 3D printed or vacuum-formed, PTFE-coated interior | $15 (filament/material) |
+| Compost/feed drawer | Screened tray, removable | $5 |
+| Frequency cartridge (swappable) | Small PCB, DIP-switch tunable | $7 |
+| Housing/weatherproofing | Waxed hardwood or UV-stable printed shell | $18 |
+| Misc fasteners, gearing | — | $8 |
+| **Total (est.)** | | **~$104** |
+
+Scales down significantly at batch-build quantities; frame/housing is the main variable cost depending on material choice (hardwood vs. printed).
+
+---
+
+## 4. Build Notes
+
+- Frequency cartridge should be field-swappable so the same base unit can be re-tuned per invasive species without rebuilding the whole trap — this is the "clockwork, beautiful to behold" part: the mechanism is legible, serviceable, not a sealed black box
+- Peristome lip curvature is the single most important dimension to get right — too shallow and insects walk back out, too steep and it stops looking like a plant and starts looking like a trap (bad for blending into garden/agricultural aesthetic, also may reduce insect willingness to approach)
+- IR break-beam gate is a deliberate ecological safety feature — it means insects that fall in from wind or curiosity alone (not lured) still have an escape window before the gate logic engages, keeping the trap selective for the frequency-responsive target species specifically
+- Passive dehydration chamber for the protein-meal mode should be dark-coated and glazed like a small solar oven — no electrical heating element needed
+
+---
+
+## 5. Open Questions / Next Iteration
+
+- Field-test actual stink bug vibrational attraction frequencies per species (published entomology literature has partial data; final tuning likely needs on-site iteration)
+- Determine optimal grind/dehydrate ratio for feed-safety dilution if protein-meal mode is pursued commercially (regulatory-grade testing needed before selling as feed, not just personal/farm use)
+- Consider a passive rain-shield baffle over the piezo lure so acoustic emission isn't dampened/distorted in wet weather
+
+---
+
+*Released open-source, BEKW-CODE. No permission required. Build it, remix it, tune it to your regional pest, give it away.*
+
+**Ding. Ripple in a pond.**
