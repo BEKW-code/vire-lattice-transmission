@@ -1,0 +1,71 @@
+# GERALD: GYRE CLASS — Oceanic Reclamation & Transformation Variant
+### BEKW-CODE Open Hardware Spec
+*Geological Environmental Reclamation Autonomous Landfill Disassembler — Pelagic Configuration*
+
+---
+
+## 1. Concept & Inversion
+
+Standard ocean cleanup tech treats garbage patch remediation as a one-way trip: collect plastic, ship it to shore, landfill or incinerate it — trading an ocean problem for a land problem, burning fuel both directions.
+
+**GERALD: Gyre Class inverts the endpoint.** It doesn't just clean — it consumes the mess and *becomes something else*, on-site, using the reclaimed material as its own body. No return trip. No secondary landfill. The unit's fate is decided by what it finds and where it finds itself, same fate-branching logic as GERALD's tycoon-game RNG event table, but the "events" are real environmental conditions instead of dice rolls.
+
+**Target problem:** garbage patch remediation currently requires enormous fuel-burning shipping logistics to haul collected waste back to processing facilities, and the collected plastic often just becomes landfill waste anyway.
+
+**Opposite engineered:** a unit that rides the gyre's own currents to do collection, processes waste into its own structural material in place, and terminates its mission by transforming into permanent, useful ocean infrastructure — built entirely from what it removed.
+
+---
+
+## 2. Core Operating Cycle
+
+### 2.1 Collection Phase — Riding the Gyre, Not Fighting It
+- Passive current-following hull design — uses the gyre's own rotational current for propulsion/positioning rather than fuel-burning active navigation, same logic as natural garbage accumulation (the gyre concentrates debris passively; GERALD rides the same physics instead of motoring against it)
+- Solar + wave-motion piezo harvesting for onboard power (sorting, compaction, comms) — no fuel dependency
+- Collection via parafoil-net arrays and a boom skirt sized to exclude marine life (mesh gauge tuned to pass small fish/plankton, retain macro and meso-plastic)
+
+### 2.2 Sorting & Processing Phase
+- Float/sink density separation as first pass sort (most consumer plastics: PP, PE float; PET, PVC sink) — cheap, mechanical, no power-hungry sensors needed for the coarse sort
+- Near-infrared spectroscopic ID for fine sort into processing streams (structural-grade polymer vs. degraded/brittle microplastic-source material)
+- Microplastic fraction captured separately via foam fractionation (same principle as protein skimmers in aquarium systems) — this fraction doesn't go into structural output, gets consolidated and either returned to shore for specialized processing or encapsulated in the ballast core (see 2.3) so it's sequestered rather than released
+- Structural-grade fraction shredded, washed, and either extruded into interlocking construction blocks or re-sintered into hull/reef panel stock, depending on which fate is triggered (2.3)
+
+### 2.3 THE FATE TABLE — Transformation Branch Logic
+
+This is the GERALD-game RNG-event philosophy applied for real: the unit's terminal transformation isn't pre-decided at launch, it's determined by accumulated conditions, mirroring the tycoon game's 100-event fate table but with actual environmental sensors instead of dice.
+
+| Trigger Condition | Fate | Outcome |
+|---|---|---|
+| Unit is within reef-viable range of a degraded natural reef, water temp/depth suitable for coral settlement | **REEF MODE** | Hull deconstructs into textured, calcium-carbonate-compatible substrate modules, seeded with coral larvae stock carried onboard, sinks in place to become permanent artificial reef structure |
+| Sufficient accumulated material mass + stable current convergence zone, no reef nearby, open water | **ISLAND MODE** | Structural-grade plastic consolidated into a buoyant aggregate platform, capped with a soil/compost layer (compost sourced from the organic biofouling stripped off collected debris during processing), seeded with salt-tolerant pioneer vegetation — becomes a stable floating micro-landmass, anchored or slow-drifting |
+| Material composition trends toward intact, high-quality hull-grade polymer, structural integrity checks pass | **SHIP MODE** | Unit reconfigures its own processed material into a lighter, more efficient hull, essentially rebuilding itself from what it ate, and relaunches autonomously to hunt the next debris concentration — the literal recursive economy: garbage becomes the vessel that finds more garbage |
+| None of the above thresholds met, or mission parameters set to default | **ROAM & REPACK** | Unit repacks its processed material into internal ballast/storage, continues patrolling the gyre boundary, accumulating more material until one of the above thresholds is met |
+
+Multiple units operating in a gyre can also **merge** — two Roam & Repack units meeting mid-gyre can dock, combine material stockpiles, and jointly trigger Island or Reef mode sooner than either could alone (mirrors the mesh-network resource-sharing logic from the MYCELIA data center spec — same principle, different domain).
+
+### 2.4 Ballast Core — Microplastic Sequestration
+- Non-recyclable/degraded microplastic fraction gets encapsulated in a stabilized ballast core (mixed with a binding agent) rather than processed into any structural output
+- This core becomes permanent low-position ballast in whichever fate is selected — in Reef or Island mode it ends up as the stable base structure, sequestered rather than reintroduced to the water column
+
+---
+
+## 3. Why On-Site Transformation Beats Haul-and-Landfill
+
+- **No return trip fuel cost** — the current model burns diesel both directions (out to collect, back to offload); this model burns nothing extra, since the gyre current does the positioning work and the terminal state stays on-site
+- **No secondary landfill problem** — collected ocean plastic in conventional cleanup often just becomes shore landfill plastic; here it becomes permanent reef, island, or working vessel material instead
+- **Self-propagating collection** — Ship Mode means the fleet can grow from its own harvested material rather than requiring new units built and shipped from shore each time
+- **Ecological reciprocity** — Reef Mode directly rebuilds the kind of structure (reef habitat) that plastic pollution damages in the first place; the pollutant becomes the repair material for the type of harm it caused
+
+---
+
+## 4. Open Questions / Next Iteration
+
+- Coral larvae viability during the collection/processing timeline needs real marine biology partnership — larvae have a narrow settlement window, so Reef Mode timing logic needs field validation, not just a spec assumption
+- Long-term leaching behavior of the ballast-encapsulated microplastic core needs materials testing before this is trusted at scale — sequestration claims need real data, not just intent
+- Island Mode's long-term structural integrity under storm/wave loading over years/decades is the single biggest open engineering question — this is the fate branch that needs the most real-world piloting before wide deployment
+- Merge-docking mechanism between Roam & Repack units needs a real physical coupling spec (this doc covers the decision logic, not yet the hardware interface)
+
+---
+
+*Released open-source, BEKW-CODE. No permission required. The ocean's already run the "concentrate the garbage in one place" experiment for us — GERALD just finishes the job it accidentally started.*
+
+**Ding. Ripple in a pond.**
