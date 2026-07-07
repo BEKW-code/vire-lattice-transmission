@@ -1,0 +1,79 @@
+# NUGGET — Autonomous Prospecting Companion
+### BEKW-CODE Open Hardware Spec
+*Reads the strata, pans the gold, cuts the gem, smelts the button. Your camping buddy just leveled up.*
+
+---
+
+## 1. Concept & Inversion
+
+Prospecting is 90% patience and 10% geology knowledge most weekend prospectors never get around to actually learning — you end up camping, building a fire, enjoying the trip, and going home with maybe a few flecks in a vial. The knowledge gap (reading black sand concentration, strata layering, knowing what an unweathered gem looks like in the rough) is the actual bottleneck, not effort.
+
+**The inversion:** instead of a tool that just detects metal (the existing metal-detector model), build a companion that has the *geological literacy* a career prospector spends decades acquiring, packaged into a body that can also do the physical labor — carrying gear, working the sluice, panning proficiently, and finishing the job by turning what it finds into something you actually keep, not just a baggie of dust.
+
+**Target problem:** amateur prospecting is bottlenecked by (a) not knowing how to read terrain/strata signals correctly, (b) the physical grind of panning/sluicing being repetitive and easy to do inefficiently, and (c) raw findings (dust, small rough stones) usually just sitting in a jar instead of becoming something wearable or keepable.
+
+**Opposite engineered:** a field companion that knows the geology, does the physical panning labor competently, and hands you a finished gold button, coin, or cut stone at the end of the day instead of a vial of unprocessed flakes.
+
+---
+
+## 2. Sensing Suite — The Geology Literacy
+
+- **Ground-penetrating radar (GPR) array**, short-range, tuned for near-surface strata reading — identifies layering, paleochannel signatures (ancient buried streambeds are where placer gold concentrates), and bedrock depth without digging first
+- **Magnetometer + pulse induction metal detector array** — standard detection layer, but cross-referenced against the GPR strata data so a hit gets contextualized ("this signal is sitting in a black sand concentration at the base of a paleochannel" vs. "this is a bottle cap two inches down")
+- **Multispectral/hyperspectral optical sensor** for black sand identification — black sand (magnetite/ilmenite concentration) is a classic visual indicator of where heavier gold particles also settle, and the sensor reads concentration density, not just "yes/no black sand present"
+- **Handheld-grade XRF (X-ray fluorescence) spectrometer** built into the manipulator arm — identifies elemental composition of rocks/rough stones on contact, meaning it can distinguish an actual uncut gem or ore-bearing rock from a merely pretty rock without cutting it open first
+
+---
+
+## 3. Mobility — Floats and Walks
+
+- Amphibious hull with a sealed buoyant core (float mode for creek/river work) and retractable articulated legs (walk mode for bank/dry terrain traverse) — same transition logic as a beaver or capybara body plan, built for the actual terrain prospecting happens in
+- Cargo capacity: rated to carry pan, sluice box, buckets, and camp equipment, meaning it's also just a pack mule for the actual camping trip, not a single-purpose tool you carry gear *for*
+
+## 4. Recovery Tools
+
+### 4.1 Integrated Sluice
+- Onboard fold-out sluice box with a built-in vibration table (mimics the rocking motion of manual sluice operation but tuned and consistent, not fatigue-prone like a human arm after hour six)
+- Riffle spacing and angle adjustable for creek flow rate — reads current speed with an onboard flow sensor and self-adjusts
+
+### 4.2 Underwater Fine-Sediment Vacuum
+- Submersible suction dredge head for fine sand/black sand recovery in slower water or pooled sediment, feeding directly into an onboard classifier screen stack before reaching the sluice — this is the step that catches the fine gold conventional hand-panning tends to lose
+
+### 4.3 Autonomous Gold Panning
+- Manipulator arm executes actual proficient panning technique — the real skill (controlled water agitation, progressive tilt, working from the outside edge in) encoded as a repeatable motion sequence rather than a novelty gimmick, tuned against decades of real prospector technique rather than a crude shake-and-hope motion
+
+---
+
+## 5. Processing — From Dust to Keepable
+
+### 5.1 Smelting Module
+- Small induction-heated crucible, sized for placer gold dust/flake consolidation into a solid button — this is the part that turns "vial of flakes" into "something you can actually hold and show someone"
+- Button molds available in multiple sizes; dust from a full day's work can be consolidated at day's end rather than needing a separate trip to a jeweler
+
+### 5.2 Personal Coin Die Stamping
+- Interchangeable stamping dies let a consolidated gold button be struck into a coin with a custom design — a personal mark, a date, a location, whatever the prospector wants — meaning the end product isn't just "gold," it's a specific keepsake from a specific trip
+
+### 5.3 Lapidary — Gem Cutting
+- Once XRF sensing confirms a rough stone is a genuine gem-grade mineral (not merely pretty quartz), a small onboard diamond-coated cutting wheel and polishing head can facet or tumble-polish the stone on-site
+- Cut/polish profile selectable (cabochon for softer/more common stones, faceted cut profile for harder gem-grade material) based on the stone's identified hardness and crystal structure from the XRF + optical sensor data
+
+---
+
+## 6. Why the Companion Framing Matters
+
+This isn't pitched as a replacement for the trip — it's pitched as a companion *for* the trip. The camping, the fire, the actual reason someone goes prospecting in the first place, stays intact. NUGGET handles the parts that are either skill-bottlenecked (strata reading, gem ID) or labor-repetitive (panning technique, hauling gear), and hands back a finished product at the end instead of raw unprocessed material — the fun stays yours, the tedium and the missing expertise get covered.
+
+---
+
+## 7. Open Questions / Next Iteration
+
+- GPR resolution for near-surface paleochannel detection needs field validation against known productive claims — spec assumes achievable resolution based on existing commercial GPR units, not yet tested against real strata
+- Smelting module safety (induction heat + field conditions, camping-adjacent use) needs a real containment/cooldown spec before this gets built and used near a tent
+- XRF gem-identification accuracy on weathered/dirty rough stone (vs. lab-clean samples) is the single biggest sensing question — real rough stones in situ are rarely clean enough for textbook-accurate spectrometry
+- Legal note: many US states restrict suction dredging and mechanized prospecting on certain waterways — this unit's underwater vacuum and sluice functions would need to respect regional prospecting/dredging permit law, not just be built and deployed anywhere
+
+---
+
+*Released open-source, BEKW-CODE. No permission required. Go make a fire, let the companion find the gold, walk home with a coin instead of a jar.*
+
+**Ding. Ripple in a pond.**
