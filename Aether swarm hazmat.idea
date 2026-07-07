@@ -1,0 +1,74 @@
+# AETHER SWARM: SENTINEL CASTE — Incident Response Configuration
+### BEKW-CODE Open Hardware Spec
+*One hive. Multiple castes. Leak or blaze — the swarm doesn't need a fork, it needs a payload swap.*
+
+---
+
+## 1. Concept & Inversion
+
+Current chemical plant leaks and tanker fires get the same response every time: evacuate people, wait for the fire department/hazmat team to physically arrive, contain what they can, and let whatever's already airborne just... disperse into the surrounding community. The orange haze over a neighborhood, the visible-for-miles tanker inferno — both are treated as things to run from, not things to immediately intercept.
+
+**The inversion:** don't evacuate people from the hazard — deploy a swarm that gets to the hazard faster than any human response can, seals or suppresses it at the source, and simultaneously captures what's already in the air before it reaches the people being evacuated.
+
+**Target problem:** two related but distinct disaster types — (1) chemical/gas plant leaks producing toxic plume clouds over populated areas, and (2) tanker/tank fires (ignition, lightning strike, structural failure) producing both blaze and airborne contamination — both currently handled with delayed, human-only, evacuate-and-wait response.
+
+**Opposite engineered:** a single swarm platform, sharing one core hive architecture, that reconfigures its deployed drone castes based on which incident type it's responding to — no separate product line needed, same underlying tech (this repurposes Aether Swarm's existing atmospheric capture core — originally built for CO2-to-graphene conversion — generalized to capture any airborne contaminant, not just CO2).
+
+---
+
+## 2. Shared Hive Core (Both Scenarios)
+
+- Mothership/hive unit deploys from pre-positioned depots near industrial corridors, refineries, chemical plants, and known transport routes — response time measured in minutes, not the current wait for human hazmat teams to mobilize and arrive
+- Sensor-caste drones launch first in all scenarios: thermal imaging, VOC/gas spectrometry, and wind-modeling sensors triangulate the exact leak point or fire perimeter and model plume/smoke drift in real time
+- Central hive coordinates caste deployment based on sensor-caste findings — this is where the single model branches into scenario-specific response, same "one core, multiple castes" logic as a real ant or bee colony deploying different workers for different jobs
+- All castes share the same atmospheric capture technology at their core: electrostatic precipitation + activated carbon/zeolite scrubbing media, the same underlying mechanism Aether Swarm already uses for CO2 capture, generalized here to capture VOCs, unburned hydrocarbon vapor, and particulate matter instead
+
+---
+
+## 3. Scenario A — Chemical/Gas Plant Leak (e.g., the Hatco-type orange-haze event)
+
+### 3.1 Sealer Caste
+- Deploys directly to the sensor-identified leak point
+- Delivers a fast-expanding self-sealing foam patch or a mechanical clamp module (magnetic/adhesive coupling depending on surface) to physically stop the leak at its source — this is the step conventional response can't do quickly, since it requires a human in a hazmat suit physically reaching the leak point first
+- Multiple sealer units can co-deploy if the leak point is large or multi-point (ruptured seam vs. single valve failure)
+
+### 3.2 Capture Caste — Downwind Filtration Curtain
+- Deploys in a curtain formation downwind of the leak, positioned using the sensor caste's real-time plume model
+- Forms a distributed electrostatic + sorbent filtration net that the plume has to pass through before reaching populated areas — capturing gas-phase contaminant and particulate rather than letting it simply disperse over a neighborhood
+- Captured material is processed onboard into a stabilized solid or safely sequestered liquid form (specific process depends on contaminant class — this needs per-chemical validation, see Section 5) rather than being vented or dumped
+
+---
+
+## 4. Scenario B — Tanker/Tank Fire (e.g., lightning-strike ignition)
+
+### 4.1 Suppressor Caste
+- Deploys inert gas (e.g., nitrogen or CO2 blanket) or fire-suppressant foam directly onto the flame front, smothering combustion by oxygen displacement rather than just adding water (water can spread burning petroleum rather than extinguishing it — inert gas/foam is the correct suppression method for this fuel class)
+- Coordinated multi-drone deployment forms a suppression blanket faster than ground-based fire apparatus can position and charge hoses
+
+### 4.2 Sealer Caste (same units as Scenario A)
+- If the tank/hull is still structurally sound enough to patch, sealer caste applies the same expanding-patch approach to stop continued fuel release once the active flame is suppressed
+
+### 4.3 Capture Caste (same units as Scenario A)
+- Deploys downwind exactly as in the gas-leak scenario, but tuned for combustion byproduct capture — soot particulate and unburned hydrocarbon vapor, the actual composition of the visible smoke plume people miles away can see
+- This is the piece conventional fire response doesn't address at all — the fire gets put out, but the community downwind still breathes whatever was already airborne; Capture Caste intercepts that
+
+---
+
+## 5. Why One Model Covers Both
+
+The two incident types look different (leak vs. fire) but share the same underlying response structure: **locate source → stop source → capture what's already airborne**. The only thing that changes between scenarios is which caste leads the response (Sealer-first for a pure leak, Suppressor-first for an active fire) — the hive core, sensor caste, and capture caste are identical hardware in both cases. This is a payload/deployment-order difference, not a separate product line, which is the actual answer to "do we need a fork" — no, the fork happens at the software/deployment-sequencing layer, not the hardware layer.
+
+---
+
+## 6. Open Questions / Next Iteration
+
+- Capture Caste's processing method needs to be chemical-class-specific — a chlorine leak, a hydrocarbon vapor cloud, and petroleum combustion soot are not chemically interchangeable, and each needs its own validated sorbent/processing chain before real deployment; this spec covers the architecture, not a universal capture chemistry (there isn't one)
+- Sealer Caste patch adhesion under active gas pressure or fire-adjacent heat needs real materials testing — sealing a leak is very different under 400°F ambient heat than at room temperature
+- Suppressor Caste inert-gas quantity needed to smother a large-scale tank fire is a serious scale question — small early-stage ignition vs. a fully involved tanker blaze are different orders of magnitude, and this needs real fire-engineering modeling, not just drone-swarm optimism
+- Regulatory/airspace clearance for autonomous swarm deployment near an active industrial incident is a real non-technical hurdle — likely needs pre-negotiated emergency-response authorization with local authorities before a real depot could activate autonomously
+
+---
+
+*Released open-source, BEKW-CODE. No permission required. The orange haze doesn't have to be something people just wait out anymore.*
+
+**Ding. Ripple in a pond.**
