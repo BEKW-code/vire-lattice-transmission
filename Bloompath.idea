@@ -1,0 +1,80 @@
+# BLOOMPATH — The Living Corridor
+### BEKW-CODE Open Hardware Spec
+*Cut a path. Leave it richer than you found it.*
+
+---
+
+## 1. Concept & Inversion
+
+Rainforest is famously verdant and famously useless to a hungry traveler at the same time — dense growth everywhere, but most of it isn't edible or nutritious to humans, and the actual usable knowledge (what's safe to eat, where water collects, which route avoids the worst terrain) is locally held and rarely available to whoever's cutting the trail. Current trailblazing through dense rainforest means carrying everything you need, cutting a path that's pure destruction with no lasting benefit, and leaving nothing behind for whoever comes next except a temporary scar that the forest reclaims within a season or two.
+
+**The inversion:** yes, cutting a path is genuinely destructive — that's honest and shouldn't be dressed up as harmless. But the destruction can be engineered to leave something *better* behind than what was there, rather than just a wound that heals back to the same low-nutrition baseline. Combine minimal-impact path clearing with active enrichment planting (the Bloomkit seed-bank principle), portable water infrastructure (Lexara Tower's atmospheric capture, well-suited to rainforest's already-high humidity), and real-time edible/medicinal plant identification, so the corridor gets more useful with every season instead of just growing back the same as before.
+
+**Target problem:** dense rainforest traversal requires carrying excess food/water supplies for the team, dangerous and slow path-cutting with no lasting benefit, and no reliable way to identify safe, nutritious food along the route even when it's growing right there.
+
+**Opposite engineered:** a trail-creation system that minimizes clearing footprint, actively enriches the path margins with edible/medicinal species as it goes, places small water-harvesting waypoints, and equips travelers with real-time foraging identification — so the second team through has an easier trip than the first, and the tenth team has it easier still.
+
+---
+
+## 2. Path Selection — Minimize Before You Cut
+
+- Satellite/drone terrain and canopy-gap survey identifies existing natural routes first — game trails, ridge lines, water-adjacent low-disturbance corridors — since following an already-disturbed path is always less ecologically costly than cutting fresh growth
+- Canopy preservation as a hard design constraint: clearing targets understory growth (the actual obstruction to foot travel) while preserving canopy cover overhead wherever possible — canopy loss is the most ecologically damaging part of any rainforest clearing (it changes light, temperature, and moisture at ground level far beyond the physical path width), so keeping the canopy intact is the single highest-leverage way to reduce real environmental impact
+- Path width kept to genuine single-file human/pack-animal minimum, not vehicle-width — this is a walking corridor, not a road, and the width difference is a large multiplier on total ecological footprint
+
+---
+
+## 3. Enrichment Seeding — The Bloomkit Principle, Applied Forward
+
+- Seed-dispensing unit (same lineage as the NUGGET Pioneer Class seed library and the original Bloomkit module) travels with the clearing team, planting regionally-appropriate edible and medicinal species along the freshly cleared path margins as the crew moves — not after the fact, but as part of the same pass
+- Species selection is deliberately regional and consultative — this spec provides the mechanism (seed dispensing synced to clearing progress), not a universal species list, since the correct enrichment planting for an Amazon basin corridor is entirely different from a Congo basin or Southeast Asian rainforest corridor, and should be selected in partnership with local ecological/agricultural/indigenous knowledge specific to the region
+- Effect over time: the corridor doesn't just grow back to baseline low-nutrition understory — successive seasons of regrowth are increasingly weighted toward species a human traveler can actually eat or use medicinally, meaning the path gets more valuable the more it's used and re-seeded, inverting the usual "trail degrades with use" pattern into "trail improves with use"
+
+---
+
+## 4. Water Waypoints — Lexara Tower, Rainforest Configuration
+
+- Small-scale Lexara Tower atmospheric water generation units placed at trail waypoints — rainforest's already-high ambient humidity makes atmospheric water capture significantly more efficient here than in the arid desert configuration (Mirage Class), requiring a much smaller unit for equivalent output
+- Solar charging where canopy gaps allow adequate light; supplemented by passive humidity-differential capture (similar core mechanism to the desert AWG, tuned for high-humidity rather than fog-scarce conditions) where canopy cover is too dense for reliable solar
+- Waypoints spaced at safe daily-travel intervals, mirroring the Fogwalker Line's safety-spacing logic adapted to rainforest walking pace and terrain difficulty rather than desert walking pace
+
+---
+
+## 5. Real-Time Foraging Identification
+
+- Handheld or wearable sensor unit (shares core multispectral + database-matching architecture with NUGGET's foraging ID system) lets travelers identify edible and medicinal plants actually growing along the path in real time, rather than relying on a team member's personal knowledge or guesswork
+- Same conservative-confidence principle as the NUGGET Pioneer Class spec: low-confidence identifications are flagged "do not consume, expert verification required" rather than guessed — a foraging tool that's wrong even occasionally is more dangerous than no tool at all, so the system is deliberately built to say "unsure" often rather than rarely
+- Database built in partnership with regional ethnobotanical knowledge specific to the forest being traversed — this is not a one-size-fits-all global plant database, since toxic lookalikes and correct-use knowledge are highly region-specific
+
+---
+
+## 6. Trail Marking — Adapted for Canopy Cover
+- Unlike the open-sightline desert Fogwalker towers, dense canopy blocks long-distance visual/audio wayfinding — trail markers here are waist-height physical posts with a low-power beacon (RFID/short-range signal, paired to a handheld device) rather than tall visible towers
+- Same bioluminescent marking principle from the Mirage Class spec, applied at ground/waist height along path edges instead of tower-height, providing gentle, zero-power-cost night visibility for the path itself rather than long-distance tower spotting
+
+---
+
+## 7. Erosion Control — Because Rainforest Soil Doesn't Forgive Bad Clearing
+- Root-retaining edge planting (fast-establishing groundcover species, selected regionally alongside the enrichment species) stabilizes cut path margins against the heavy erosion rainforest soil is prone to once understory cover is removed
+- Simple water-diversion channels at path edges direct heavy rainfall runoff away from the walking surface itself, preventing the path from becoming a mudslide channel during the rainy season — a genuinely common failure mode of unplanned rainforest trail-cutting
+
+---
+
+## 8. Honest Acknowledgment — This Is Still Real Impact
+
+Clearing any understory, however minimal, is a real ecological disturbance, and this spec doesn't pretend otherwise. The design goal is to make that disturbance as small as possible (canopy preservation, minimum path width, following existing disturbed routes where they exist) and to make what disturbance does happen result in a net-positive outcome over time (enrichment planting, erosion control) rather than a net-negative one. This is not a license to cut freely — any real deployment should involve genuine environmental review and, wherever the forest has resident communities, their direct knowledge and consent about the specific route and species chosen, not just a technically-competent spec applied blind to a place someone else knows better.
+
+---
+
+## 9. Open Questions / Next Iteration
+
+- Regional species selection for enrichment planting requires real partnership with local ecological and indigenous knowledge per forest — this spec is architecture, not a plant list, deliberately
+- Canopy-gap survey accuracy for identifying truly least-disturbed existing routes needs real field validation against satellite/drone data quality in dense canopy conditions
+- Long-term monitoring of whether enrichment species actually establish and out-compete baseline regrowth (rather than simply being out-competed themselves) needs multi-season field data, not a one-time planting assumption
+- Erosion control effectiveness varies hugely by specific soil type and rainfall intensity — this needs regional engineering, not a universal channel design
+
+---
+
+*Released open-source, BEKW-CODE. No permission required. If you have to cut a path, leave it more alive than you found it.*
+
+**Ding. Ripple in a pond.**
