@@ -1,0 +1,88 @@
+# ARGUS — Adaptive Reality Glasses
+### BEKW-CODE Open Hardware Spec
+*Named for the hundred-eyed watchman. Sees what's real, sees what's yours, sees what everyone else missed.*
+
+---
+
+## 1. Concept & Inversion
+
+Two separate problems, currently unsolved by two separate industries: corrective lenses are a static, one-prescription-forever compromise, and AI-generated fake video/imagery is spreading faster than the average person's ability to spot it. Neither problem is being solved by the same device, despite both being fundamentally about *what your eyes are actually being shown*.
+
+**Target problem:** (1) static prescription glasses fixing only one focal distance, (2) synthetic/deepfake content being effectively undetectable to the naked eye, (3) workflow tasks like manual inventory counting being slow and error-prone, and (4) no consumer AR device currently treats the wearer's private annotation layer as actually private by default.
+
+**Opposite engineered:** one frame, adaptive rather than static correction, that treats "is this real" as a baseline always-on feature rather than a separate app, and that defaults to privacy rather than defaulting to broadcast.
+
+---
+
+## 2. Adaptive Vision Correction
+
+- Liquid-lens (fluid-chamber, electronically adjustable curvature) optics per eye, replacing fixed prescription glass entirely — focal correction adjusts in real time based on gaze-tracked focal distance, meaning near work (reading) and distance work (driving, road signs) are both corrected by the same lens without switching glasses
+- Calibrated per-user during setup against a standard refraction test, stored in the biometric profile (Section 7) so the correction curve is personal, not generic
+- Passive anti-fog: hydrophilic coating plus micro-venting channels at the lens periphery, no heating element required (avoids battery drain on a feature that should just work)
+
+---
+
+## 3. Augmented Reality Layer
+
+- Waveguide display, world-anchored persistent annotations — a note, sketch, or marker placed in physical space stays there across sessions, the same location, visible again next time the wearer looks at that spot
+- **Privacy default:** all annotations are private-to-creator unless explicitly shared — the AR world a person builds is theirs by default, not broadcast by default, inverting the current social-media-era assumption that anything created is automatically public
+- Rapid object/inventory recognition: depth sensing plus a trained object-classification model lets the wearer look down a walk-in cooler or storage aisle and get an immediate overlay count and categorization of visible inventory — this is a workflow feature disguised as a magic trick, useful for restaurants, warehouses, retail, home pantry management alike
+
+---
+
+## 4. Deepfake & Synthetic Content Detection — Baseline Feature
+
+- Always-on passive analysis layer, not a separate mode, running on any video/image content the wearer views through a connected screen (phone, TV, monitor) that the glasses' camera can also see
+- Multi-signal approach, since no single detection method is reliable alone:
+  - Compression/generation artifact analysis (synthetic content has statistically distinct noise patterns from real camera sensor output)
+  - Biological plausibility checks — natural blink rate, micro-color shifts from blood flow under skin, consistent lighting/shadow physics — synthetic faces frequently fail one or more of these subtly
+  - Content provenance cross-check against embedded metadata standards (e.g., C2PA-style content credentials) where present in the source file
+- Output is a **confidence indicator, not a binary verdict** — displayed as a subtle AR overlay badge (e.g., a percentage or a simple low/medium/high synthetic-likelihood flag), since overclaiming certainty on a fast-evolving adversarial problem would be its own misinformation risk
+
+---
+
+## 5. Extended Vision Modes
+- **Night vision:** IR illumination + image intensification overlay, toggled or gaze-gesture activated
+- **Telescopic/zoom:** combined optical + digital zoom, gaze-tracked focus point, useful for distance reading (your actual stated need — small text at range) as well as general utility zoom
+- **Capture:** photo/video recording to onboard storage, synced to a paired device
+
+---
+
+## 6. Power — Multi-Source Passive Harvesting
+- **Piezoelectric** elements in the temple hinges, flexing with normal head movement and even blink-adjacent micro-motion at the nose bridge
+- **Thermoelectric (Peltier-effect)** generation at temple and nose-bridge contact points, harvesting the differential between skin temperature and ambient air — meaningful trickle power specifically because the contact points are already touching skin continuously
+- **Solar** thin-film cells integrated into the frame's outer surface (not the lens itself, to avoid interfering with optical clarity), active in direct sun
+- All three feed a shared small battery/capacitor bank — no single source needs to carry the full load, and combined they meaningfully extend runtime versus battery-only designs
+
+---
+
+## 7. Biometric Privacy Layer
+
+- Continuous (not just at-unlock) iris/retina verification via the inward-facing eye-tracking camera already required for gaze-based focus and gesture control — this means the authentication isn't a one-time PIN-equivalent, it's persistent throughout wear
+- If the glasses are picked up and worn by someone whose iris doesn't match the stored owner profile, the device automatically loads *that person's own profile* (or a guest/default state with no access to the owner's private AR annotations, notes, or captured media) — the world you built stays yours even if someone else literally puts your glasses on
+- Local-first processing option: annotation and biometric data can be configured to never leave the device (fully offline mode) for users who want zero cloud dependency on their private AR layer
+
+## 7.1 My Addition — External Recording Indicator
+- A visible, non-defeatable small LED on the front of the frame illuminates whenever camera capture (photo/video) is active — this isn't in the original feature list, but any device with this much passive camera capability needs a physical, honest signal to the people around the wearer that they might be on camera. Consent and bystander awareness shouldn't be an afterthought bolted on after complaints; it's a standard feature from day one.
+
+## 7.2 My Addition — Accessibility Overlay Suite
+- Real-time closed captioning/translation overlay for spoken conversation in the wearer's field of view — genuinely useful for hard-of-hearing users or cross-language situations, and a natural extension of the same AR/AI stack already running
+- Directional sound-source indicator (a subtle AR arrow/highlight toward the origin of a loud or important sound) for hard-of-hearing wearers who can't rely on audio cues alone
+
+## 7.3 My Addition — Low-Power Display Mode
+- E-ink-style low-refresh display mode for all-day passive use (time, basic notifications, low-frequency AR anchors) that sips power, reserving the full active waveguide AR rendering for when the wearer actually needs it — extends real-world battery life significantly beyond always-on full AR rendering
+
+---
+
+## 8. Open Questions / Next Iteration
+
+- Liquid-lens focal adjustment speed/accuracy needs real optometric validation against a range of astigmatism and higher-order refractive error cases, not just simple myopia — your stated case (nearsighted, needs correction for distance/small text) is the simpler end of the correction spectrum
+- Deepfake detection confidence scoring is fighting a moving target — synthetic generation techniques improve continuously, so this feature needs a maintained/updatable detection model, not a one-time trained baseline that goes stale
+- Thermoelectric harvesting contribution is real but modest — needs honest power-budget modeling so users don't expect it to meaningfully replace charging, just extend it
+- Biometric continuous-auth false-reject rate (e.g., in low light, with contact lenses on top, etc.) needs real testing — a system that locks the owner out of their own device due to a bad iris read is worse than no biometric layer at all
+
+---
+
+*Released open-source, BEKW-CODE. No permission required. See clearly, see what's real, see what's yours.*
+
+**Ding. Ripple in a pond.**
