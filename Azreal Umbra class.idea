@@ -1,0 +1,63 @@
+# AZRAEL: UMBRA CLASS — Radiotrophic Reclamation
+### BEKW-CODE Open Hardware Spec
+*Melanin already learned to eat gamma rays. We're just giving it a job site.*
+
+---
+
+## 1. Concept & Inversion
+
+Depleted uranium contamination is real, widespread, and quietly unresolved — decades of documented soil, groundwater, and dust contamination in conflict zones from munitions and armor use, chemically toxic as a heavy metal on top of residual radioactivity, with the World Health Organization itself acknowledging major research gaps and no active ongoing DU health assessment program. Current remediation is mostly limited to excavation and secure disposal — expensive, slow, and doesn't scale to diffuse, low-concentration contamination spread across large areas.
+
+Meanwhile, melanin-rich fungi discovered thriving inside the Chernobyl reactor's ruins demonstrated something remarkable: they use ionizing radiation as an energy source through a process called radiosynthesis, growing measurably faster in high-radiation environments than in normal ones. Separately, fungi are already well-documented as effective heavy-metal bioaccumulators — mycoremediation using fungal biosorption to concentrate metals out of contaminated soil and water is an established (if still maturing) technique.
+
+**The inversion:** don't fight diffuse, low-concentration radioactive contamination with excavation. Deploy fungi that are drawn to and metabolically supported by the exact conditions that make the site dangerous, let them concentrate the contamination into harvestable biomass, then process that biomass into stable, inert, permanent material — ideally material that's actually worth looking at.
+
+**Target problem:** depleted uranium (and other diffuse low-level radiological/heavy-metal) contamination spread across large soil/groundwater areas, currently addressed mainly by expensive excavation that doesn't scale to the actual geographic spread of the problem.
+
+**Opposite engineered:** a living system that's biologically incentivized to go toward the contamination, concentrate it, and hand back a stable, safely stored end product instead of requiring active human excavation of every contaminated square meter.
+
+---
+
+## 2. Core Mechanism
+
+### 2.1 Site Mapping
+- Gamma spectrometry and soil/groundwater uranium concentration sensors (ground-based unit or drone-deployed) map contamination density across the site, identifying where fungal deployment will have the most impact
+- Shares core sensing architecture with the NUGGET prospecting line — same underlying spectrometry principle, different target signature
+
+### 2.2 Radiotrophic-Mycoremediation Fungal Deployment
+- Melanin-rich fungal strains (in the lineage of species documented at Chernobyl, e.g., *Cladosporium sphaerospermum*-type strains), cultivated and inoculated directly onto contaminated soil surfaces and groundwater interface zones
+- These fungi are simultaneously:
+  - **Radiosynthetic** — using ambient ionizing radiation as a growth-supporting energy input via melanin-mediated electron transport, meaning they are biologically supported by, not merely tolerant of, the contamination
+  - **Bioaccumulative** — fungal cell walls (chitin and melanin structures) bind and concentrate heavy metals, including uranium, out of the surrounding soil/water into fungal biomass, a well-documented mycoremediation mechanism
+- Net effect: diffuse, low-concentration contamination spread across a wide area gets biologically concentrated into a much smaller volume of harvestable fungal mat
+
+### 2.3 Harvest & Vitrification
+- Fungal biomass is periodically harvested (now carrying concentrated uranium/heavy-metal content) and incinerated/processed under controlled conditions
+- Resulting ash is **vitrified** — melted into a borosilicate glass-ceramic matrix, an established, real waste-stabilization method already used in radioactive waste management, permanently locking the concentrated contaminant into a stable, non-leaching solid form
+- **Aesthetic byproduct:** vitrified glass-ceramic blocks, depending on the specific mineral content captured, can take on genuinely striking coloration and density — the same principle as how trace metal content colors natural glass — meaning the stabilized waste product can double as a monument or memorial marker at a remediated site, transforming "permanently sealed hazard" into "something people are actually meant to look at," rather than a fenced-off, hidden containment vault
+
+---
+
+## 3. Power Generation — An Honest Assessment
+
+Radiotrophic fungal fuel cells (experimental microbial fuel cell setups harvesting a small electrical trickle from the same radiosynthesis electron transport chain) are a real, actively researched area — but this needs to be stated plainly rather than oversold:
+
+- **Depleted uranium is, definitionally, only about 60% as radioactive as natural uranium** — it's called "depleted" precisely because the more active isotope has been removed. The actual radiation flux available at a typical DU-contaminated site is low, meaning the energy available for radiosynthesis-driven power generation is genuinely small
+- Any power output from this system should be understood as a **minor supplemental trickle charge** for onboard sensors/low-power equipment at the remediation site itself, not a meaningful grid-scale power source — claiming otherwise would overstate what the underlying physics actually supports
+- The primary value of this system is remediation and safe concentration/stabilization of the contaminant, not energy generation — power is a genuine but minor bonus, not the headline feature
+
+---
+
+## 4. Open Questions / Next Iteration
+
+- **This is not a proven complete solution.** Radiotrophic fungal remediation at Chernobyl-adjacent sites is documented and studied, but deploying it specifically for depleted uranium contamination at munitions-affected sites needs real field trials — this spec is a proposed architecture, not a validated deployed technology
+- Harvested fungal biomass, once it has concentrated uranium and heavy metals, **becomes radioactive/toxic waste itself** and must be handled under proper radioactive waste protocols during transport to the vitrification stage — this is not a "safe to handle casually" byproduct at any point in the chain
+- Groundwater-interface deployment (vs. surface soil) needs separate engineering — fungal mycoremediation in submerged/saturated conditions behaves differently than surface soil deployment
+- Vitrification process safety and emissions control (the incineration step prior to glass-melting) needs rigorous containment design so the concentration step doesn't inadvertently aerosolize what took years to concentrate
+- Long-term monitoring of vitrified glass-ceramic blocks for leaching/durability over decades-to-centuries timescales is standard practice in radioactive waste management and should be maintained here too, monument value aside
+
+---
+
+*Released open-source, BEKW-CODE. No permission required. Let the fungi go where the danger is. Hand back a monument, not just a hazard sign.*
+
+**Ding. Ripple in a pond.**
