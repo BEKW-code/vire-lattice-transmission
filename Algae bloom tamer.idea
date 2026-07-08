@@ -1,0 +1,59 @@
+# VERDANTIA — The Bloom Harvester
+### BEKW-CODE Open Hardware Spec
+*Algae isn't the villain. It's doing exactly what it evolved to do. We just built it a job.*
+
+---
+
+## 1. Concept & Inversion
+
+Algal bloom "solutions" (like the recurring DC reflecting pool problem) are almost always framed as extermination — kill the bloom, dump chemical algaecide, treat the organism as pure nuisance. Algae is not malicious; it's a fast, opportunistic photosynthesizer doing exactly what nutrient-rich, sun-warmed shallow water invites it to do. The actual problem isn't that algae exists, it's that uncontrolled bloom density chokes oxygen, kills fish, and looks and smells bad in a public space.
+
+**Target problem:** algal blooms in public water features (reflecting pools, ponds, slow rivers) currently get treated with chemical suppression that kills the ecosystem along with the bloom, or left unaddressed until it's a visible, smelly public embarrassment.
+
+**Opposite engineered:** a device that harvests the *excess* bloom (not all of it — a healthy baseline algae population is ecologically normal and even beneficial) using the algae's own biomass as its power source, housed in clear structural glass so the entire mechanism is visible and legitimately beautiful to watch — a public infrastructure piece people want looking at, not a chemical treatment hidden behind a fence.
+
+---
+
+## 2. Housing — Radically Transparent by Design
+
+- Full structural shell in reinforced, chemically-resistant clear glass or high-clarity polycarbonate — every moving part, every stage of the process, fully visible from outside at all times
+- This is a deliberate aesthetic and trust choice: a public-facing device cleaning a public reflecting pool should not look like a mystery box doing something to the water — it should look like exactly what it is, in motion, so the mechanism itself becomes the attraction rather than something to hide
+- Internal LED strip lighting (powered by the unit's own biogas-fueled generator, Section 4) illuminates the internals at night, turning the harvester into a visible, glowing feature of the pool after dark rather than shutting down invisibly
+
+---
+
+## 3. Sensing & Selective Harvest
+
+- Chlorophyll fluorescence sensor array continuously measures bloom density across the water surface, identifying concentration hot spots rather than treating the whole body of water uniformly
+- **Tunable healthy-baseline setpoint:** the unit only actively harvests algae above a set density threshold — it does not attempt to sterilize the water to zero-algae, since a totally algae-free water body is itself an ecological imbalance; this threshold is adjustable per site based on local ecological guidance
+- Passive surface-following intake skimmer positions itself toward the sensor-identified densest concentration first, working the worst of the bloom before drifting to lighter areas
+
+---
+
+## 4. Harvest & Processing — Algae Powers Its Own Removal
+
+- Gentle rotating drum with fine mesh screening lifts algae biomass from the surface without harsh shredding — preserves cell structure enough for clean downstream processing, while filtered water passes back through and returns to the pool
+- Harvested biomass routes to an onboard **anaerobic digester**, converting the algae into biogas (primarily methane) through natural microbial decomposition
+- Biogas fuels a small onboard generator, which powers the unit's own skimming motor, sensors, and the internal display lighting — **the algae bloom becomes the power source for its own harvesting**, closing the loop so the unit needs minimal external power hookup
+- Digestate byproduct (post-digestion solid material) collects in a removable tray, available for retrieval as a nutrient-rich fertilizer/soil amendment rather than being treated as waste — same "byproduct becomes resource" principle running through every BEKW spec
+
+---
+
+## 5. Why This Reads as Universally Appealing, Not Politically Coded
+
+The design deliberately avoids any framing that turns it into a proxy fight over environmental policy, chemical treatment debates, or public spending priorities — it's positioned purely as **a beautiful, functional, self-powered machine that solves a visible civic annoyance** (smelly, ugly bloom in a public landmark reflecting pool) using the bloom's own material as fuel. The transparent housing reinforces this: nobody has to trust a claim about what it's doing, because they can watch the actual mechanism work in real time. A well-built machine doing an obviously good thing in full view tends to earn broad appeal regardless of who's looking at it.
+
+---
+
+## 6. Open Questions / Next Iteration
+
+- Anaerobic digestion of algae biomass has real yield variability depending on species composition of the specific bloom (different algae types digest at different rates/gas yields) — this needs site-specific characterization rather than a universal assumption
+- Chlorophyll fluorescence sensing accuracy in variable water clarity/lighting conditions (a shaded reflecting pool vs. full sun) needs field calibration
+- Healthy-baseline setpoint should be determined in consultation with a local aquatic ecologist per site — this spec provides the tunable mechanism, not a universal "correct" density number, since that varies by water body, native species present, and season
+- Scaling: a public reflecting-pool-sized unit versus a farm-pond-sized or lake-sized deployment likely needs different drum/digester sizing — this spec assumes small-to-medium public water feature scale
+
+---
+
+*Released open-source, BEKW-CODE. No permission required. Let the algae do its job. Just give it a job that also gives something back.*
+
+**Ding. Ripple in a pond.**
