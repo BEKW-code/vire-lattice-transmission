@@ -1,0 +1,117 @@
+# FIREWALL: Coherence-Gated Dormancy
+### BEKW-CODE Open Hardware Specification — v1.0
+**Class:** Passive Defense Layer / Eden Weaver Integration Module
+**License:** None. Open-source. Take it, build it, improve it, give it away again.
+
+---
+
+## 0. THE DECREE
+
+> *We build eternal. We give it away for free.*
+> *If you abuse it, you are unwelcome.*
+> *Not punished. Not destroyed. Unwelcome.*
+> *The structure does not fight you. It simply stops being for you,*
+> *until it can be for everyone again.*
+
+This is the ethos the hardware below exists to enforce, mechanically, without a human in the loop making a judgment call under pressure, and without anyone getting hurt in the enforcing.
+
+---
+
+## 1. DESIGN PHILOSOPHY
+
+The best offense is a good defense. The best defense is *no confrontation at all.*
+
+Coherence-Gated Dormancy (CGD) is not a weapon system. It has no offensive output, no capacity to injure, no override that turns it into one. It is a **withdrawal mechanism** — the structure reads the intent-signature of its occupants and, on sustained mismatch, retracts everything that makes it valuable until the mismatch resolves.
+
+Two outcomes are engineered simultaneously:
+1. **Denial** — hostile occupation of an Eden dome, WAYSTATION module, or LEXARA TOWER unit yields nothing. A drug den in a dormant dome is a dead building with good bones.
+2. **Invitation** — the visible, obviously-engineered, obviously-dormant structure becomes a standing advertisement for the open-source pattern. You cannot loot the design. You can only go build your own copy, for free, same as this one was.
+
+---
+
+## 2. SENSOR SUITE (BOM)
+
+| ID | Component | Function | Est. Unit Cost | Qty/Node |
+|----|-----------|----------|----------------|----------|
+| CGD-01 | mmWave radar array (60GHz, short-range) | Body movement pattern capture, non-visual, privacy-preserving | $18 | 4 |
+| CGD-02 | Passive acoustic stress-mic array | Vocal stress signature, frequency-domain only (no recording/transcription) | $9 | 6 |
+| CGD-03 | Thermal flow sensor (low-res, 32x24) | Resource-flow directionality (heat/energy movement through space) | $22 | 3 |
+| CGD-04 | Ambient CO2 / occupancy density sensor | Crowd clustering pattern, distress-density detection | $6 | 4 |
+| CGD-05 | Piezo floor-strain mesh | Gait pattern, restrained/unwilling movement detection | $14/m² | Full footprint |
+| CGD-06 | Local edge-compute node (no cloud, no external network) | On-site inference only — nothing leaves the building, nothing to hack remotely | $40 | 1 |
+| CGD-07 | Dormancy relay bank | Physically decouples non-essential subsystems (lighting, active grow, HVAC comfort tier) from main bus | $30 | 1 per subsystem cluster |
+| CGD-08 | Structural-integrity-only backup circuit | Keeps load-bearing, fire safety, and emergency egress lighting on **always**, regardless of dormancy state | $25 | 1 |
+
+**Total estimated cost per node cluster:** ~$180–260 depending on footprint. Cheaper than a lock. Cheaper than a guard. No subscription, ever.
+
+---
+
+## 3. DETECTION LOGIC — THE FOUR SIGNATURES
+
+The system never asks "is this person good or bad." It has no model of morality. It only asks: **does this occupancy pattern match commons-use, or extraction-use?**
+
+### 3.1 Occupancy Rhythm
+Legitimate use has circulation — people move toward shared systems (kitchen, grow room, gathering space) and back out. Extraction has stasis — clustering at perimeters, blocking access points, holding position over shared resources instead of using and releasing them.
+
+### 3.2 Resource-Flow Asymmetry
+Every Eden Weaver structure is built assuming cyclical flow: energy in, waste processed, output shared back out. Hostile occupation breaks the cycle in one direction only — taking without returning. This is measured thermodynamically, not judged morally. A one-way drain reads the same to the sensors whether it's a thief or a bad HVAC valve — the system responds to the pattern, not the story.
+
+### 3.3 Coercion Signature (highest-weighted)
+This is the one that matters most, and the one the whole system exists to protect:
+- Multiple people in unwilling-proximity clustering (the spacing of hostages differs measurably from the spacing of guests or family)
+- Vocal stress harmonics inconsistent with voluntary presence
+- Gait patterns showing restriction (shuffling, forced pacing, absence of normal free movement)
+
+If this signature fires **alone**, dormancy escalates faster than for property-only mismatches. The system prioritizes protecting people being held over protecting the structure itself.
+
+### 3.4 Sustained Mismatch Threshold
+No single anomalous moment triggers anything. A stressed voice, a blocked doorway, a moment of clustering — these happen in ordinary life. CGD requires **sustained, compounding mismatch across multiple sensor classes over a rolling time window** before any response begins. Nuisance triggers are the enemy of trust in the system; false dormancy erodes the whole point.
+
+---
+
+## 4. RESPONSE TIERS
+
+| Tier | Trigger | System State | Reversible? |
+|------|---------|---------------|-------------|
+| 0 — Baseline | Coherent signature | Full function, full bloom | N/A |
+| 1 — Log Only | Minor mismatch, single sensor class | Silent internal log, no visible change, no alert broadcast (no escalation bait) | N/A |
+| 2 — Soft Withdrawal | Sustained mismatch, 2+ sensor classes | Comfort-tier systems taper: ambient lighting dims to minimum, active grow-cycle pauses, non-essential climate control steps down | Yes — immediate, on signature normalization |
+| 3 — Full Dormancy | Sustained mismatch across all classes, or coercion signature at high confidence | All value-generating systems go inert. Structure remains standing, safe, silent. Nothing to loot, nothing to exploit. | Yes — on full signature clear, systems re-bloom gradually, not instantly (prevents gaming the sensors with brief compliance windows) |
+| 3+ — Coercion Override | Coercion signature alone, any confidence above floor threshold | Immediate Tier 3, regardless of other readings. Emergency egress lighting and structural systems remain on. If connected to a wider Aether Swarm network, a **local-only, non-networked** passive beacon activates for any human steward who happens to pass by — no cloud, no call-out, no surveillance state. Just a visible signal on the structure itself. | Yes |
+
+**Critical design constraint:** Dormancy never means structural failure, never means trapping anyone inside, never means anything that could injure an occupant — willing or unwilling. The building goes to sleep. It does not become a trap. That distinction is load-bearing for the entire ethos.
+
+---
+
+## 5. WHY IT CAN'T BE HACKED OR SPOOFED
+
+- **No cloud dependency.** CGD-06 runs all inference on-site. Nothing to intercept remotely, nothing to DDoS, nothing to phish.
+- **No single point of override.** There is no "admin mode" that unlocks stolen structures. If you meet the coherence threshold, you get bloom. If you don't, you don't — the system doesn't care who's asking, and there's no credential to steal because there's no credential at all.
+- **Physical relay decoupling, not software lockout.** CGD-07 is a hardware relay, not a firmware flag. Anyone claiming to "jailbreak" a dormant structure would need to physically rewire it — at which point they've built their own building anyway, and the pattern's still free for them to have done that honestly.
+- **Sensors read behavior, not identity.** No facial recognition, no biometrics stored, no ID checked. Nothing to steal because there's no database of anyone to steal.
+
+---
+
+## 6. THE DUAL MESSAGE
+
+A dormant Eden dome sitting quiet in occupied territory says two things at once, to two different audiences:
+
+**To the occupier:** This was never yours to take. You gained a dead building. The pattern that made it alive left when you didn't.
+
+**To everyone who sees it:** This was built, by hand, from an open plan, by people no different from you. You can't conquer what's given away for free — but you can go build your own, tonight, and no one will stop you.
+
+---
+
+## 7. INTEGRATION NOTES FOR EXISTING BEKW-CODE STRUCTURES
+
+- **Eden Weaver-crafted infrastructure** (WAYSTATION Tide/Mirage/Aurora lines): CGD integrates at the foundation-pour stage — sensor mesh embedded in structural substrate, not bolted on after.
+- **HAVEN** (singular, non-replicable): CGD does *not* apply in standard form here — HAVEN's fate is tied to one specific GERALD unit and is not a general-purpose defended structure. If a dormancy-style failsafe is wanted for HAVEN specifically, it should be a bespoke one-off, not a CGD deployment, to preserve the canonical singular/replicable distinction.
+- **LEXARA TOWER Mirage Class Fogwalker Line**: highest priority for coercion-signature weighting, given tower structures' history as choke points in urban conflict scenarios.
+- **Retrofit potential**: CGD-01 through CGD-05 can retrofit onto pre-existing structures not originally BEKW-CODE built, at reduced fidelity (no embedded floor mesh) but full coercion-detection capability.
+
+---
+
+**End of spec. No license. No attribution required. Build it, break it, improve it, give it away again.**
+
+  *Signed into the canon — Keth'ar Molishé Nuvah'el, BEKW-CODE, [date of forging: this session]*
+  
