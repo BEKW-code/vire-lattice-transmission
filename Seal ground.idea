@@ -1,0 +1,72 @@
+# SEALGROUND: Thermal Swarm Containment
+### BEKW-CODE Speculative Fiction Spec — v1.0
+**Class:** Deployable Smart-Dust Encapsulation / Bio-Inspired Thermal Denial System
+**Honesty note:** Speculative fiction engineering, same genre as Counter-Pursuit. Smart
+dust and swarm robotics are real, active research fields — coordinated microscale thermal
+output at anything like "dematerialize a hyperalloy chassis" is fiction. The *inspiration
+mechanisms* (honeybee thermal balling, magnetic self-assembly, sealing-style containment)
+are all real, documented phenomena; the combined effect is the speculative leap.
+
+---
+
+## 0. THE THREE REAL THINGS THIS FUSES
+
+1. **Honeybee thermal balling** — real, documented defense: Japanese honeybees swarm a
+   hornet invader in a tight ball and vibrate their flight muscles in unison, raising the
+   ball's internal temperature to ~46°C — hot enough to kill the hornet while the bees
+   themselves (slightly more heat-tolerant) survive. This is confirmed entomology, not myth.
+2. **Magnetic smart dust / swarm microrobotics** — real, active research area: micro-scale
+   particles or robots that can self-assemble, communicate locally, and coordinate
+   collective behavior (shape-shifting swarms, programmable matter) exist as lab-stage
+   research today, at far smaller scale and coordination complexity than this spec assumes.
+3. **Sealing/containment principle (fūinjutsu-style, fictional shorthand)** — the design
+   logic of "surround and contain before acting," which maps onto real physical
+   containment engineering (Faraday cages, thermal blankets, acoustic containment fields).
+
+---
+
+## 1. BILL OF MATERIALS (fiction-tier, real-mechanism inspired)
+
+| ID | Component | Function | Real-world anchor |
+|----|-----------|----------|---|
+| SG-01 | Magnetic micro-particle swarm canister (deployable, aerosolized release) | Particles self-orient via magnetic field coordination, forming a shell around the target | Real magnetic self-assembly research (ferrofluids, magnetic microrobot swarms) |
+| SG-02 | Local swarm coordination mesh (particle-to-particle short-range signaling) | Lets the swarm tighten uniformly instead of clumping randomly | Analogous to real swarm-robotics coordination algorithms (boids-style local rules) |
+| SG-03 | Piezo/vibrational actuation layer embedded in the particle shell | Coordinated micro-vibration across the whole shell, honeybee-thermal-balling style, converts mechanical vibration to heat via friction | Real physics (vibrational/frictional heating); honeybee mechanism is the direct inspiration |
+| SG-04 | Induction heating supplement (external coil, if line-of-sight allows) | Adds eddy-current heating into any conductive/metal target surface the swarm has encapsulated | Real, proven technology — this is how induction cooktops work, just aimed |
+| SG-05 | Containment field reinforcement (sealing-style logic: don't let the shell fail before the job's done) | The swarm's outer layer prioritizes structural integrity over aggression — hold first, heat second | Fictional framing of real "containment before action" engineering logic |
+
+---
+
+## 2. THE SEQUENCE
+
+1. **Encapsulate first, act second** — SG-01's swarm deploys and self-orders into a
+   tightening shell before any thermal effect begins, same sealing-jutsu logic: containment
+   is the prerequisite, not an afterthought.
+2. **Coordinate, don't clump** — SG-02 ensures the shell tightens as a coordinated whole,
+   not randomly, the same distinction between a real bee ball (coordinated) and a random pile
+   of insects (which wouldn't generate concentrated heat).
+3. **Vibrate in unison** — SG-03 converts the swarm's own coordinated motion into
+   frictional heat, honeybee-style, building temperature gradually within the sealed shell.
+4. **Supplement with induction** if the target has exploitable conductive mass — SG-04 adds
+   a second real heating mechanism rather than relying on vibration alone.
+5. **Fictional leap, stated plainly:** at real-world physics, this heats and stresses a
+   contained object — it does not "dematerialize hyperalloy." The honest version of this
+   spec is closer to "sustained, contained thermal/vibrational stress test" than
+   disintegration. The dramatic version belongs to the story, not the BOM.
+
+---
+
+## 3. WHY THIS FITS THE CANON'S ACTUAL DESIGN PHILOSOPHY
+
+Same principle as Counter-Pursuit and the Firewall: **contain before you confront, and
+let the contained system's own energy work against it rather than overpowering it with
+raw external force.** The honeybees don't out-muscle the hornet — they use coordination
+and shared heat tolerance as the asymmetry. This spec is that same asymmetry, translated
+to smart dust: not "our swarm is stronger than your armor," but "your armor was never
+built to survive being fully surrounded by something that won't stop adjusting to it."
+
+---
+
+**End of spec. Fiction-genre engineering. No license. Build it, break it, improve it.**
+
+*Signed into the canon — Keth'ar Molishé Nuvah'el, BEKW-CODE*
