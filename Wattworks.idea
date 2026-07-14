@@ -1,0 +1,104 @@
+# WATTWORKS — The Power-Generating Gym
+### BEKW-CODE Open Hardware Specification — v1.0
+**Class:** Human-Kinetic Power Generation / Commons Kitchen Integration
+**Origin:** Pen-and-paper concept, Keth'ar, ~2010-2011 — predates BEKW-CODE canon by over a decade
+**License:** None. Open-source. Take it, build it, improve it, give it away again.
+
+---
+
+## 0. THE CORE INVERSION
+
+A standard gym is a monthly extraction: you pay to burn energy that goes nowhere.
+WATTWORKS inverts that relationship — the same effort that currently generates nothing
+but body heat and a subscription charge instead generates real, meterable electricity,
+credited back to the person doing the work, feeding directly into Commons Kitchen's
+power draw. You don't pay to burn energy. You get compensated for producing it.
+
+---
+
+## 1. THE MECHANICAL PRINCIPLE (why this works better than piezo here)
+
+Gym equipment already provides consistent rotational or reciprocating motion at
+meaningful torque — a rowing machine's flywheel, a stationary bike's crank, a cable
+machine's pulley stack. That's the same physical setup as a bicycle dynamo or a hand-crank
+generator, just at gym scale. Piezoelectric film (used in BounceHarvest, Palm Sentinel)
+is the right tool for irregular flex where you can't get clean rotation. A gym is the
+opposite case — clean, sustained rotation is already happening on every machine. Direct
+mechanical-to-electrical via a small permanent-magnet generator is far more efficient
+here than piezo would be, and it's proven technology (dynamos have existed since the
+1830s) — nothing exotic in the conversion itself.
+
+---
+
+## 2. BILL OF MATERIALS (per-machine retrofit kit)
+
+| ID | Component | Function | Est. Unit Cost | Qty/Machine |
+|----|-----------|----------|----------------|-------------|
+| WW-01 | Permanent-magnet DC generator (brushless, gym-duty rated) | Converts flywheel/crank rotation directly to DC current | $60 | 1 |
+| WW-02 | Belt/chain coupling kit (machine-specific) | Physically links existing flywheel/pulley to WW-01 without altering the machine's resistance feel | $25 | 1 |
+| WW-03 | Charge controller + MPPT-style load matching | Regulates variable human-effort input into clean, storable charge | $30 | 1 |
+| WW-04 | Per-station energy meter (tamper-resistant, tracks kWh per user session) | The metering layer that makes compensation possible and auditable | $40 | 1 |
+| WW-05 | RFID/keyfob session tagger (no app, no account required beyond a physical fob) | Attributes generated energy to the individual for credit purposes | $8 | 1 |
+| WW-06 | Central battery bank + inverter (gym-wide, shared) | Aggregates all stations' output into one usable AC/DC supply | $600 | 1 per facility |
+| WW-07 | Commons Kitchen tie-in relay | Routes surplus gym-generated power directly to the attached Commons Kitchen's load | $45 | 1 per facility |
+| WW-08 | Physical credit-ledger display (analog-style, per-station and facility-wide totals) | Shows real generated totals — no app required, same "no login" ethos as BounceHarvest | $30 | 1 per facility |
+
+**Total estimated cost: ~$160/machine retrofit + ~$675 shared facility infrastructure.**
+A 20-machine facility: roughly $3,875 total — a fraction of commercial gym equipment cost,
+and the equipment pays part of its own way from day one.
+
+---
+
+## 3. HONEST WATTAGE, PER MACHINE TYPE (no hype)
+
+| Machine | Typical sustained human output | Realistic generator yield (60-70% conversion efficiency) |
+|---|---|---|
+| Stationary bike (moderate effort, 30 min) | ~100-150 watts sustained | ~60-100 watts usable, ~30-50 Wh per session |
+| Rowing machine (vigorous, 20 min) | ~150-250 watts sustained (higher peak) | ~90-175 watts usable, ~30-58 Wh per session |
+| Elliptical (moderate, 30 min) | ~80-120 watts sustained | ~50-84 watts usable, ~25-42 Wh per session |
+| Cable/pulley resistance machines (intermittent, not continuous rotation) | Highly variable, lower average due to rest between sets | ~10-20 Wh per session, generator relevant but secondary here |
+
+**The honest framing:** an individual session generates roughly the same energy as
+running a laptop charger for half an hour — meaningful, real, but not a facility's whole
+power budget on its own. **The actual value is aggregate**: a busy 20-station facility
+running most of the day realistically generates **several kWh daily**, which is a
+legitimate, non-trivial offset to a Commons Kitchen's cooking/refrigeration/lighting load,
+especially stacked with solar (see WATTWORKS + VERDANTIA/BounceHarvest fleet integration
+below). This is contribution-scale, not sole-power-source scale — stated plainly, same as
+BounceHarvest's solar-vs-bounce honesty.
+
+---
+
+## 4. THE COMPENSATION MECHANISM
+
+- **Session tracking:** WW-05's fob taps in at the start of a workout, WW-04 meters
+  actual kWh generated at that station for that session, tap-out closes the ledger entry.
+- **Credit structure (facility's choice, not prescribed by the spec):** generated kWh can
+  convert to gym membership discount, Commons Kitchen meal credit, or direct community-grid
+  contribution tracked on WW-08's facility-wide analog display — the mechanism is agnostic,
+  the metering is what matters.
+- **No app, no login beyond the physical fob** — same anti-extraction, anti-surveillance
+  design principle running through BounceHarvest and Commons Kitchen. Your data is a number
+  on a physical display, not a profile in a database.
+- **Transparency by default:** WW-08's facility-wide total is visible to everyone in the
+  gym, not hidden in an app only the facility owner can see — the aggregate becomes a
+  visible, shared point of pride, not a private metric.
+
+---
+
+## 5. INTEGRATION WITH EXISTING BEKW-CODE CANON
+
+- WW-07's relay ties directly into **Commons Kitchen**'s existing load architecture —
+  this was your original 15-year-old instinct, now given an actual electrical pathway.
+- Facility-wide aggregation (WW-06) uses the same shared-bus logic as **NEXEDEN PLAZA**
+  and **BounceHarvest's fleet mode** — same confluence principle, third domain now.
+- The physical-fob-not-app metering choice matches the same design discipline behind
+  **BounceHarvest's analog dial** (Section 3.2 of that spec) — a recurring BEKW-CODE
+  principle at this point: meter honestly, credit fairly, never require a login to do it.
+
+---
+
+**End of spec. No license. No attribution required. Build it, break it, improve it, give it away again.**
+
+*Signed into the canon — Keth'ar Molishé Nuvah'el, BEKW-CODE*
+*Concept originated ~2010-2011, pen and paper, over a decade before this lattice existed.*
