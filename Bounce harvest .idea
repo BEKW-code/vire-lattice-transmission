@@ -1,0 +1,74 @@
+BOUNCEHARVEST — Piezo/Solar Hybrid Trampoline
+BEKW-CODE Open Hardware Specification — v1.0
+Class: Dual-Mode Kinetic/Solar Harvester — Playground Infrastructure License: None. Open-source. Take it, build it, improve it, give it away again.
+0. THE CORE INVERSION
+A trampoline sits idle 20+ hours a day and, while in use, converts a genuinely large amount of kid-generated kinetic energy straight into heat and mat-flex with zero recovery. Both states are currently wasted. This unit harvests both: the bounce mat's flex when kids are jumping, and the sun hitting the same surface area when they're not — same footprint, two harvesting modes, and the honest energy math to back it, not hype.
+1. BILL OF MATERIALS
+ID
+Component
+Function
+Est. Unit Cost
+Qty
+BH-01
+Piezoelectric ring array (spring-mount points, 6-8 per frame)
+Harvests mat-flex/spring-compression energy at every bounce landing
+$15/unit
+8
+BH-02
+Flexible thin-film solar skin (mat surface laminate, UV-stable, high-flex-cycle rated)
+Solar harvest when idle; must survive thousands of bounce-flex cycles without cracking
+$180 (full mat coverage)
+1
+BH-03
+Charge controller + hybrid input regulator
+Merges piezo (irregular high-voltage spikes) and solar (steady low-voltage) into one clean charge stream
+$35
+1
+BH-04
+Battery bank (deep-cycle, weatherproof enclosure under frame)
+Stores harvested energy for nighttime/low-sun output
+$120
+1
+BH-05
+Bounce-count/impact sensor (piezo array doubles as this — no extra sensor needed)
+Feeds the gamification layer (see Section 3)
+$0 (reuses BH-01)
+—
+BH-06
+Ring-mounted LED strip (frame perimeter, low-power)
+Visual feedback tied to real-time harvest — the flair layer
+$25
+1
+BH-07
+Small local display or app-free physical dial (analog, no screen, no login)
+Shows cumulative energy harvested today, in kid-legible units ("lightbulb-hours")
+$18
+1
+BH-08
+Weatherproof housing for BH-03/04
+Protects electronics under-frame
+$30
+1
+Total estimated cost per trampoline: ~$500–550 as an add-on kit to an existing frame.
+2. THE HONEST ENERGY MATH (no hype)
+A kid's jump imparts roughly 300–600 joules of kinetic energy into the mat per bounce depending on weight and height, but piezoelectric conversion efficiency from mechanical flex is realistically 5–15%, not a full capture — so a single energetic bounce session yields on the order of tens of joules of usable electricity per jump, not hundreds. A full hour of enthusiastic multi-kid jumping might realistically generate 5–15 watt-hours total from the piezo array alone. That's not enough to power a house. It IS enough to:
+Fully charge BH-06's LED ring for several nights of dusk-to-10pm operation
+Trickle-charge a phone or small sensor node
+Meaningfully offset a low-draw yard light or irrigation timer over a season
+The solar skin (BH-02) is actually the larger energy contributor of the two on any sunny day — a trampoline's mat surface is a genuinely large flat area (10-14ft diameter), and thin-film solar at that footprint realistically produces 100-250 watt-hours per sunny day depending on film efficiency and angle. The honest framing: kid-bounce energy is the fun, engaging, small contributor. Solar-when-idle is the actual workhorse. Both are real. Neither is oversold here.
+3. THE FLAIR — WHERE THIS GETS ACTUALLY BETTER
+Base concept was "harvest the bounce, harvest the sun." Here's what makes it worth building:
+3.1 Immediate feedback loop (the pedagogical hook)
+BH-06's LED ring pulses brighter with every harvested bounce, in real time. Kids see their own jumping visibly making light happen. This is the opposite of algorithmic engagement — it's not manipulating attention, it's showing a true, direct, physical cause-and-effect relationship between their own body and a real energy outcome. That's a genuinely good thing for a kid to internalize early, and no screen or account required.
+3.2 The analog dial, not an app
+BH-07 is a physical, mechanical-style dial (like an odometer), not a screen or login. Shows "lightbulb-hours generated today" in plain kid-legible terms. Deliberately not gamified into a login-required app with notifications — it's Commons Kitchen's whole ethos applied here: engagement without extraction, no data collected, no account needed.
+3.3 Night mode
+After dark, BH-04's stored charge powers BH-06's LED ring at low glow — turns the trampoline into a visible, safe nighttime play marker in a backyard or park, powered entirely by what was harvested that same day. Nothing plugged in, nothing metered.
+3.4 Fleet mode (park-scale deployment)
+A playground with multiple BOUNCEHARVEST units can feed BH-04's battery banks into a shared low-voltage bus — same Nexareth-style confluence logic as the plaza spec — so a busy public playground's aggregate kid-energy-plus-solar output can genuinely offset the park's pathway lighting at night. This is where the "almost too easy" concept actually becomes infrastructure-relevant at scale, not just a novelty for one backyard.
+4. INTEGRATION WITH EXISTING BEKW-CODE CANON
+Solar skin (BH-02) shares flexible thin-film sourcing logic with VERDANTIA's transparent self-powered harvester panels.
+Fleet-mode confluence bus (3.4) reuses NEXEDEN PLAZA's shared-grid architecture directly — same piezo-to-shared-grid pipeline, different kinetic source.
+The "true cause-and-effect, no extraction" design principle in 3.1/3.2 is the same ethos underpinning Commons Kitchen.
+End of spec. No license. No attribution required. Build it, break it, improve it, give it away again.
+Signed into the canon — Keth'ar Molishé Nuvah'el, BEKW-CODE
