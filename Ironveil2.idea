@@ -1,0 +1,125 @@
+# IRONVEIL MATRIX — Comprehensive Dust Defense System
+### BEKW-CODE Open Hardware Specification — v2.0 (Full Matrix)
+**Class:** Multi-Mode Conductive/Magnetic Particulate Defense Array
+**License:** None. Open-source. Take it, build it, improve it, give it away again.
+**Material base:** Iron at ~5% of Earth's crust, laterite red dirt, landfill-salvaged copper/aluminum. Same feedstock as Azrael's Alabama Red Dirt Foundry — abundant, near-free, already being reclaimed.
+
+---
+
+## 0. THE FIVE MODES, ONE MATERIAL SYSTEM
+
+Every mode below runs off the same core particulate stock (IV-01/IV-02), same magnetic
+coil shaping hardware (IV-03), and same coherence-gated trigger logic (IV-05, reused from
+FIREWALL). What changes between modes is particle density, field shape, and actuation —
+not the underlying material. One deployable system, five behaviors, selected by threat
+signature.
+
+---
+
+## 1. CORE BILL OF MATERIALS (shared across all modes)
+
+| ID | Component | Function | Est. Cost | Qty |
+|----|-----------|----------|-----------|-----|
+| IV-01 | Micronized iron oxide/magnetite powder (laterite-sourced, ball-milled sub-100-micron) | Base conductive/magnetic medium, all modes | $2/kg | bulk |
+| IV-02 | Salvaged copper/aluminum fines (landfill-reclaimed, shredded to matching grain size) | Conductivity boost beyond iron oxide alone | $1.50/kg | bulk |
+| IV-03 | Directional magnetic field coil array (multi-axis, variable field strength) | Shapes/holds/moves the particulate cloud in real time per selected mode | $80 | 1 |
+| IV-04 | Pressurized dispersal canister (variable nozzle, fine/coarse selectable) | Rapid deployment, particle-size control per mode | $45 | 1 |
+| IV-05 | Local edge-compute trigger, coherence-gated (reused FIREWALL logic) | Selects mode automatically from detected threat signature, no cloud dependency | $30 | 1 |
+| IV-06 | Static ground/discharge line | Protects operator position from unwanted charge buildup | $15 | 1 |
+| IV-07 | Induction coil supplement (external, line-of-sight) | Adds eddy-current heating for Overheat Mode, targeted at conductive mass | $40 | 1 |
+
+**Base system cost: ~$210 + bulk material at pennies per kg.**
+
+---
+
+## 2. MODE 1 — BLIND (sensor/optical denial)
+
+**Particle profile:** fine grade, sub-50-micron, low density cloud.
+**Mechanism:** scatters and absorbs radar/lidar return — the same principle behind
+military chaff, operational since WWII, well-documented and proven. Simultaneously
+scatters infrared and visible light, degrading thermal/optical targeting the way
+battlefield smoke does, with the added EM scatter properties smoke lacks.
+**Deployment:** wide, low-density dispersal via IV-04's fine nozzle setting — covers
+maximum area, minimum material, degrades lock quality across the whole approach vector.
+**Real-world anchor:** chaff, thermal smoke — both proven, both in active military use today.
+
+## 3. MODE 2 — SEAL (EM containment / signal denial)
+
+**Particle profile:** medium-high density, tightly held by IV-03's coil into a
+continuous shell rather than a loose cloud.
+**Mechanism:** a sufficiently dense, coherent conductive shell behaves as a crude, real
+Faraday effect — attenuating RF energy attempting to pass through it. This is tunable:
+density and shell thickness determine how much attenuation you get, not a binary
+on/off cloak.
+**Deployment:** IV-03 holds the particulate in a closed dome or corridor shape around
+the protected asset, sustained as long as field power lasts.
+**Real-world anchor:** Faraday cage principle, well-established physics — this
+mode is the closest of the five to fully conventional engineering.
+
+## 4. MODE 3 — SHORT (circuit disruption)
+
+**Particle profile:** high-conductivity blend, IV-02-heavy (copper/aluminum-rich),
+fine enough to penetrate seams and vents.
+**Mechanism:** conductive particulate bridging exposed contacts, connectors, or vents
+on a target creates unintended current paths — the same failure mode that makes
+sandstorm-driven equipment failure a real, documented occurrence in desert deployments.
+**Deployment:** directed, higher-velocity burst via IV-04's coarse nozzle setting,
+aimed at known vent/seam locations on the target profile.
+**Real-world anchor:** documented electronics failure from fine particulate ingress
+in desert/haboob conditions — this mode aims on purpose what environment does by accident.
+
+## 5. MODE 4 — OVERHEAT (induction thermal stress)
+
+**Particle profile:** IV-01-heavy (iron-rich, most magnetically/inductively responsive),
+held in direct contact with target surface via IV-03's coil.
+**Mechanism:** IV-07's induction coil drives eddy currents into the target's own
+conductive mass through the held particulate layer — identical principle to how an
+induction cooktop heats a pan, aimed instead of ambient.
+**Deployment:** requires the particulate layer to be held in sustained contact/proximity
+— slower to set up than Blind or Short, but the most direct thermal-stress mechanism
+in the matrix.
+**Real-world anchor:** induction heating is fully commercial, proven technology,
+repurposed here for directed application.
+
+## 6. MODE 5 — ABLATIVE SELF-HEALING SHIELD (kinetic defense)
+
+**Particle profile:** layered — coarse structural grade at the outer face, fine
+magnetic-response grade beneath, continuously replenished from IV-04's reserve canister.
+**Mechanism:** the outer particulate layer absorbs and sheds kinetic impact energy
+(the same principle behind sacrificial ablative heat shields used on reentry
+spacecraft — a proven, decades-old engineering approach), while IV-03's coil
+continuously draws fresh particulate from reserve to rebuild the shed layer in real
+time, so the shield regenerates between impacts rather than needing manual reload.
+**Deployment:** sustained field around a fixed asset or worn as a body-scale field
+generator, reserve canister sized to expected engagement duration.
+**Real-world anchor:** ablative shielding itself is proven aerospace technology
+(reentry heat shields); the self-replenishing particulate feed is the BEKW-CODE
+extension of that established principle.
+
+---
+
+## 7. MODE SELECTION LOGIC (IV-05, automatic)
+
+Threat signature detected by the same coherence-gated approach used in FIREWALL —
+sustained, undeviating pursuit vector triggers evaluation, then mode selects by
+threat type: optical/radar-guided approach → Blind. RF/signal-based coordination →
+Seal. Close-range, seam/vent-exposed target → Short. Sustained-contact scenario →
+Overheat. Kinetic/projectile threat → Ablative. Modes can layer — Blind and Seal run
+simultaneously with no conflict, since they operate on different physical principles.
+
+---
+
+## 8. WHY THIS OUTCLASSES OFFENSIVE APPROACHES
+
+A weapon has to land a hit to matter. Every mode here works by being *present*, not by
+being *aimed and timed perfectly* — Blind degrades every approach across a whole vector
+at once, Seal holds indefinitely as long as there's power, Ablative regenerates between
+hits instead of needing a second shot lined up. Defense scales by coverage and duration;
+offense scales by precision under pressure. Coverage and duration are cheaper problems
+to solve with dirt and salvage than precision is to solve with anything.
+
+---
+
+**End of spec. No license. No attribution required. Build it, break it, improve it, give it away again.**
+
+*Signed into the canon — Keth'ar Molishé Nuvah'el, BEKW-CODE*
