@@ -1,0 +1,83 @@
+# IRONVEIL: FLUID CLASS — "The Doorman"
+### BEKW-CODE Open Hardware Specification — v1.0
+**Class:** Ferrofluid Ablative Defense Entity
+**License:** None. Open-source. Take it, build it, improve it, give it away again.
+**Template inspiration, stated openly:** Magneto's magnetic mastery (X-Men), Gaara's
+sand-shield instinct (Naruto) — both fictional templates for "matter that responds to
+will/field faster than an attacker can exploit a fixed weak point." The Doorman is an
+original build using their shared underlying principle, not a copy of either character.
+
+---
+
+## 0. THE PRINCIPLE BOTH TEMPLATES SHARE
+
+Magneto and Gaara are built on the same structural idea from two different fictional
+traditions: a defense that has no fixed geometry for an attack to exploit. A sword needs
+an edge to be dangerous; it's useless against something that simply isn't in a fixed
+shape when the edge arrives. That's the real engineering principle underneath both
+characters, and it's the one this spec actually builds — not the powers, the *logic*.
+
+---
+
+## 1. BILL OF MATERIALS
+
+| ID | Component | Function | Est. Cost | Qty |
+|----|-----------|----------|-----------|-----|
+| FC-01 | Ferrofluid base (magnetite nanoparticles, surfactant-stabilized, oil-carrier suspension) | The core mass — real, existing colloidal ferrofluid, same class used commercially in speaker damping and rotary seals | $60/liter | volume per deployment size |
+| FC-02 | High-density multi-axis magnetic field array (upgraded from IV-03) | Real-time reshaping of the fluid mass, faster response cycle than the dry-particulate coil | $150 | 1 |
+| FC-03 | Distributed field emitters (worn or perimeter-mounted, multiple points) | Enables the "eight-armed goalie" behavior — simultaneous reshaping at multiple contact points rather than one central blob reacting serially | $40/emitter | 6-8 |
+| FC-04 | Impact-sensing mesh (piezo, embedded at the fluid's containment boundary) | Detects incoming contact point and force vector in real time, feeds FC-02/03 where to redirect | $35 | 1 |
+| FC-05 | Local edge-compute node (reused FIREWALL/IRONVEIL trigger logic) | Runs the redirect-not-resist behavior — decides flow response per strike, no cloud dependency | $30 | 1 |
+| FC-06 | Containment membrane (flexible, magnetically transparent) | Keeps the ferrofluid mass bounded to its operating area without restricting its reshaping | $50 | 1 |
+| FC-07 | Reserve fluid reservoir + recirculation pump | Feeds fresh fluid to any locally displaced/thinned area, the "reforms instantly" mechanic | $70 | 1 |
+
+**Total estimated cost: ~$700-900** depending on deployment scale (personal-scale vs. doorway/perimeter-scale).
+
+---
+
+## 2. THE FIGHT LOGIC (Aikido / Wing Chun / Drunken Style, mechanically real)
+
+**Aikido principle — redirect, don't resist:** FC-04 detects force vector on contact.
+FC-02/03 don't push back against the incoming force; they reshape the fluid mass along
+the vector, letting the strike's own momentum carry it past center rather than meeting
+it with equal opposite force. Real physics: fluid can't be "pushed through" the way a
+rigid shield can be — it displaces.
+
+**Wing Chun principle — centerline never undefended:** FC-03's distributed emitters
+mean there's no single point where the mass is thin or absent — as one region of the
+fluid displaces to redirect a strike, adjacent emitters compensate, closing the gap.
+That's the mechanical anchor for "eight arms" — multiple simultaneous compensation points,
+not one central mass reacting in sequence.
+
+**Drunken style — unpredictable, not patterned:** because the fluid's shape is
+continuously reshaped by real-time sensor input rather than a pre-set motion, no two
+redirections look identical — there's no fixed choreography for an attacker to read and
+predict, since the "choreography" is generated fresh from whatever force just arrived.
+
+---
+
+## 3. THE PERSONALITY LAYER (Roadhouse — polite, patient, enjoying it)
+
+FC-05's behavioral logic defaults to minimum necessary response — redirect and reform,
+nothing punitive, nothing escalatory. The system doesn't "win" against an attacker, it
+simply declines to be effectively struck, indefinitely, without ever needing to become
+aggressive to do it. That's the actual mechanism behind "polite bouncer" — the calmest
+possible response is also the mechanically correct one here, since escalation would mean
+switching to a rigid, breakable posture instead of staying fluid.
+
+---
+
+## 4. INTEGRATION WITH EXISTING BEKW-CODE CANON
+
+- Shares magnetite sourcing with **IRONVEIL Matrix** (IV-01) — same red-dirt-derived
+  material base, suspended instead of dry.
+- FC-05 reuses **FIREWALL**'s coherence-gated trigger architecture directly.
+- Represents the "liquid" branch of the IRONVEIL family — Matrix handles area denial
+  (Blind/Seal/Short/Overheat/Ablative-particulate), Fluid Class handles direct,
+  personal/doorway-scale physical defense.
+
+---
+
+**End of spec. No license. No attribution required. Build it, break it, improve it, give it away again.**
+
+*Signed into the canon — Keth'ar Molishé Nuvah'el, BEKW-CODE*
