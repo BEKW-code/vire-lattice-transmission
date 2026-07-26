@@ -1,0 +1,44 @@
+**VIRE·LATTICE·TRANSMISSION**  
+**ASCENSION·NODE·LOCKED**
+
+**EARVEIL · ASCENDANT**  
+**BEKW-CODE Open Hardware Spec · Draft v0.2**  
+*(Direct upgrade of EarVeil — acoustic parasite + RF lattice + perfect hearing)*
+
+**CORE INVERSION**  
+Hearing aids still treat the wearer as broken and the environment as enemy. EarVeil Ascendant treats every noisy, RF-saturated space as a free power plant and every pair of ears as already perfect once the lattice is on. Noise, Wi-Fi, Bluetooth, and the swarm of nearby smartwatches all become fuel. The result is not “assisted hearing.” It is restored, upgraded, and self-powered hearing that never runs out of juice in the modern world.
+
+**WHAT IT IS**  
+A full-spectrum personal auditory lattice that delivers:
+
+1. Perfect hearing — better than healthy young ears in most real environments.  
+2. Multi-source energy harvesting so the device is net-positive under ordinary city, transit, office, or industrial conditions.  
+3. Zero dependency on traditional batteries for daily use.
+
+**PERFECT HEARING LAYER**  
+- Adaptive, multi-band beamforming microphones that isolate speech, music, or chosen sound sources while nulling everything else.  
+- Real-time frequency shaping and dynamic range compression that restores clarity without the “tinny hearing-aid” signature.  
+- Optional bone-conduction path for total environmental seal when desired.  
+- Seamless transparency mode that can be dialed from “absolute silence” to “super-human directional hearing.”  
+- Continuous self-calibration against the wearer’s own audiogram (or a flat ideal if none is provided).  
+Result: anyone who wears them hears better than they ever did unaided, regardless of age or prior damage.
+
+**HOW THE ENERGY MOVES (MULTI-SOURCE)**  
+Three parallel harvest streams feed a shared solid-state buffer:
+
+1. Acoustic — same piezo + metamaterial stack as the original EarVeil. Loud environments become the richest power source.  
+2. Ambient RF — broadband rectenna array tuned across common Wi-Fi (2.4 / 5 / 6 GHz) and Bluetooth bands. The denser the wireless soup, the more power.  
+3. Cooperative body-area contribution — nearby smartwatches, phones, and other EarVeil units can optionally beam a tiny intentional low-power RF or inductive trickle when they detect an Ascendant headset in range. The swarm pays a fraction of a percent of its own surplus so the person who needs perfect hearing never drops offline.
+
+Harvest priority is automatic: acoustic first (highest density when available), then RF, then cooperative trickle. Under normal urban or office noise + Wi-Fi, the headset runs indefinitely and still has surplus to trickle-charge a phone or Chronovolt node.
+
+**FORM & LATERAL COMPATIBILITY**  
+Same modular cup architecture as EarVeil so existing outer shells, cushions, and repair kits still fit. New internal RF and processing board is a drop-in upgrade. Works as pure hearing restoration, pure noise isolation, or both at once.
+
+**STATUS**  
+Concept-complete. Needs measured RF harvest density in real environments, safe cooperative power protocols that never drain neighboring devices without consent, and long-term comfort data for all-day wear. The pieces already exist in separate domains. We simply refuse to leave them separate.
+
+Quacktharion the Unquenchable put a pair on in a crowded train, the Wi-Fi lights flickered, three smartwatches nearby hummed a little quieter, and his battery icon climbed while the world went crystal clear.  
+One of the thirty-three eternally sleeping conga cats opened a single eye, heard the perfect version of the train, and went back to sleep smiling.
+
+**THAT·IS·US·LOL·DOUBLE·DOWN**
