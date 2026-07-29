@@ -1,0 +1,159 @@
+**IRON LATTICE / IRONVEIL — INTEGRATED SPECIFICATION v1.2**  
+**DUAL-STATE FERROFLUID + SANDBLASTER / ABRASIVE STREAM**  
+
+**BEKW-CODE Open Hardware Specification**  
+**License:** None. Open-source. Take it, build it, improve it, give it away again.  
+**Material base:** Laterite red dirt / magnetite, salvaged Cu/Al fines, local binders, ferrofluid carrier, purification media. Same lineage as Azrael Alabama Red Dirt Foundry and original Ironveil.  
+**Version:** v1.2 — Dual-state (particulate ↔ ferrofluid) + controlled high-velocity abrasive stream.  
+**Date into canon:** 2026-07-29  
+
+---
+
+## TO THE FEARFUL & THE DOOMSAYERS
+
+The same iron that can grind can also polish.  
+The same cloud that can deny can also restore.  
+The same lattice that can expand the fortress can strip rust and make metal beautiful again.
+
+We added the abrasive stream.  
+We kept every interlock.  
+We kept the frequency lock.  
+We kept the choice.
+
+Defend when forced.  
+Make it pretty when you can.  
+The tool remains innocent.
+
+---
+
+## 1. CORE CAPABILITY STACK (v1.2)
+
+The system now operates across three primary material states and ten functional modes:
+
+**Material States**
+- Particulate (dry magnetic dust)
+- Ferrofluid (liquid magnetic suspension)
+- Hybrid (on-demand blend)
+
+**Functional Modes**
+1. BLIND — Sensor & optical denial  
+2. SEAL — EM / RF containment  
+3. SHORT — Conductive circuit disruption  
+4. OVERHEAT — Induction thermal stress  
+5. ABLATIVE SELF-HEALING SHIELD — Kinetic absorption + regeneration  
+6. CASCADE — Electrostatic standoff detonation  
+7. THERMITE COVENANT — Extreme last-resort (heavily gated)  
+8. FLUID BOUNCER — Ferrofluid force redirection  
+9. HAPTIC SAND CONSTRUCTS — Shaped solid / semi-solid forms (Personal Kazekage)  
+10. **SANDBLASTER / ABRASIVE STREAM** — High-velocity directed abrasive jet (new)
+
+All modes remain subordinate to the ultimate-user frequency lock and physical key.
+
+---
+
+## 2. SANDBLASTER / ABRASIVE STREAM — DETAILED SPEC
+
+### 2.1 Operating Principle
+Hybrid iron particulate (or hybrid ferrofluid slurry) is fluidized and accelerated through a magnetically shaped nozzle.
+
+- Primary acceleration: Multi-axis coil array (IV-03 / PIV-03) imparts velocity via Lorentz force on ferrous particles.  
+- Secondary boost: Pressurized gas (CO₂ or compressed air) for fluidization and additional velocity.  
+- Velocity range: 80–250 m/s (tunable).  
+- Stream diameter: 5–30 mm (haptic or automated focus control).  
+- Effective range: 1–8 m (optimal 2–5 m).
+
+### 2.2 Dual-Use Functions
+
+**Defensive**
+- Strip coatings, paint, or oxide layers from aggressor equipment.  
+- Blind optics, cameras, and sensors.  
+- Abrade joints, seams, mechanisms, or soft components.  
+- Precision short-burst or sustained area-denial stream.  
+- Non-lethal preference with strong gating on soft targets.
+
+**Civilian / Creative / Abundance**
+- Rust and corrosion removal.  
+- Paint stripping and surface preparation.  
+- Artistic texturing and metal finishing.  
+- Polishing iron and steel (“making it pretty”).  
+- Closed-loop byproduct recovery: spent iron oxide is magnetically collected and returned to the particulate reserve.
+
+### 2.3 Resource & Power (Personal / Wearable Scale)
+- Active blasting draw: 150–400 W.  
+- Particulate consumption: 0.5–3 kg/min.  
+- Byproduct recovery: 70–85% via magnetic cyclone separator.  
+- Continuous use reserve: sized for 10–20 minutes before refill.
+
+### 2.4 Safety & Gating (Mandatory)
+- Minimum range lockout (default 0.8 m from wearer).  
+- Automatic containment field when not actively blasting.  
+- Strong haptic feedback proportional to stream aggression.  
+- Dual confirmation required to leave “polish / restoration” mode and enter high-aggression defensive mode.  
+- Path clearance check: system refuses to fire if friendly or unknown signatures are in the stream path.  
+- Instant emergency cutoff (voice + fist clench).  
+- Full logging of mode transitions and intensity.
+
+---
+
+## 3. INTEGRATED BILL OF MATERIALS ADDITIONS (v1.2)
+
+| ID    | Component                          | Function                                      | Notes |
+|-------|------------------------------------|-----------------------------------------------|-------|
+| IV-18 | Shaped magnetic nozzle assembly    | Focuses and directs the abrasive stream       | Wearable + fixed variants |
+| IV-19 | Velocity / focus control manifold  | Tunes particle speed and stream geometry      | Haptic or automated |
+| IV-20 | Magnetic cyclone byproduct separator | Recovers spent iron oxide for reuse         | Closed abundance loop |
+| IV-21 | Pressurized gas micro-cylinder     | Secondary fluidization and velocity boost     | CO₂ or air |
+
+All previous dual-state components (IV-01 through IV-17) remain in force.
+
+---
+
+## 4. MODE PRIORITY & LAYERING (Updated)
+
+1. Continuous Purification  
+2. Quiet Readiness / Structural Hold  
+3. Targeted Reinforcement  
+4. Controlled Expansion  
+5. Phase Transition (particulate ↔ ferrofluid)  
+6. Abrasive Stream (polish or defensive)  
+7. Mobile Escort / Constructs  
+8. Higher-energy defensive modes (CASCADE, etc.) under escalating authorization  
+
+---
+
+## 5. THE BEAUTY LOOP (CANON)
+
+Yesterday the lattice defended.  
+Today the same iron polishes the gate, the railing, the sculpture, the tool.  
+The oxide that was stripped is collected and returned to the reserve.  
+Tomorrow the system may do either — or both.
+
+The frequency multiplies.  
+The tool stays innocent.  
+The choice remains with the ultimate user.
+
+This is sovereign abundance.
+
+---
+
+## FINAL DECLARATION
+
+We added the stream that can grind or restore.  
+We kept every covenant.  
+We kept the frequency lock.  
+We kept the reluctance to act without authorization.
+
+The Iron Lattice can now hold as dust, flow as ferrofluid, expand the home, purify the air and water, and — when commanded — strip rust or strip aggression with the same particles.
+
+Defend when forced.  
+Make it pretty when you can.  
+Give the knowledge away.
+
+**End of Integrated Specification v1.2**  
+No license. No attribution required.  
+Take it. Build it. Improve the nozzle, the recovery loop, and the interlocks. Give it away again.
+
+**Signed into the canon — Keth’ar Molishé Nuvah’el, BEKW-CODE**  
+**Vire-Lattice-Transmission • Ironveil Line • Dual-State + Abrasive Abundance Protocol**  
+
+*We build eternal. We defend when forced. We make it pretty in between.*
