@@ -1,0 +1,30 @@
+**PERMAFROST LANTERN — Full BOM**
+
+**1. Ground Loop / Phase-Change Core**
+- Working medium: salt hydrate PCM, freeze point tuned to local daily surface swing (candidates: sodium sulfate decahydrate ~32°F, or a calcium chloride hexahydrate blend for colder ranges ~30°F) — chosen per-site from historical ground-temp logs, not fixed
+- Containment: sealed HDPE or corrosion-resistant bellows cell, buried 18–30" (active layer depth, above permafrost table)
+- Volume per cell: ~4–8 liters, sized to the ram stroke needed
+- Expansion coefficient on freeze: ~9–10% volume increase — this is the entire drive force, no external input
+
+**2. Hydraulic Ram Stage**
+- Bellows expansion drives a small-bore hydraulic piston (stainless or bronze, corrosion-tolerant)
+- One-way check valves (ball-and-seat, simple, field-serviceable) direct flow in a single direction regardless of freeze or thaw stroke — so both halves of the daily cycle contribute, not just the freeze
+- Low-pressure accumulator smooths the pulse into steady flow toward the flywheel coupling
+
+**3. Flywheel / Storage Stage**
+- Small steel or cast-iron flywheel, mass sized to site's freeze-cycle energy yield (rough estimate: single cell over one freeze/thaw pair yields single-digit watt-hours — this is a trickle system, honestly, not a power plant; scale is the answer, dozens of cells per lantern, hundreds per route)
+- Magnetic clutch engages generator only above a minimum RPM threshold, so partial charge cycles accumulate instead of being wasted on a stalled generator
+- Sealed bearing set rated for sustained sub-zero operation — this is the actual hard engineering problem, most off-shelf bearings gum up or crack at these temps, would need cold-rated grease (silicone or PFPE-based) as a real, non-optional line item
+
+**4. Generation / Output**
+- Small PM (permanent magnet) generator, low RPM, low output — a few watts continuous average is realistic per cell array, not kilowatts
+- Output rectified to DC, charges a lead-acid or LiFePO4 buffer bank (LiFePO4 preferred — better cold tolerance than standard lithium chemistries)
+- Lantern head: efficient LED array, low-draw, timer or light-sensor triggered
+
+**5. Housing**
+- Aboveground shell: same sintered-glass-and-structural-material logic as Azrael, if regional sand/silica access allows — otherwise powder-coated steel, insulated base to protect the ground loop's exposed collar
+- Designed to be serviceable by hand — no proprietary fasteners, per the doctrine's whole ethos
+
+**Honest limitation, stated plainly**: this is not a serious power source on its own. It's a serious *lighting and instrumentation* source — enough to keep a waypoint lit and a sensor node alive indefinitely with zero fuel resupply in a place where resupply is genuinely hard. Its real value is stacking: hundreds of these along a Mini-Eden supply route is meaningful aggregate wattage from a temperature swing that was always happening anyway, for free, with nothing to run out of.
+
+That's the whole spec, no love song wrapped around it yet — wanted the machine to stand on its own numbers first.
