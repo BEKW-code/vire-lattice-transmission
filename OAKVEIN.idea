@@ -1,0 +1,49 @@
+**OAKVEIN — The Witness Reactor**
+*BEKW-CODE Open Hardware Spec // Nexareth × MSRE Recombination*
+
+*Oak Ridge proved the chemistry could run four years without failing. It just never let anyone see it do it. We fix that half.*
+
+---
+
+**0. THE INVERSION**
+
+MSRE was buried in concrete, run by people who couldn't be in the room with it, and forgotten so completely most of the country never learned it existed. Not because it was dangerous to look at — because the culture around it defaulted to hidden. Nexareth was already built the opposite way: glass veins so you can watch the fluid move, gauges you can read with your own eyes, "witness only" as a design philosophy. OAKVEIN takes MSRE's proven, unglamorous chemistry — graphite-moderated salt loop, Hastelloy-N piping, freeze-valve failsafes, gravity-drain safety tanks, all public-domain 1960s engineering, none of it reinvented here — and wraps it in Nexareth's conversion architecture and visual honesty. The primary loop stays exactly what Oak Ridge already proved works, sealed and shielded the way any such loop has to be. Everything downstream of it — the part that actually makes the power, and the part a person can safely stand next to — gets built to be walked through.
+
+**1. WHAT STAYS SEALED, WHAT OPENS UP**
+
+The reactor's primary salt loop is deliberately left as historical fact, not a new design — that boundary is the honest one, and it's also where the beauty argument gets easy: nobody needs to see inside the primary loop to behold the machine, because the primary loop was never the interesting part. The interesting part, the part MSRE's own team would have loved to show a visitor if the era had allowed it, is everything the heat does *after* it leaves that sealed loop. That's the Nexareth side, and that's where OAKVEIN puts its glass.
+
+**2. THE WALKABLE HEAT STACK**
+
+Heat crosses from the primary loop into a secondary salt loop — non-fissile, non-radioactive, the same architectural move MSRE itself used to keep the fuel salt physically isolated from anything a person or a turbine ever touches. From there it's pure Nexareth:
+
+- Secondary salt runs through a shell-and-tube exchanger into the sCO₂ working loop, visible behind borosilicate sight-glass the whole way — you watch the color and turbulence of the fluid change as it climbs toward 500–650°C.
+- Recuperator recovers turbine exhaust heat before the cold-side radiator, same 25% efficiency gain, housed in an open lattice frame so the counterflow geometry is legible, not boxed.
+- Molten salt thermal storage (300–600°C) sits in view behind leaded glass viewing ports, the tanks lit from within so the salt's slow color shift as it charges and discharges is the room's ambient lighting.
+- The sCO₂ turbine itself — the one piece spinning at 60,000 RPM — is the one thing that has to be behind a containment shroud for the same reason a jet engine does. Everything slow stays visible. Everything fast stays shrouded. That contrast was already Nexareth's stated aesthetic; here it does safety work too.
+
+**3. THE BREATHING LAYER, MADE ARCHITECTURAL**
+
+Nexareth's pendulum array — long-period, 1–5 second sweep, driven by ambient vibration and thermal frame flex — becomes the physical rhythm of the walking space. Visitors move through a hall where the slow pendulums are the visible motion and the building itself is quietly breathing off waste vibration nobody would otherwise capture. Piezo nodes under every mount and junction do what they did in the original spec: power the sensors and control loop, no wiring run needed through the public space.
+
+**4. FAILSAFE VISIBILITY**
+
+MSRE's freeze-valve philosophy — a plug of salt frozen solid as the default "off" state, thawed only to run — gets rebuilt as a visible feature rather than a buried mechanism: a sight-glass section in the secondary loop where you can watch the freeze plug itself, solid and inert, a physical demonstration that the system's resting state is stopped, not running. Drain-tank logic (gravity beats every other failure mode) stays exactly as MSRE proved it: if anything upstream faults, the secondary salt drains by gravity into shaped, passively-cooled tanks, visible from the gallery, subcritical by geometry, no power required to fail safe.
+
+**5. THE COVENANT**
+
+Nothing here claims to reinvent reactor physics. What it claims is that the fifty years MSRE spent unseen were a culture failure, not an engineering requirement — the loop that actually needs a wall around it is one loop, and everything else was always safe enough to walk beside. Built with beauty in mind means built so a person can trust what they're looking at, because they can see it working.
+
+```
+        [ SEALED :: PRIMARY SALT LOOP :: PROVEN 1965-1969 ]
+                          |
+                    (heat crosses here)
+                          |
+   [ SECONDARY SALT — VISIBLE ] --> [ sCO2 HEAT STACK — VISIBLE ]
+                          |                    |
+                 [ SALT STORAGE ]      [ TURBINE — SHROUDED ]
+                          |                    |
+                [ PENDULUM HALL — WALKABLE, BREATHING ]
+```
+
+Quacktharion doesn't fly near this one. He just sits on the gallery rail, watching the pendulums with the rest of the visitors, for once not the strangest thing in the room.
