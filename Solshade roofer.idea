@@ -1,0 +1,69 @@
+# SOLSHADE: ROOFCLASS — Roofing/High-Solar-Exposure Uniform
+### BEKW-CODE Spec | Maximum Solar Harvest, Heat-Illness Prevention Focus
+
+---
+
+## 1. Concept
+
+A working uniform for roofers and other direct-sun, high-exertion trades — the single highest-solar-exposure occupational environment in the SOLSHADE Wearable family, and one with a genuinely serious safety stake: roofing is a documented high-risk occupation for heat-related illness and death, standing directly on a radiant heat source (dark shingle surface, often 150–180°F+ in Alabama summer sun) with zero shade, sustained physical exertion, and full-body direct solar load. This isn't a comfort accessory — it's occupational heat-illness prevention hardware, built to the same "make the job survivable" standard as SURVIVOR Class was built for disaster survival.
+
+---
+
+## 2. Design Principles
+
+1. **Maximum PV harvest, because maximum sun exposure is unavoidable here.** Every other SOLSHADE garment treats sun exposure as intermittent; this one treats it as constant and designs the PV layer at full available surface area accordingly.
+2. **Active cooling is the priority function, not a secondary feature.** Heat illness prevention is the actual design target — cooling performance takes precedence over aesthetics or minimizing bulk, more so than any other garment in the line.
+3. **Dual heat source awareness.** A roofer faces direct overhead solar load AND radiant heat reflecting/conducting up from the roof surface itself — THERMWEAVE placement needs to account for both directions, and the cooling system needs to handle a genuinely harder thermal load than ground-level work.
+4. **Heat-stress monitoring is a safety feature, not a gimmick.** Given the real injury/fatality risk in this trade, a basic physiological heat-stress warning function is worth building in — this is the one SOLSHADE garment where "tell the wearer to stop and cool down before it's dangerous" is a legitimate core function, not scope creep.
+5. **Doesn't interfere with safety gear or task performance.** Harnesses, tool belts, kneepads, grip — none of the added hardware can compromise fall-protection equipment fit or hand/knee mobility. This is a hard constraint, not a nice-to-have.
+
+---
+
+## 3. Layer Architecture
+
+| Layer | Material/Function |
+|---|---|
+| 1. Outer shell | Light-colored (reflective, not heat-absorbing — a real departure from the WEARABLE/LINE garments' aesthetic freedom, since color choice here is a functional heat-load decision, not style) UV-stable, abrasion-resistant fabric — roofing involves crawling/kneeling on rough shingle surfaces, so durability against granule abrasion matters |
+| 2. PV layer | Maximum-coverage flexible thin-film cells across shoulders, back, upper arms, and hat brim — largest PV surface area of any garment in the SOLSHADE Wearable family, since constant direct overhead sun is the actual work environment rather than an occasional condition |
+| 3. Cooling layer | Highest-capacity version of the SOLSHADE Wearable hybrid cooling system (fan-driven channel airflow, Section 4B of that spec) — sized for sustained heavy exertion in direct sun, not just ambient comfort; likely needs a larger fan array and battery allocation than any other garment in the line given the severity of the thermal load |
+| 4. THERMWEAVE layer | Positioned to capture BOTH the overhead-solar-heated shell surface (differential against body-side interior) AND, where boot/kneepad contact allows, the roof-surface-conducted heat (differential against ambient air) — genuinely two harvest zones, front/back |
+| 5. Heat-stress sensor | Basic physiological monitoring (skin temperature and/or heart rate sensor, low-cost commercial-grade component) feeding a simple alert (vibration/light on a wrist or collar indicator) when readings cross a heat-stress threshold — not a medical device, a basic early-warning nudge |
+
+---
+
+## 4. Heat-Stress Monitoring Detail
+
+- Not diagnostic, not medical-grade — a simple threshold-based alert system (elevated skin temp + sustained high heart rate = vibrate/flash) prompting the wearer to take a shade/water break before symptoms escalate
+- This directly supports (doesn't replace) standard heat-illness prevention practice — water/rest/shade cycling — by giving an earlier, more consistent signal than "wait until you feel bad," since heat exhaustion symptoms can outpace a worker's own real-time self-assessment under sustained exertion
+- Sensor package should be genuinely low-cost and simple — this is a safety nudge feature, not the product's centerpiece, and over-engineering it would just add failure points and cost without improving the core safety function
+
+---
+
+## 5. Hydration Integration
+
+- Carried over from SURVIVOR Class's chest-mounted drinking-tube approach (Section 4 of that spec) — hands-free hydration access matters as much here as in a disaster scenario, since a roofer stopping work to dig out a water bottle is exactly the kind of friction that leads to under-hydrating during a shift
+- No filtration needed here (clean job-site water source, unlike disaster relief) — just the hands-free access mechanism, simplified from SURVIVOR's filtered version
+
+---
+
+## 6. Power Budget
+
+- Given maximum PV surface area AND constant direct sun (the best-case solar harvest condition of any garment in this family), this is the SOLSHADE Wearable garment most likely to approach genuine net-positive power during active work hours — worth stating as a realistic possibility here specifically, unlike the general "battery-assisted, not self-sufficient" caveat that applies elsewhere in the line
+- Even so, cooling fan draw under sustained heavy use is real — battery bank sizing should still be calculated properly rather than assumed to be a non-issue just because PV harvest is strong
+
+---
+
+## 7. Relationship to Existing BEKW-CODE Canon
+
+- Direct sibling to **SOLSHADE: WEARABLE LINE** — shares PV/cooling architecture, scaled up for maximum-exposure conditions
+- Shares **THERMWEAVE**'s dual-differential harvest logic, similar to the LINE Class kitchen uniform's repeated-cycling approach, but here both differentials (solar-heated shell, roof-conducted heat) are simultaneous rather than sequential
+- Extends the occupational-safety framing established in **SOLSHADE: LINE CLASS** (real occupational-health improvement, not just comfort) — ROOFCLASS pushes that further into active injury/fatality prevention given the severity of heat-related risk in roofing specifically
+
+---
+
+## 8. Open Items / Next BOM Pass
+
+- Heat-stress sensor threshold values need real occupational-health sourcing (actual heat-illness onset indicators) rather than an assumed number — this is a safety-critical calibration, not a guess
+- Fall-protection harness compatibility needs physical fit-testing against actual harness hardware — this is a hard constraint that can't be verified on paper alone
+- Reflective/light-colored shell vs. maximum PV cell coverage may be in some tension (PV cells are typically dark) — needs a real materials pass to see how much reflective shell area can be preserved around the PV zones without compromising harvest
+- Battery/cooling-fan sizing for sustained heavy exertion (versus the WEARABLE Line's more moderate day-to-day use case) needs its own calculation, not reused numbers from the base spec
