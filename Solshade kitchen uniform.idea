@@ -1,0 +1,72 @@
+# SOLSHADE: LINE CLASS — Kitchen/Culinary Uniform
+### BEKW-CODE Spec | Grease-Resistant, Sweat-Cooled, Thermal-Cycle Harvesting
+
+---
+
+## 1. Concept
+
+A working kitchen uniform built for the actual physical reality of line cooking: repeated cycling between a hot line (grill/fryer radiant heat, ambient kitchen heat) and a walk-in/deep freezer, combined with constant grease/liquid exposure and heavy sweat output. Existing chef coats/kitchen uniforms solve none of this well — cotton/poly-blend coats stain permanently, provide no active cooling, and do nothing with the genuinely unusual thermal-cycling environment a line cook's body goes through every shift.
+
+**Why this is the best THERMWEAVE application yet identified:** every other use case in the THERMWEAVE spec relies on a *static* differential (foundry heat, panel backside heat). A line cook's body crosses a large hot-to-cold differential repeatedly and rapidly — hot line to walk-in and back, multiple times per hour. That's a stronger, more frequent differential-cycling event than most passive systems get, making this uniform a genuinely strong THERMWEAVE candidate, not a stretch application.
+
+---
+
+## 2. Design Principles
+
+1. **Grease/stain resistance is structural, not a coating.** Most stain-resistant treatments wash out over a laundry cycle or two in commercial kitchen laundering (high heat, harsh detergent). Needs a fabric-level hydrophobic/oleophobic weave, not a sprayed-on finish.
+2. **Sweat becomes the cooling mechanism, not just something to wick away.** Standard "moisture wicking" fabric just moves sweat to the surface to evaporate passively. This uses the same principle SOLSHADE Wearable's cooling channels use (Section 4 of that spec) — routed airflow channels that actively pull air across sweat-dampened fabric zones, turning evaporative cooling into an engineered function rather than an incidental one.
+3. **The hot/cold cycle is harvested, not just endured.** THERMWEAVE module (per that spec) integrated at core/back zones — as the wearer moves hot line → cold walk-in → hot line, the differential across the garment is real and repeated, unlike most static applications.
+4. **Kitchen-laundry durable.** Commercial kitchen laundering (industrial heat, bleach-tolerant detergents, high cycle frequency) is a harsher duty cycle than normal garment care — every material choice needs to survive that, not just look good in a spec sheet.
+5. **Freedom of movement first.** Line cooks move constantly, reach, bend, lift hot pans — nothing about the climate/power layer can restrict range of motion or add meaningful bulk.
+
+---
+
+## 3. Layer Architecture
+
+| Layer | Material/Function |
+|---|---|
+| 1. Outer fabric | Tightly woven synthetic-natural blend with structural (woven-in, not topically coated) hydrophobic/oleophobic finish — grease and liquid bead and shed rather than soak in; rated for repeated industrial laundering without finish degradation |
+| 2. Cooling channel layer | Routed micro-channel liner (same principle as SOLSHADE Wearable Section 4B) at back/underarm/core zones — sweat-dampened fabric gets active airflow rather than passive evaporation, small low-power fan array, battery-fed |
+| 3. THERMWEAVE strips | Positioned at core/back — hot line radiant heat on the front/exterior-facing side of the body, cooler garment-interior/ambient-kitchen-air side provides the differential; walk-in transitions create a second, inverted differential event (body heat vs. freezer-cold ambient) — module captures both directions since the Seebeck effect works on any differential regardless of which side is hotter, with the DC-DC regulation stage (THERMWEAVE Section 3) already handling variable input |
+| 4. Battery/control | Compact battery pack, low profile, waist or back-mounted — powers the cooling fan array and receives THERMWEAVE's harvested trickle, netting against the fan draw rather than needing a separate always-plugged-in power source |
+
+---
+
+## 4. Grease/Stain Resistance Detail
+
+- Structural oleophobic weave (fluorine-free formulation preferred, given ongoing PFAS/"forever chemical" scrutiny of older fluorinated treatments — worth building this clean from the start rather than needing a reformulation later)
+- Dark, grease-hiding base color as a practical secondary measure — doesn't reduce actual soiling but reduces visible staining between full-strength launderings
+- High-wear zones (forearms, front torso — the areas most exposed to splatter/spill) get reinforced double-layer fabric, since that's also where garment failure happens first on standard chef coats
+
+---
+
+## 5. Cooling System Detail
+
+- Micro-fan array pulls ambient air across the channel-routed liner at sweat-heavy zones (back, underarm, core) — same mechanism as SOLSHADE Wearable's hybrid cooling approach, chosen there specifically because convective/evaporative cooling outperforms conductive (Peltier) cooling against a sweating body, which is exactly this use case
+- Fan speed should be adjustable/automatic based on a simple heat/moisture sensor rather than fixed-speed, since line intensity varies shift to shift and station to station (a fryer station runs hotter than a prep station)
+- Genuinely useful side effect: this is a real occupational-health improvement, not just comfort — commercial kitchens are a documented heat-stress environment, and this directly reduces core-temperature strain over a shift
+
+---
+
+## 6. THERMWEAVE Integration Detail
+
+- Positioned to capture two distinct differential events per work cycle: (1) hot-line radiant heat against cooler garment-interior air, and (2) the walk-in/freezer transition, where the body is briefly the warm side against cold ambient
+- Output feeds the uniform's own battery pack first (offsetting cooling-fan draw), with any surplus available to trickle-charge a phone via the same wireless-pocket approach as SOLSHADE Wearable Section 5
+- Realistic expectation carried over from the base THERMWEAVE spec: this is a supplemental offset to the garment's own power draw, not a source that makes the uniform power-positive — stated plainly so it's not oversold
+
+---
+
+## 7. Relationship to Existing BEKW-CODE Canon
+
+- Direct sibling to **SOLSHADE: WEARABLE LINE** — shares the hybrid heat/cool architecture, wireless charging approach, and PV-adjacent power philosophy, adapted for an indoor/no-sun-exposure environment (no PV layer needed here, since kitchen work happens under artificial light — THERMWEAVE replaces PV as this garment's harvest mechanism)
+- First real-world application of **THERMWEAVE** that uses an *active, repeated* differential rather than a static one — worth flagging back into the THERMWEAVE spec as the strongest use case identified so far
+- Consistent with BEKW-CODE's practice of naming real occupational users (Keth'ar's own multi-decade trade background) rather than designing in the abstract
+
+---
+
+## 8. Open Items / Next BOM Pass
+
+- Fluorine-free oleophobic fabric treatment needs real material sourcing/testing — this is a genuinely active area of textile research right now, worth checking current best-in-class options rather than assuming older PFAS-based treatments
+- THERMWEAVE strip placement/sizing for a repeated-cycling body-differential use case is different engineering than the static applications in the base spec — needs its own thermal modeling pass, not just a smaller copy of the foundry module
+- Battery pack sizing needs a real shift-length duty-cycle estimate (average line-cook shift, cooling fan draw, THERMWEAVE offset) before finalizing capacity
+- Commercial kitchen laundering standards (temperature, chemical exposure, wash frequency) should be sourced from an actual commercial laundry spec rather than assumed, since that's the environment most likely to break any "durable" claim early
