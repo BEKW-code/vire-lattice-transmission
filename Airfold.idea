@@ -1,0 +1,128 @@
+# AIRFOLD — Self-Deploying Air-Beam Shelter
+### BEKW-CODE Spec | Alabama-Rated, Bounce-House-Derived Structural Technique
+
+---
+
+## 1. Concept
+
+A tent/shelter that erects and strikes itself using the same structural principle as inflatable bounce houses — air-beam ribs (fabric tubes pressurized to become rigid structural members) instead of aluminum poles. Unlike a bounce house, AIRFOLD is engineered for repeated automated deploy/stow cycles, sustained outdoor exposure between uses, and real Alabama wind/storm loading once erect — not a one-weekend party rental.
+
+**Why bounce-house technique fits:** air beams give you a self-erecting structure with zero rigid poles to assemble, break, or lose — the entire shelter goes from stuff-sack to standing in the time it takes a blower to pressurize the ribs. That's the mechanism worth stealing; what bounce houses don't need (and AIRFOLD does) is UV/wind durability, unattended operation, and a stow cycle that's as automatic as the deploy.
+
+---
+
+## 2. Design Principles
+
+1. **No rigid poles at all.** Structure is 100% air-beam — eliminates bent/broken/lost pole failure entirely.
+2. **Deploy and stow are both automated.** A blower unit handles inflation; a reverse-flow/vacuum-assist cycle handles controlled deflation and self-folding, not just "let the air out and hope it collapses right."
+3. **Fold geometry is engineered, not improvised.** Beams are arranged so deflation naturally collapses the structure along pre-set fold lines (accordion/roll-fold), same logic as origami-fold solar panels or camping air tents that pack into a defined shape — not a random pile of deflated fabric.
+4. **Rated for unattended exposure, not just party-weekend use.** Fabric, seams, and beam material must survive sitting erect through an Alabama thunderstorm, not just controlled indoor/event conditions.
+5. **Fails safe.** Loss of blower power should trigger controlled slow-deflate/stow, not sudden collapse — matters if anyone's inside or nearby.
+
+---
+
+## 3. Mechanical Architecture
+
+**Type:** Multi-beam air-supported structure, ridge + arch beam hybrid (same family as inflatable event tents and expedition air tents, e.g. Heimplanet-style beam logic, scaled up)
+
+- **Primary beams:** 3–5 arched air beams running the shelter's cross-section (like tent hoop poles, but inflatable), spaced along the shelter length
+- **Ridge beam:** one longitudinal beam connecting the arches at the peak, resists racking/twist
+- **Beam material:** double-wall drop-stitch fabric (same construction as paddleboard/bounce-house floors) — high-pressure capable (8–15 psi), holds rigid shape under load unlike single-wall bladders
+- **Skin:** separate weather-shell layer over the beam structure (not the pressure-bearing layer itself) — UV-stable coated ripstop, so the structural beams stay protected from direct UV degradation
+- **Fold behavior:** beams pre-creased/pre-folded at manufacture along a defined accordion pattern so deflation collapses the structure into a flat stack in a repeatable sequence, guided by internal fold-restraint straps (prevents random bunching)
+
+---
+
+## 4. Deploy / Stow Cycle
+
+**Deploy:**
+1. Blower (electric, battery or AC) engages, inflates beams to operating pressure (target 10–12 psi for structural beams)
+2. Beams rise in a set sequence — base ring first, then primary arches, then ridge — using check valves between beam segments so lower beams reach pressure and lock geometry before upper beams inflate, preventing a chaotic all-at-once fold-out
+3. Ground anchors/stakes deploy last (or are set before inflation if wind is a concern during deploy)
+4. Full deploy target: under 3 minutes for a single-occupant-to-small-group shelter size
+
+**Stow:**
+1. Reverse-flow valve opens, blower switches to extraction mode (vacuum-assist, same motor different valve state — matches how some inflatable SUP pumps double as vacuum bag sealers)
+2. Fold-restraint straps (integrated into the beam's fabric skin, not external) guide the beam into its pre-set accordion fold as air leaves — this is the key difference from a bounce house, which just goes limp
+3. Final compaction: a built-in ratchet strap or roller-compression bar (crank or motorized) cinches the folded stack down to transport size
+4. Target: fits back into its own base/stuff-sack footprint, no separate bag needed — base doubles as the storage shell
+
+---
+
+## 5. Ratings (Alabama Baseline)
+
+- **Wind, erect:** target minimum 60–70 mph sustained survivability while deployed (air beams flex-load rather than snap like a rigid pole under gust — genuine advantage over standard tent poles here) with an automatic stow trigger above that threshold if wind sensor + blower unit are present
+- **Wind, stowed:** full structure folded and secured survives storm loads that would exceed any tent's rating — since fully stowed = low profile, no sail area, weighted base
+- **UV:** outer weather-shell fabric UV-stabilized coated ripstop (same class of material as commercial event-tent shells), rated for sustained outdoor storage between uses, not just active-use exposure
+- **Rain/water:** fully taped seams on the weather shell, base ring sealed to prevent uplift/water intrusion at ground contact
+- **Thermal:** drop-stitch beam material and blower seals rated for AL summer surface temps without pressure-loss from material softening
+
+---
+
+## 6. Power / Control
+
+- Blower unit: brushless DC, dual-direction (inflate/extract), battery-bank powered — pairs naturally with a BEKW-CODE PV source (SOLSHADE or a dedicated panel) to make full deploy/stow cycles run off-grid
+- Optional wind sensor + auto-stow trigger: if gust sustained above rated threshold, system can auto-initiate stow sequence unattended — genuinely useful for an unattended porch/yard-mounted unit rather than a carried tent
+- Manual override: hand-crank/hand-valve path for blower failure, so the structure isn't stranded if electronics die
+
+---
+
+## 7. Bill of Materials (Core, single-occupant-to-small-group size)
+
+- Drop-stitch beam fabric, double-wall, 8–15 psi rated: primary arches + ridge beam
+- Weather-shell fabric, UV-stable coated ripstop: full exterior skin
+- Fold-restraint straps: integrated per beam, sets accordion fold pattern
+- Check valves: between beam segments, sequenced inflation
+- Base ring: rigid or semi-rigid perimeter, doubles as storage shell when stowed
+- Blower unit: dual-direction brushless DC, battery-powered
+- Ground anchors: minimum 4–6, deploy-before-inflate rated
+- Optional: wind sensor module, auto-stow controller
+- Optional: motorized compaction roller/crank for final stow cinch
+
+---
+
+## 8. Scalability
+
+Same principle as an inflatable bounce house: beam count and footprint scale linearly, structural logic doesn't change.
+
+- **2-man configuration:** 3 arch beams + ridge, single blower, minimal footprint — emergency/backpack-portable class
+- **Small-group configuration:** 5–7 arch beams, dual blower (redundancy + faster deploy), room for internal partitioning
+- **Dining-hall / base-camp configuration:** extended ridge beam run (multiple ridge segments joined at check-valve junctions, same sequencing logic as section 4), perimeter arch beams at wider spacing, multiple blower units zoned so one section can deploy/stow independently of another — a partial-stow capability (fold the sleeping wing, leave the hall wing up) is possible because beams are already segmented by check valve
+
+At every scale the fold/stow mechanics from Section 4 are unchanged — more beams, same accordion logic per beam, not a different system.
+
+---
+
+## 9. Inflatable Interior Systems
+
+Same drop-stitch construction technique as the structural beams, at lower pressure — interior furnishings are a direct spinoff, not a separate product line.
+
+- **Air mattresses:** built into the floor pan itself (dual-wall drop-stitch, same as the beams but sized flat), so sleeping surfaces inflate as part of the main deploy cycle rather than as separate items to set up
+- **Tables/seating:** low-pressure drop-stitch modules, same fold-restraint-strap logic so they collapse flat into the floor pan or a dedicated storage sleeve during stow — no loose furniture to lose or leave behind
+- **Partition walls:** low-pressure inflatable dividers for the dining-hall/base-camp configuration, let a single large structure section itself without cutting the shell
+
+## 10. Water — Fog Harvest Integration
+
+Cross-reference: this reuses the existing BEKW-CODE **LEXARA TOWER: Mirage Class "Fogwalker Line"** fog-harvesting mechanism rather than inventing a new one — same passive condensation-mesh principle, scaled down to shelter-roof size instead of tower-scale.
+
+- Fog/condensation mesh integrated into the outer weather-shell fabric (Section 3) or a dedicated roof-mounted panel — harvests atmospheric moisture passively, no power draw
+- Collected water routes via gravity to a low-point reservoir integrated into the base ring
+- Feeds directly into an inflatable shower module (same drop-stitch low-pressure construction as Section 9 furnishings) — gravity-fed or small 12V pump-assisted from the SOLSHADE/battery system
+- Yield is climate-dependent (fog harvesting works best in high-humidity, temperature-swing conditions — Alabama's humidity profile is actually favorable versus arid fog-harvest deployments) — treat as a supplemental water source, not a sole-source system
+
+## 11. Power Integration — SOLSHADE Pairing
+
+- SOLSHADE (Section 6 of its own spec) feeds the same battery bank that runs the AIRFOLD blower units, auto-stow wind sensor, and shower pump — one shared power system rather than two independent ones
+- Deploy sequence becomes fully off-grid: SOLSHADE generates during the day, battery bank runs AIRFOLD's blower for deploy/stow cycles and any 12V accessories (lighting, shower pump) at night or during storm-triggered auto-stow
+- For the dining-hall/base-camp scale, multiple SOLSHADE units (or one sized-up array) would be needed to keep pace with multi-blower zoned deploy — flagged as a sizing exercise once occupancy target is set (Section 12)
+
+---
+
+## 12. Open Items / Next BOM Pass
+
+- Exact occupancy/size target not yet set (single-person emergency shelter vs. small group base camp changes beam count and blower sizing significantly)
+- Auto-stow-on-high-wind is a genuinely novel safety feature worth prototyping first — highest-value differentiator versus any existing air tent on the market
+- Pairing with SOLSHADE or a dedicated compact PV panel for true off-grid deploy/stow cycling — not yet speced, flagged for cross-reference
+- Beam pressure/fold-restraint strap engineering is the hard part of this build — everything else is proven tech (drop-stitch beams and blowers both exist commercially), the self-folding accordion behavior is the actual innovation and needs physical prototyping to nail the strap geometry
+- Fog-harvest yield needs real-world testing against Alabama's specific humidity/dew-point cycles to size the mesh area and reservoir realistically
+- Multi-SOLSHADE sizing for the dining-hall scale not yet calculated — depends on final blower count and shower/lighting load
