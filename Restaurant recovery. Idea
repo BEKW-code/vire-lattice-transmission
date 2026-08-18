@@ -1,0 +1,72 @@
+# Restaurant Resource Recovery — A Plain-Language Guide
+**For readers with no restaurant or waste-industry background**
+
+---
+
+## The Problem, Explained From Zero
+
+Every restaurant produces several very different kinds of "waste" that most people mentally lump into one category: "trash." In reality, a working kitchen produces at least three distinct material streams, each needing different handling:
+
+1. **Clean scraps** — vegetable trimmings, fruit peels, stems, seeds. This is food material that never touched a plate or a customer — it's cut off during prep, before cooking.
+2. **Mixed plate waste** — whatever comes back from a table after a meal. This is "dirty" in the practical sense: it's mixed together, may include non-food items (a fork, a napkin, a lost earring), and its exact composition is unpredictable.
+3. **Grease trap material** — nearly every commercial kitchen is legally required to install a grease trap, a plumbing fixture that catches fats, oils, and grease before they can clog sewer lines. This gets pumped out periodically by a service company. Almost nobody outside food service knows this exists, but it's a huge, concentrated, already-collected material stream sitting in the basement of every restaurant.
+
+**The current default:** all three streams typically end in the same place — a dumpster, then a landfill (streams 1 and 2), or a waste-hauling contract that treats the grease as a disposal cost, not a resource (stream 3). That's the "problem" this template addresses: material being thrown away by default, before anyone checks whether it's actually useless.
+
+---
+
+## Why "Zero Waste" Is a Myth Worth Retiring
+
+A common goal in sustainability discussions is "zero waste" — the idea that nothing gets thrown away. This isn't realistic, and claiming otherwise undermines credibility. Some material genuinely is:
+- **Contaminated** (mixed with things that make it unsafe to reprocess)
+- **Uneconomical** (technically recoverable, but the cost/effort to recover it exceeds its value)
+- **Hazardous** (needs specialized, careful disposal, not creative reuse)
+
+The realistic goal is **"next-best format"** — recover everything worth recovering, and only throw away what genuinely has no better option after being actually checked, not assumed.
+
+---
+
+## The Three Intake Streams, In Plain Terms
+
+### Stream 1 — Clean Scraps ("P.I.G." internally)
+This is the easy stream conceptually: it was never contaminated, so the question is just "what's the best use for this specific thing?"
+- Seeds get pulled out first and saved — they're alive, in a sense (viable for planting), and once ground up with everything else they're gone for good.
+- Everything else gets sorted by what it actually is and routed accordingly: some can feed animals (if it's safe for that specific animal — not all scraps are safe for all livestock), some feeds fungi (mushroom cultivation), some becomes compost, some goes to a biogas digester (explained below).
+
+### Stream 2 — Mixed Plate Waste ("G.R.I.T." internally)
+This is the harder stream because it's unpredictable:
+- First priority, always: make sure nothing dangerous or that could hurt a person is in the mix.
+- Second: recover actual objects — a fork or plate that got scraped into the bin isn't "waste," it's just misplaced inventory.
+- Third: sort the actual organic material (food scraps, bones, sauce residue) into fat, protein, bone, and general organic matter, because each of those has a different best next use.
+
+### Stream 3 — Grease Trap Material ("FOG": Fats, Oils, Grease)
+This is the stream most people have never thought about, and it's actually the most valuable one pound-for-pound:
+- Grease trap material, when processed correctly, produces significantly more biogas (usable energy) per pound than regular food scraps do — roughly three times as much.
+- It's also the easiest stream to start with, because restaurants are already required to collect it separately — the infrastructure already exists, it's just currently treated as a disposal cost instead of a resource.
+
+---
+
+## What Happens After Sorting — "Where Does It Actually Go?"
+
+Once material is sorted, several of the streams converge into the same next step: **anaerobic digestion.**
+
+**In plain terms:** anaerobic digestion is a sealed tank where microorganisms break down organic material in the absence of oxygen, producing biogas (a mix of methane and CO2, similar to natural gas) as a byproduct. This is not experimental technology — municipal wastewater treatment plants and dedicated facilities already do this at real scale, right now, in many cities.
+
+The biogas produced can be burned for heat or cleaned up and used as generator fuel. What's left over afterward (called "digestate") isn't waste either — it can be used as a soil amendment or further processed for nutrients.
+
+---
+
+## The Honest Bottom Line
+
+- Not everything can be saved. Some fraction of all three streams will still end in a landfill or hazardous-waste disposal, and that's fine — that's the honest floor, not a failure.
+- The goal isn't perfection. It's making sure nothing gets thrown away **by default**, before anyone actually checked what it was and whether it had a better use.
+- The infrastructure for at least one of these streams (grease traps) already exists in most commercial kitchens — the opportunity isn't building something from scratch, it's redirecting something already being collected.
+
+---
+
+## What's Still Unbuilt (for anyone who wants to help)
+
+- A practical way (manual checklist or automated sensor) to quickly identify what a given scrap of material actually is, so sorting isn't guesswork
+- A small-scale digester design sized for a single restaurant or small cluster of restaurants, rather than municipal scale
+- A method for cleaning up biogas if it's going to run a generator, versus just burning it for heat (which needs less cleanup)
+                         
