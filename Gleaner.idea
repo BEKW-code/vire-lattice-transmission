@@ -1,0 +1,70 @@
+# GLEANER — Autonomous Row-Crop Harvesting Platform
+### BEKW-CODE Spec | Replacing Stoop-Labor Harvest, Not Optimizing It
+
+---
+
+## 1. Concept
+
+An autonomous field-harvesting machine built to eliminate manual stoop-labor crop picking, not to make it more bearable. This spec is a direct correction to SOLSHADE: FIELDCLASS's underlying premise — better PPE for a punishing task risks normalizing the task rather than removing it. GLEANER's goal: nobody spends an 8-hour shift bent over in a field picking produce by hand. The humans who currently do that work move into GLEANER's actual value chain — operation, maintenance, quality judgment calls, produce prep and processing (the genuinely engaging, skill-based work, like sorting/prepping fresh produce) — not out of work entirely.
+
+---
+
+## 2. Design Principles
+
+1. **Replace the task, don't cushion it.** This spec doesn't ask "how do we make picking crops less miserable" — it asks "why is a human doing this repetitive motion at all."
+2. **Human judgment stays where it's actually valuable.** Machine vision handles bulk sorting (ripe/unripe, obvious defects); genuinely ambiguous calls — the "weird food anomalies," edge cases a produce prep cook actually catches — route to a human reviewer, not because the machine can't be trained further, but because that's the interesting, skill-based part of the work worth keeping human.
+3. **Gentle-handling first.** Produce quality/bruising is often the actual reason hand-harvesting persists for delicate crops — GLEANER's mechanical end-effector design has to match or beat human gentleness, or it's not a real replacement, just a cheaper worse one.
+4. **Field-serviceable and open-source**, per every other BEKW-CODE covenant — this shouldn't create a new form of dependency (proprietary ag-tech lock-in) replacing an old form of exploitation.
+5. **Displaced labor gets a real path, not just displacement.** This spec explicitly pairs with a labor-transition principle (Section 6) rather than treating "fewer people doing this job" as success on its own.
+
+---
+
+## 3. Mechanical Architecture
+
+- **Platform:** autonomous or semi-autonomous row-straddling or row-following rover, scaled to row spacing/crop type (this varies significantly by crop — a strawberry harvester and a squash harvester are different scale problems, so GLEANER is a platform architecture, not a single fixed machine)
+- **Vision system:** multi-camera + depth sensing (stereo or LIDAR-assisted) for ripeness detection, defect identification, and precise end-effector targeting
+- **End-effector:** soft-robotic gripper (pneumatic or tendon-driven soft gripper, not rigid pincer) — matches or exceeds human hand gentleness on delicate produce, this is the component most likely to determine whether GLEANER can actually replace hand-picking on fragile crops versus only the more robust ones
+- **Sorting/conveyance:** on-board bulk sort (size/ripeness grading) as picked produce moves to a collection bin, reducing downstream sorting labor too
+- **Power:** SOLSHADE-derived PV array across the platform's upper surface (large flat area, ideal PV real estate, same direct-sun conditions FIELDCLASS was designed around — except now the sun hits a machine, not a person's back) paired with a battery bank sized for a full field-day cycle
+
+---
+
+## 4. Human-in-the-Loop Design
+
+- **Remote/on-site review queue:** ambiguous items (the genuinely weird anomalies, uncertain ripeness/quality calls) get flagged and routed to a human reviewer rather than forced through an uncertain automated decision — this is deliberately NOT trying to fully eliminate human judgment, just relocate it away from repetitive stoop labor and toward the actual decision-making
+- **Maintenance/operation roles:** GLEANER units need field technicians, not field pickers — a genuinely different, less physically punishing, more skill-building role
+- **Feeds forward into produce prep:** harvested/graded produce moving toward a kitchen/prep pipeline is exactly the stage where the "delicious fresh produce, eliminate the bad stuff, interesting weird anomalies" work you described stays human — GLEANER's output should be designed to hand off cleanly into that stage, not compete with it
+
+---
+
+## 5. Crop-Specific Variants (Platform, Not One-Size-Fits-All)
+
+- **Row/vine crops** (tomatoes, peppers, beans): straddle-rover with vertical reach arm array
+- **Ground crops** (strawberries, melons): low-profile rover, downward-facing gripper array, extra emphasis on gentle handling given fragility
+- **Tree/orchard crops:** a genuinely different platform class (vertical reach, canopy navigation) — flagged as a separate spec pass if pursued, not assumed to share GLEANER's row-crop chassis
+
+---
+
+## 6. Labor Transition Principle
+
+Consistent with the concern raised directly: automation without a transition path just shifts who suffers, from field labor to unemployment. This spec explicitly does NOT treat "labor eliminated" as a complete success metric on its own. Paired principle (not a full policy spec, a design-level commitment):
+
+- GLEANER's open-source, field-serviceable nature (Section 2.4) means the technician/maintenance/operation jobs it creates are real, skill-building roles available to the same community the machine displaces from stoop labor — not jobs requiring an unrelated new specialization pipeline
+- Design intent is explicitly stated in the spec itself (this section) so future BEKW-CODE builders inherit the "replace the task, create a real next step" framing, not just "replace the task"
+
+---
+
+## 7. Relationship to Existing BEKW-CODE Canon
+
+- Powered by **SOLSHADE**-derived PV architecture, same as every other recent spec in this stack
+- Direct philosophical correction/companion to **SOLSHADE: FIELDCLASS** — FIELDCLASS remains useful for tasks that genuinely need to stay human (see Section 4) and for other outdoor field-adjacent roles (crop scouting, quality inspection, GLEANER maintenance techs working outdoors), but its role shifts from "endure the picking" to "do the parts that are actually worth a human's time"
+- Continues the "give tools, not just aid" lineage from **Bloomkit → AIRFOLD: RELIEF → SURVIVOR Class**, now applied to labor itself rather than disaster relief
+
+---
+
+## 8. Open Items / Next BOM Pass
+
+- Crop-specific end-effector gentleness needs real physical testing per crop type — soft-robotic gripping is proven tech in general but crop-specific tuning is a real engineering pass, not assumed
+- Vision system's "ambiguous → human review" threshold needs real definition — where that line sits determines how much genuine judgment work stays human versus how much gets automated away, and that line should probably be set deliberately rather than just wherever the model's confidence happens to land
+- Orchard/tree-crop variant is flagged as a separate spec, not yet started
+- Labor-transition principle (Section 6) is a design-level statement, not an economic/policy plan — if this gets built for real, that gap matters and shouldn't be papered over with good intentions alone
