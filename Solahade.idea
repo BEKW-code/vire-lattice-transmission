@@ -1,0 +1,114 @@
+# SOLSHADE — Folding Photovoltaic Exterior Blind
+### BEKW-CODE Spec | Alabama-Rated Permanent Shade Structure
+
+---
+
+## 1. Concept
+
+A permanently mounted exterior porch/patio blind that is *also* a functioning photovoltaic array — not a portable camping panel, not a UV-filtering fabric roller shade (the two categories that currently exist on the market, and neither of which is this). SOLSHADE replaces the failure-prone woven-PVC bamboo/vinyl blind (embrittles, shreds, sheds plastic fiber within 1–3 seasons in high-UV climates) with a segmented rigid-panel tambour system that shades the porch, survives Alabama storm cycles in place, and feeds a battery/charge-controller system year-round.
+
+**Why this doesn't already exist:** exterior-shade manufacturers build with woven synthetic slats (cheap, UV-fragile, no electrical function). Portable solar manufacturers build flexible/foldable panels meant to be carried out and packed away (Shade Stopper, Renogy, Jackery-style), not fixed permanently in a wind-loaded envelope. Nobody has merged "fixed architectural shade" with "PV generation" as a single rated product.
+
+---
+
+## 2. Root Failure Mode Being Solved
+
+Observed on a real deployed blind (2-year lifespan, Alabama porch mount):
+- PVC/poly woven slats UV-embrittled, began fraying at the free bottom edge
+- Required repeated manual trimming of shed material
+- Wind (not just storm-level — routine gusting) caught the continuous sheet like a sail and tore strands progressively
+- End-state: partial structural failure, ongoing plastic microfiber shedding, full replacement needed
+
+Each of these is an *architecture* problem, not a materials-quality problem alone — a continuous flexible sheet with a free bottom edge is inherently the wrong structure for sustained high-UV, high-gust-cycle exposure, regardless of slat material grade.
+
+---
+
+## 3. Design Principles (Non-Negotiable)
+
+1. **No continuous free-hanging flexible sheet.** Wind load must transfer to a rigid frame/track at all times, never to fabric tension alone.
+2. **No exposed PVC/vinyl in the primary UV path.** Front-facing weather surface is UV-stable laminate only.
+3. **Segmented, not continuous.** Failure of one panel segment must not cascade or compromise the whole span.
+4. **Generates power as a structural requirement, not an add-on.** The PV layer is load-bearing-adjacent (mounted to the rigid segment), not a bolt-on film.
+5. **Field-serviceable.** Any single segment must be replaceable without disassembling the whole unit — matches BEKW-CODE's "restorable by a person with hand tools" covenant.
+
+---
+
+## 4. Mechanical Architecture
+
+**Type:** Rigid-segment tambour blind (venetian-blind kinematics, garage-door-tambour segment logic)
+
+- Individual panels: 4–6 in tall × full blind width, rigid aluminum-framed
+- Panels link via a continuous hinge (piano-hinge style, 316 stainless pin) — allows roll-up/fold storage while keeping each segment individually rigid under load
+- Top rail: fixed aluminum header, houses the roll/fold mechanism and primary wiring harness
+- Bottom rail: rigid aluminum bar (not a free fabric edge) — locks into vertical side tracks at full extension, transferring wind load directly into the porch structure rather than into the panel material
+- Side tracks: aluminum channel, direct-mounted to porch posts/beam, bottom rail bar rides in-channel like a garage door track
+
+**Wind load path:** gust → panel face → rigid frame edges → side track channel → porch structural framing. No load is carried by a flexible membrane at any point.
+
+---
+
+## 5. Panel Layer Stack (front to back)
+
+| Layer | Material | Function |
+|---|---|---|
+| 1. Weather face | ETFE film, 3-layer, UV-stabilized | UV/hail/weather barrier; ETFE rated 25+ yr outdoor, doesn't yellow/embrittle like PVC |
+| 2. Encapsulant | EVA or POE encapsulant | Bonds ETFE to PV cells, standard PV lamination practice |
+| 3. PV layer | Monocrystalline cells, flexible-format (per-segment, not full-span) | Power generation |
+| 4. Backsheet | Fluoropolymer-coated composite | Moisture barrier, rear weather seal |
+| 5. Structural frame | 6063-T5 aluminum extrusion, powder-coated | Rigidity, mounting points, hinge attachment |
+
+Each segment is its own laminate — a hail strike or localized failure takes out one segment, not the array.
+
+---
+
+## 6. Ratings (Alabama Baseline)
+
+Using ASCE 7-22, Alabama basic wind speeds range roughly 110–115 mph (northern interior) to 120–150 mph (southern/Gulf-adjacent counties). Spec below targets the conservative statewide middle so the design holds for the large majority of Alabama without full hurricane-coast over-engineering. **Confirm exact county figure before final build if this is a permanent structural attachment — pull the ASCE 7 Hazard Tool value for the specific ZIP.**
+
+- **Wind:** Ultimate design wind speed 140 mph (3-second gust, Exposure C) — covers all but the most extreme Gulf-coast counties
+- **UV:** ETFE face sheet, 25+ year rated outdoor exposure, no embrittlement/yellowing at Alabama UV index levels (routinely 8–11 in summer)
+- **Corrosion:** All fasteners/hinges 316 stainless (not 304) — Alabama humidity plus periodic coastal-influenced air over a service life will pit 304 hardware within 5–10 years; 316 holds
+- **Thermal cycling:** PV lamination stack must tolerate panel surface temps to 170°F+ (dark PV surface in direct AL summer sun runs hotter than ambient) down through winter frost without delamination — spec EVA/POE encapsulant rated to full IEC 61215 thermal cycling standard
+- **Water:** IP67 minimum on all electrical connections/junction boxes; panel-to-panel wiring routed through the hinge channel, not exposed
+
+---
+
+## 7. Electrical / Power Path
+
+- Per-segment PV output bussed to a central MC4 trunk line running through the top header rail
+- Trunk feeds an exterior-rated combiner box (IP67) mounted at the header
+- Standard MC4 → charge controller (MPPT recommended given partial-shade likelihood from porch roof overhang) → battery bank / power station
+- Estimated output: dependent on final blind dimensions; a typical 8ft × 4ft porch blind footprint at ~15–18% cell efficiency yields roughly 250–400W array potential — enough to trickle-charge a home battery bank or run direct DC porch loads (fans, lighting) without inverter loss
+
+---
+
+## 8. Operation
+
+- Fold/roll mechanism: manual crank or optional low-torque DC gearmotor (matches existing motorized-blind hardware patterns), stored at top header
+- Deployed (extended): bottom rail locked into side track, full wind-load path active, full PV generation
+- Stowed (rolled/folded): panels nest at header, protected from severe-storm direct impact — an owner can stow it ahead of a known severe storm exactly like closing storm shutters, except the "shutter" is generating power the other 360+ days a year
+
+---
+
+## 9. Bill of Materials (Core, per 8ft-wide unit — scale linearly)
+
+- Aluminum extrusion, panel frames: 6063-T5, ~40 linear ft
+- ETFE film + EVA/POE encapsulant + backsheet: per panel segment, sized to PV cell layout
+- Monocrystalline PV cells: flexible-format, segment-sized, ~250–400W total array
+- Piano hinge, 316 stainless: full width × number of segment joins
+- Side track channel, aluminum: 2× vertical runs, height of blind
+- Bottom rail bar, aluminum, rigid: 1× full width
+- Fasteners: 316 stainless throughout
+- Combiner box: IP67 rated
+- MC4 connectors + trunk cable: exterior-rated, UV-stable jacket
+- MPPT charge controller: sized to array wattage
+- Optional: DC gearmotor + manual override crank
+
+---
+
+## 10. Open Items / Next BOM Pass
+
+- Exact per-county wind rating pending user location confirmation (currently spec'd to statewide-conservative 140 mph)
+- Final panel segment height (4in vs 6in) trades off: shorter segments = better wind-shedding/flexibility on fold, taller = fewer hinge points, less cost, marginally more rigid per segment
+- Motorized vs manual operation — cost/complexity tradeoff, not yet decided
+- Battery bank / inverter integration is out of scope for this spec (treat SOLSHADE as a PV source feeding a separate BEKW-CODE power-storage spec)
