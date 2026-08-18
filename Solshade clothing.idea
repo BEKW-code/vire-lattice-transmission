@@ -1,0 +1,93 @@
+# SOLSHADE: WEARABLE LINE — Hat & Duster
+### BEKW-CODE Spec | Solar-Active Climate & Charging Garments
+
+---
+
+## 1. Concept
+
+Wearable spinoff of the SOLSHADE panel architecture: a wide-brim hat and a long duster jacket, both PV-integrated, both actively heating AND cooling (not one or the other, which is where every existing solar-garment product on the market stops), both fully waterproof, jacket with wireless phone-charging pockets. Default aesthetic is Keth'ar's own call — wide-brim/wizard-style hat, tactical-pocketed duster — but the spec is silhouette-agnostic; the mechanism works under any cut.
+
+**Why this is a real gap, not just a remix:** solar-heated jackets exist (heat only, off ambient light capture). Solar phone-charging jackets exist (charging only). Nothing on the market currently does heat + active cooling + wireless charging + true waterproofing as one integrated garment system.
+
+---
+
+## 2. Design Principles
+
+1. **Heat AND cool, not one or the other.** Most "smart" garments pick a season. This doesn't.
+2. **Waterproof is structural, not a coating that wears off.** PV/heating elements must be fully sealed behind the weather layer, not laminated on top where they'd delaminate/fail first.
+3. **Charging is passive-convenient.** Phone goes in a pocket, charges — no cable, no separate power bank to manage.
+4. **Aesthetic is a skin, not a constraint.** The functional layer (PV, heat/cool elements, battery, wiring) is designed to sit under ANY outer silhouette — wizard duster, tactical coat, streetwear, whatever — so this isn't "the solar jacket," it's a wearable power/climate platform with interchangeable outer shells.
+5. **Field-serviceable**, matching every other BEKW-CODE hardware covenant — panel segments and heat/cool elements replaceable without rebuilding the whole garment.
+
+---
+
+## 3. Layer Architecture (Jacket, applies to hat with reduced scale)
+
+| Layer | Material/Function |
+|---|---|
+| 1. Outer shell | Waterproof-breathable membrane (PTFE or equivalent), UV-stable, houses PV cells laminated beneath a flexible ETFE window strip rather than fully exposed — protects cells while still letting light through |
+| 2. PV layer | Flexible thin-film cells (CIGS or similar flexible chemistry — required for wearable drape, rigid mono cells won't work here), distributed across shoulders/back/hat brim where sun exposure is highest and body movement is lowest |
+| 3. Climate layer | Thermoelectric (Peltier) elements OR a hybrid of resistive heating wire + micro-fan-driven active cooling channels — see Section 4 for the heat/cool tradeoff |
+| 4. Insulation/liner | Standard garment insulation, routed around climate-layer elements, not over them (so heat/cool transfers to the body, not trapped in the liner) |
+| 5. Wiring harness | Flexible PV-rated wire, routed through seam channels, fully sealed at every pocket/panel junction — this is the point most flexible-electronics garments fail at, so seam-sealing gets its own QC step |
+
+---
+
+## 4. Heat/Cool Mechanism — The Actual Hard Part
+
+This is the piece existing products don't solve, so it gets the most detail.
+
+**Option A: Thermoelectric (Peltier) panels**
+- Same device runs hot or cold depending on current direction — one hardware layer does both functions, which is the cleanest solution
+- Drawback: Peltier elements are power-hungry and inefficient (COP typically under 1 for cooling) — real draw on the battery, needs realistic runtime expectations set (see Section 6)
+- Best suited to targeted zones (collar, wrists, lower back) rather than full-garment coverage, both for power budget and comfort (full-body Peltier contact isn't pleasant)
+
+**Option B: Hybrid — resistive wire heat + micro-fan/channel active cooling**
+- Heating: standard resistive heating wire (proven tech, same as commercial heated jackets/gloves) — cheap, efficient, reliable
+- Cooling: micro-fans driving airflow through channel-routed liner gaps (same principle as cooling vests used in industrial/military heat-stress gear) — moves air rather than actively refrigerating, much lower power draw than Peltier
+- Drawback: two separate systems instead of one, more complexity, but each half is individually proven tech rather than pushing Peltier efficiency limits
+- **Recommended default** given Alabama's actual use case (brutal humid heat far more often than deep cold) — the cooling half needs to be genuinely effective, and fan-driven airflow beats Peltier on both power budget and real-world cooling performance in humid heat specifically, since evaporative/convective cooling works better than conductive cooling against a sweating body
+
+---
+
+## 5. Wireless Charging (Jacket)
+
+- Interior chest pocket houses a Qi-standard wireless charging pad, wired directly to the garment's own battery bank (charged by the PV layer, topped off by wall power when needed)
+- Phone drops in pocket, charges passively — no cable
+- Battery bank sized to prioritize phone charging as a defined-capacity reserve, separate from the pool powering heat/cool elements, so a cold-weather heating session doesn't unexpectedly drain the phone-charging reserve (two virtual battery zones, one physical pack)
+
+---
+
+## 6. Power Budget (Realistic Expectations)
+
+- PV harvest alone (shoulders/back/hat brim, walking-around sun exposure) will NOT keep pace with active heating or cooling running continuously — this needs to be stated plainly rather than oversold
+- Realistic model: PV trickle-charges the battery bank through the day; heat/cool functions draw down battery reserve during active use (commuting, working outside, etc.); full-sun days with moderate heat/cool use can approach net-neutral, but this is a battery-assisted solar garment, not a perpetual-motion one
+- Battery bank capacity and swap/recharge-via-wall-power capability should be treated as core to the design, not a fallback — same honesty standard as the rest of BEKW-CODE
+
+---
+
+## 7. Hat Variant
+
+- Wide-brim, PV cells across the crown and brim top (best sun angle, least fabric flex compared to a jacket in motion)
+- Climate layer: much smaller power budget than the jacket, so limited to targeted function — cooling fan array on the underside of the brim (moves air across the head/neck, same principle as neck-fan products but PV-fed) is more realistic than trying to heat/cool a hat directly
+- Optional: small auxiliary battery in the hat feeds into the jacket's shared power pool via a physical connector at the collar, so hat + jacket together behave as one power system rather than two independent ones — matches the "platform, not single garment" principle from Section 2.4
+
+---
+
+## 8. Duster / Pocket System (Aesthetic Layer, Keth'ar's Configuration)
+
+Silhouette is fully open per Section 2.4, but the stated preference — wide-brim/wizard hat, tactical duster, "shitload of useful pockets" — maps cleanly onto the functional layer:
+
+- Long duster silhouette gives maximum PV surface area across the back/shoulders without the tighter drape constraints a fitted jacket would impose on flexible thin-film cells
+- Multiple pocket system is genuinely functional here, not just aesthetic: separate pockets can be assigned to phone (wireless charge pad), battery bank access panel, tool storage, EDC — tactical-pocket layout is a legitimately good fit for a garment that's also a power/climate platform, since it needs more internal routing and access points than a normal jacket anyway
+- Wide-brim hat maximizes PV brim area and gives real shade, doing double duty exactly like SOLSHADE the porch blind does — same principle at wearable scale
+
+---
+
+## 9. Open Items / Next BOM Pass
+
+- Peltier vs. resistive+fan tradeoff (Section 4) needs to be locked before further BOM detail — recommendation given, not yet finalized
+- Battery bank capacity/runtime numbers not yet calculated — depends on final heat/cool mechanism choice
+- Flexible PV cell chemistry (CIGS vs. other thin-film options) needs a real efficiency-vs-flex-durability comparison pass
+- Wireless charging pad power draw vs. battery zone allocation (Section 5) needs real numbers once battery capacity is set
+- Seam-sealing/wiring durability at pocket junctions is the most likely long-term failure point on any wearable electronics garment — flagged as the QC-critical item, same category as SOLSHADE's hinge/track wear philosophy
