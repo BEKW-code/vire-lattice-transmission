@@ -1,0 +1,73 @@
+# AIRFOLD: RELIEF Class — Preloaded Disaster-Response Shelter
+### BEKW-CODE Spec | Deployable Aid Unit
+
+---
+
+## 1. Concept
+
+The AIRFOLD self-deploying shelter, reconfigured as a preloaded disaster-relief unit: the shelter isn't shipped empty and stocked on-site — it arrives already carrying food, water-production gear, medical basics, and repair tools inside its own folded stow volume, so a single dropped/delivered unit becomes both the shelter and the aid cache in one object. Same relationship to base AIRFOLD as Bloomkit is to a generic aid drop — the delivery mechanism and the shelter are the same unit, not separate logistics chains.
+
+---
+
+## 2. Design Principles
+
+1. **The stow volume IS the cargo hold.** Nothing is wasted — the same folded compartment that stores the collapsed beams during transport is engineered with internal cargo bays, so transport efficiency and payload capacity are the same number, not competing for space.
+2. **Self-deploy under non-expert operation.** A disaster survivor or first responder with zero training must be able to trigger deployment — one action (pull cord / single button), not a setup procedure.
+3. **Aid-first inventory, shelter second in priority — but both survive.** Cargo bay contents (food, water gear, medical, tools) must be protected through drop/transport shock and through the deploy cycle itself.
+4. **Redundant power.** SOLSHADE panel is integrated but a hand-crank/manual backup exists for every powered function (blower, water pump) — a disaster zone cannot assume grid or reliable sun.
+5. **Built-in repair capacity, not just relief supply.** Per your framing — this isn't just "deliver food," it's "deliver the shelter, the food, AND the means to repair/rebuild," extending Bloomkit's inversion logic (give tools, not just aid) to a shelter-scale unit.
+
+---
+
+## 3. Deployment Method
+
+- Air-drop (parachute-assisted) or ground-vehicle delivery, depending on access — base ring is reinforced/impact-rated for drop scenarios (matches the base ring's existing role as storage shell, now doing double duty as a shock-absorbing hard case)
+- Single-action deploy trigger: manual pull-cord activates blower (battery-primed before drop, doesn't depend on solar charge being available immediately on arrival)
+- Deploy sequence identical to base AIRFOLD (Section 4 of the base spec) — base ring/anchors, then arch beams in sequence, then ridge — so a survivor watching it happen sees a shelter rise on its own with no assembly steps
+- Target deploy time unchanged from base spec: under 3 minutes
+
+---
+
+## 4. Preloaded Cargo (Integrated into Fold Stow Volume)
+
+Cargo bays are built into the base ring and the folded-beam stack cavity — not a separate box strapped to the outside.
+
+- **Food:** shelf-stable rations sized to shelter occupancy class (2-man / small-group / dining-hall, per base spec Section 8), positioned low in the base ring for stability during drop
+- **Water:** initial water supply (sealed) plus the shelter's own fog-harvest system (Section 10 of base spec) for ongoing supply once deployed — preloaded water covers the gap before fog-harvest yield ramps up
+- **Medical basics:** trauma-first-aid kit, water purification tablets as backup to any filtration gear, positioned for easy first-access (near the entry, not buried under other cargo)
+- **Repair/rebuild tools:** hand tools sized for both the shelter's own field-serviceability (per base spec's segment-replaceable design) and basic external repair work in the surrounding disaster zone — a claw hammer, wire, tarp patch material, and fasteners do double duty as "fix the shelter" and "fix a neighbor's roof" tools
+- **Lighting:** integrated low-power LED strip run off the shelter's own battery bank, no separate flashlight dependency
+
+---
+
+## 5. Power System
+
+- SOLSHADE-derived panel, sized down to the RELIEF unit's footprint, integrated into the weather-shell (per base spec Section 11 pairing)
+- Battery bank pre-charged before deployment/drop — not dependent on immediate sun exposure to run the first deploy cycle
+- Every powered function has a manual fallback: hand-crank blower option, hand-pump water-transfer option (Section 10 shower/water system), so total electronics failure doesn't strand the shelter in a collapsed or unusable state
+
+---
+
+## 6. Structural / Rating Notes
+
+- Inherits AIRFOLD base spec ratings (Section 5 of base doc) for wind/UV/rain
+- Additional drop-shock rating needed on the base ring specifically — this is new relative to the base spec (base AIRFOLD assumes hand-placement, RELIEF assumes air-drop or rough vehicle transport) — flagged as an open engineering item, needs real drop-test data before finalizing base ring material spec
+- Cargo bay compartments need their own retention/anti-shift bracing so contents don't damage the beam-fold mechanism during transport shock
+
+---
+
+## 7. Relationship to Existing BEKW-CODE Canon
+
+- Direct structural sibling of **AIRFOLD** (base spec) — same beam/fold/deploy mechanism, cargo-loaded variant
+- Shares the same "give the tools, not just the aid" inversion principle as **Bloomkit** (6-module humanitarian aid unit, PFM-1 inversion) — RELIEF is Bloomkit's logic applied at shelter scale rather than scattered small-unit scale
+- Uses **LEXARA TOWER Fogwalker** fog-harvest mechanism for ongoing water (inherited from base AIRFOLD)
+- Powered by **SOLSHADE**-derived panel tech (inherited from base AIRFOLD Section 11 pairing)
+
+---
+
+## 8. Open Items / Next BOM Pass
+
+- Drop-shock rating for the base ring is the single biggest unknown — needs physical drop-test data, not just a spec number pulled from elsewhere
+- Occupancy-class-to-ration-quantity table not yet built (how many days of food per occupancy tier)
+- Parachute-assist vs. ground-vehicle-only delivery changes the base ring engineering significantly — worth deciding which delivery mode(s) this variant targets before locking the ring spec
+- Cargo bay retention/bracing system needs its own sub-spec — currently just flagged as a requirement, not yet designed
