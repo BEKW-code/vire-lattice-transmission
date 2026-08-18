@@ -1,0 +1,68 @@
+# SHADOWMIST: WORKSITE CLASS — Autonomous Shade/Mist/Cooler Drone
+### BEKW-CODE Spec | Scaled-Up SHADOWMIST for Roofing/High-Heat Job Sites
+
+---
+
+## 1. Concept
+
+The scaled-up worksite variant of the personal SHADOWMIST drone (follows the user through doorways, provides personal cooling airflow, mists on demand). WORKSITE CLASS is sized up from a personal-comfort device to a real job-site utility: hovers over an active work zone (roofer on a roof, crew on a hot job site) providing genuine shade coverage and airflow, on-demand mist, and doubles as an aerial-positioned cooler for cold drinks and lunches — removing the need for a worker to climb down for water/food/shade breaks, directly reducing the friction that leads to skipped hydration/cooling breaks (same underlying problem SOLSHADE: ROOFCLASS targeted from the wearable side).
+
+**Relationship to ROOFCLASS:** this isn't a replacement for the roofer uniform spec, it's a complementary environmental system — ROOFCLASS handles the body-worn layer, WORKSITE CLASS handles the ambient work-zone environment. Together they attack heat stress from both directions rather than asking one system to do everything.
+
+---
+
+## 2. Design Principles
+
+1. **Scale up the mechanism, not just the size.** The personal SHADOWMIST's follow-behavior and mist function are the proven core; WORKSITE CLASS keeps that same logic while genuinely increasing shade coverage area and payload capacity, not just making a bigger drone with the same small shadow.
+2. **Real shade, not token shade.** A drone that casts a token shadow isn't solving the problem — the shade canopy needs genuine coverage area over an active work zone.
+3. **Hands-free convenience reduces break friction.** Same principle as ROOFCLASS's hydration tube and FIELDCLASS's piece-rate awareness — if getting water/shade/a cold drink requires climbing down off a roof, workers under-hydrate. Removing that friction is the actual safety value here, not just novelty.
+4. **Safe to operate directly over/near a human on an active job site.** This is a hard constraint given the operating environment — propeller guarding, fail-safe behavior on low battery or malfunction (controlled descent away from the worker, not a drop), and genuinely quiet/non-distracting operation near someone doing focused, safety-critical roofing work.
+5. **Powered by the same PV ecosystem as the rest of BEKW-CODE**, so it's not a separate isolated power draw.
+
+---
+
+## 3. Mechanical Architecture
+
+- **Airframe:** multi-rotor drone, sized up from personal SHADOWMIST scale — real engineering tradeoff between shade-canopy size and flight stability/payload capacity, addressed in Section 7
+- **Shade canopy:** deployable rigid or semi-rigid shade panel (potentially SOLSHADE-derived PV-integrated panel material — the shade canopy doubles as the drone's own primary power-generation surface, same "the function IS the structure" principle used throughout BEKW-CODE)
+- **Follow behavior:** inherited from personal SHADOWMIST — tracks and positions above the worker, adjusted for a stationary/near-stationary work pattern (roofer working one section) rather than the personal unit's doorway-following pattern, since job-site positioning is a different tracking problem than following someone room to room
+- **Mist system:** on-demand water mist nozzle array, same core function as personal SHADOWMIST, sized up with a larger onboard reservoir given the longer duty cycle (full work shift vs. personal intermittent use)
+- **Cooler payload bay:** insulated compartment slung beneath or integrated into the airframe, holds cold drinks/lunch items, ice-pack or small active-cooling element — drone descends to deliver/retrieve on request rather than needing to carry the full cooler weight in constant flight
+- **Power:** PV-integrated shade canopy (Section above) feeding an onboard battery, likely supplemented by a ground-based charging pad/dock for full recharge between flights given real limits on how much PV a shade-canopy-sized surface can realistically generate mid-flight
+
+---
+
+## 4. Operational Modes
+
+- **Shade-hold:** primary mode — drone maintains position above the worker's active zone, canopy deployed, providing continuous shade
+- **Mist-on-demand:** worker signals (voice command, simple wearable button — could integrate with ROOFCLASS's existing hardware) triggers a mist cycle
+- **Cooler delivery:** worker requests, drone descends payload bay to arm's reach, retrieves item, returns to shade-hold position
+- **Auto-return/dock:** low battery or end-of-task triggers automatic return to a ground charging dock, not left hovering to fail
+
+---
+
+## 5. Safety Systems
+
+- Full propeller guarding, rated for operation in close proximity to a human
+- Redundant lift (multi-rotor with graceful-degradation capability — losing one rotor shouldn't mean losing the aircraft)
+- Fail-safe controlled descent behavior, biased away from the worker's position if a fault occurs
+- Wind-abort threshold — same wind-awareness principle as AIRFOLD's auto-stow trigger; above a set wind speed, the shade drone can't safely maintain position and should auto-dock rather than risk becoming a hazard on an already-precarious rooftop work site
+- Quiet operation prioritized in motor/propeller selection — this is hovering near someone doing safety-critical balance-dependent work, constant loud drone noise is a genuine distraction risk, not just an annoyance
+
+---
+
+## 6. Relationship to Existing BEKW-CODE Canon
+
+- Scaled-up sibling of the existing personal **SHADOWMIST** drone (ceiling-fan/mist/doorway-follow device)
+- Complementary system to **SOLSHADE: ROOFCLASS** — environmental (ambient shade/mist/supply) rather than body-worn, addressing the same heat-stress-prevention goal from a different angle
+- Powered via SOLSHADE-derived PV canopy architecture, consistent with the rest of the recent build stack
+- Fits the same "who's actually being left out" throughline as ROOFCLASS/FIELDCLASS/GLEANER — roofers specifically, who can't easily climb down for a break without real time/productivity cost
+
+---
+
+## 7. Open Items / Next BOM Pass
+
+- Real engineering tradeoff between shade-canopy size and flight stability/payload needs actual aerodynamic modeling — a canopy sized for "genuine shade coverage" adds real wind-catching surface area, which fights against stable hover in exactly the gusty rooftop conditions this needs to operate in; this is the single hardest open problem in the spec, not a minor detail
+- PV generation realistically achievable from a shade-canopy-sized surface while airborne needs real numbers — likely insufficient alone, hence the ground-dock recharge assumption in Section 3, which should be treated as the primary charging method rather than a backup
+- Multi-worker job sites (a full roofing crew, not one person) raise a fleet-coordination question — one drone per worker, or a larger shared-shade unit — not yet decided, flagged for a follow-up spec pass
+- FAA/regulatory considerations for operating a drone at low altitude directly over an active human work site are a real-world constraint this spec doesn't attempt to resolve — worth real research before any physical build, this is not just an engineering question
