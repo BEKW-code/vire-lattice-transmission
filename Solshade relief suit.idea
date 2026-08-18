@@ -1,0 +1,84 @@
+# SOLSHADE: SURVIVOR CLASS — Disaster-Relief Jumpsuit
+### BEKW-CODE Spec | One-Piece Survival Garment, Four-Size Class System
+
+---
+
+## 1. Concept
+
+A one-piece survival jumpsuit for mass disaster distribution — not a fashion garment, a wearable survival kit. Extends the SOLSHADE Wearable Line's power/climate platform (heat, active cooling, PV charging, waterproofing) into a single integrated suit pre-equipped with the tools a person actually needs to survive the first 72+ hours after a disaster and start recovering beyond it: water filtration, signaling, basic medical, cordage, light.
+
+**Sizing philosophy:** four classes, not standard S/M/L/XL apparel sizing — this is built around real-world body variance in a mass-distribution context (a suit that only fits "average" body types fails a large share of the people who need it most).
+
+---
+
+## 2. Size Class System
+
+| Class | Target Fit | Notes |
+|---|---|---|
+| **Small** | Children and petite adults | Scaled proportionally, not just shortened — pocket/kit placement adjusted so tool weight distribution stays comfortable on a smaller frame, not just a shrunk adult suit |
+| **Medium** | Average adult build | Baseline pattern |
+| **Large** | Larger adult build (~6ft / 200lb reference point) | Extended torso/limb length, standard kit loadout |
+| **Big Bubba** | Oversized build — wide shoulders, large forearms/thighs relative to height, non-"tall" oversizing | Not just "Large scaled up" — cut for width/girth independent of height, since real body variance (a person with forearms bigger than another person's thighs) doesn't scale linearly from a height-based sizing chart |
+
+Each class gets its own pattern, not a single pattern scaled by a multiplier — this matters specifically for the Big Bubba class, where height-based scaling would produce a suit that's too long and still too tight, which is the exact failure mode of most "one size fits most" disaster gear.
+
+---
+
+## 3. Base Garment (All Classes)
+
+Inherits SOLSHADE Wearable Line architecture (Sections 3–4 of that spec) at jumpsuit scale:
+- Waterproof-breathable outer shell, PV cells across shoulders/back/upper legs (max sun exposure zones, least joint-flex interference)
+- Hybrid heat (resistive wire) / cool (fan-driven channel) climate layer, zoned at core/collar rather than full-body for power budget reasons
+- Shared battery bank, PV-charged with wall-power topoff capability where available
+- Full waterproof sealing at every seam and pocket junction
+
+---
+
+## 4. Integrated Survival Systems
+
+**Water:**
+- Built-in hollow-fiber membrane straw filter (LifeStraw-class filtration — removes bacteria/protozoa, not a substitute for treating known chemical contamination) integrated into a chest-mounted drinking tube, routed to an accessible intake point so the wearer can filter-drink from any found water source hands-free
+- Collapsible water reservoir/bladder pocket, low-profile, doesn't interfere with mobility
+
+**Medical:**
+- Compact trauma kit integrated into a dedicated sealed pocket (tourniquet, compression bandage, basic wound care) — positioned for one-handed self-access (same principle as a seatbelt-cutter placement on a life vest, must be reachable under stress/injury)
+- Emergency blanket (mylar-style) built into a lower-back pocket, doubles as signaling reflector
+
+**Signaling:**
+- High-visibility panel, concealable (zippered flap) so it's not permanently exposed if the wearer doesn't want to be visually flagged at all times, but deployable in seconds
+- Integrated whistle, physically attached (not a loose accessory that gets lost)
+- Small signal mirror in a hip pocket
+
+**Light:**
+- Low-power LED strip along the shoulder/collar line, run off the shared battery bank — hands-free lighting for nighttime movement or being located
+- Manual crank backup on a chest-mounted micro-light for zero-battery scenarios (matches AIRFOLD's fail-safe manual-override principle)
+
+**Utility:**
+- Integrated cordage (paracord) woven into a beltline or seam, pull-out length available without needing a separate coil
+- Multi-tool pocket, sized per class (Big Bubba class gets a wider tool pocket sized to actual hand/tool-grip proportions, not just a longer one)
+- Fire-starting basics (ferro rod + tinder, sealed pocket) — low cost, high value, doesn't depend on battery power at all
+
+---
+
+## 5. Design Principles Carried From Base BEKW-CODE Covenants
+
+1. **Redundant power paths for every critical function** — light and any active climate function has a non-electric fallback, consistent with AIRFOLD RELIEF's manual-override principle
+2. **Field-serviceable** — pocket/kit contents replaceable/restockable in the field, not sealed-for-life
+3. **No single point of failure on survival-critical items** — water filtration and fire-starting specifically do not depend on the garment's battery system at all
+
+---
+
+## 6. Relationship to Existing BEKW-CODE Canon
+
+- Direct wearable-scale sibling to **AIRFOLD: RELIEF Class** — RELIEF is the shelter-and-cargo unit, SURVIVOR is the individual-wearable unit; a full disaster response deploys both together (RELIEF shelter units + individually distributed SURVIVOR jumpsuits per person)
+- Inherits **SOLSHADE Wearable Line** power/climate architecture directly
+- Shares **Bloomkit**'s "give tools, not just aid" inversion principle at the individual-body scale, same lineage as RELIEF at shelter scale
+
+---
+
+## 7. Open Items / Next BOM Pass
+
+- Big Bubba class pattern needs real body-scan/anthropometric data rather than an assumed proportion set — this is the class most likely to be gotten wrong by guessing, and it's the class where getting it wrong matters most (that's the population most underserved by existing disaster-relief clothing sizing)
+- Battery bank sizing for jumpsuit-scale PV area (legs + torso + shoulders) not yet calculated — likely higher harvest potential than the jacket-only Wearable Line given more surface area, worth recalculating rather than assuming jacket numbers scale up directly
+- Kit loadout weight budget per class not yet set — Small/children's class needs a real weight ceiling so the kit doesn't become a burden rather than a help
+- Water filter membrane replacement/service interval needs sourcing research (hollow-fiber filters have a finite lifespan before replacement, needs a real number for field-service planning)
