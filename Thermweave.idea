@@ -1,0 +1,58 @@
+# THERMWEAVE — Ambient/Waste-Heat Thermoelectric Harvest Module
+### BEKW-CODE Spec | Supplemental Power, Not Primary Source
+
+---
+
+## 1. Concept
+
+A standalone thermoelectric generator (TEG) module, built to bolt onto existing BEKW-CODE hardware wherever a hot-to-ambient temperature differential already exists and is currently being wasted. Explicitly framed as a **contributor, not a power source** — the honest physics of thermoelectric generation (roughly 5–8% conversion efficiency off the heat differential) means this will never replace PV or a battery bank as primary power, but it skims real, otherwise-wasted watts anywhere heat is already being generated as a byproduct.
+
+**Mechanism (Seebeck effect):** a thermoelectric material generates voltage across a temperature *difference* between its two faces — hot side and cold side, not "hot" alone. Requires a real differential to function; a module fully submerged in uniform heat with no cold-side exposure produces nothing.
+
+---
+
+## 2. Design Principle
+
+**Module-first, not system-first.** THERMWEAVE is built as a self-contained bolt-on unit (hot-side plate, TEG array, cold-side heatsink/fins, output wiring to a shared battery bus) so it can attach to *any* existing BEKW-CODE system with a heat differential, rather than being redesigned per application. This matches the master mechanism list's purpose — a reusable component, pulled into different specs as needed.
+
+---
+
+## 3. Core Module Architecture
+
+| Component | Function |
+|---|---|
+| Hot-side plate | Thermally conductive contact plate (aluminum or copper), mounts directly to the heat source |
+| TEG array | Bismuth telluride (or similar) Peltier-effect elements, wired in series/parallel per voltage/current target |
+| Cold-side heatsink | Finned aluminum heatsink, passive air-cooled by default; active fan-assist optional where power budget allows |
+| Output regulation | DC-DC buck/boost converter, since TEG output voltage varies with differential — regulates to a stable bus voltage before feeding the shared battery system |
+| Mounting bracket | Application-specific (varies per host system), but hot/cold plate module itself stays standardized |
+
+---
+
+## 4. Known Application Points Across Existing BEKW-CODE Systems
+
+Rather than a new standalone product, THERMWEAVE's value is in cross-application — flagging every existing spec with an underused heat differential:
+
+- **AZRAEL Alabama Red Dirt Foundry** — already runs a hotdog stand off waste heat; a THERMWEAVE layer adds electrical harvest alongside the existing food-heat use, same waste stream, two outputs instead of one
+- **SOLSHADE (porch blind)** — PV panel backsides run hot in direct Alabama sun (panel surface can hit 170°F+, per SOLSHADE Section 6); a THERMWEAVE layer between the panel backsheet and the aluminum frame (frame stays closer to ambient) could skim a genuine few extra watts off heat SOLSHADE is already generating as a PV byproduct
+- **SOLSHADE: WEARABLE LINE** — the resistive heating elements (Section 4 of that spec) generate heat against a cooler ambient/body-temperature boundary; a small THERMWEAVE strip at that boundary recovers a fraction of heating-mode energy rather than losing all of it to the air
+- **MYCELIA data center** — server/compute heat is a large, steady differential against any passively cooled surface — a strong candidate for a larger-scale THERMWEAVE array, worth its own sizing pass
+- **Any cooking/fire-adjacent BEKW-CODE hardware** (Commons Kitchen, campfire-adjacent AIRFOLD deployments) — direct fit for the classic camp-stove-TEG use case, charges a phone/battery off cooking heat that's happening anyway
+
+---
+
+## 5. Honest Performance Expectations
+
+- Typical conversion efficiency: 5–8% of the heat differential's energy, sometimes lower depending on material grade and differential size
+- Output scales with the SIZE of the temperature differential, not just "how hot" the hot side is — a small differential (e.g., 10°F) yields very little regardless of absolute temperature; the AZRAEL foundry (very high heat) and MYCELIA (steady heat) are stronger candidates than smaller differentials elsewhere
+- This is a waste-heat recovery layer, not a design centerpiece — every application above should be spec'd assuming THERMWEAVE contributes a supplemental trickle to the shared battery bus, never a load-bearing power requirement
+- Cold-side performance matters as much as hot-side — a poorly heat-sinked cold side collapses the differential and kills output regardless of how hot the source is; this is the most common real-world TEG underperformance cause and needs to be a first-class design consideration, not an afterthought
+
+---
+
+## 6. Open Items / Next BOM Pass
+
+- Which application point gets the first physical prototype — AZRAEL foundry (largest differential, most heat available) is the strongest first candidate given it already has waste heat with no current electrical recovery
+- DC-DC converter sizing depends on final TEG array choice, not yet selected
+- MYCELIA-scale array sizing is a genuinely different scale of project than a single bolt-on module — flagged as its own spec pass if pursued, not assumed to be "THERMWEAVE but bigger" without real engineering
+- "Paint-form-factor" flexible/printable thermoelectric material is NOT included in this spec — that's still a research-stage material, not a buildable component today; THERMWEAVE stays in the plate/module form factor until that materials science matures
