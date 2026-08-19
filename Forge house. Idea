@@ -1,0 +1,64 @@
+# BEKW-CODE // THE FORGEHOUSE
+## Manufacturing Plant + Community Campus, Built From What It Builds
+
+**Status:** Conceptual site/facility spec — architecture and program defined, unit-level engineering pending
+**Canon tie-ins:** GERALD: REFORGE Class (upstream feedstock), FORGE SYSTEM / Wall Platform / THE 17 WALLS / Floor Forge / FLOORFORGE (the manufactured product AND the building material the facility itself is built from), WATTWORKS (gym power generation), Commons Kitchen (open-source community kitchen precedent), LIVING RPG (the same "become better at what you actually do" ethos applied to a workplace), FRESHKILLS UNDER (closest existing site-scale precedent — destination-plus-infrastructure, not just infrastructure)
+**Design thesis:** The plant that manufactures FORGE-family building materials is itself built from FORGE-family building materials — the facility is its own proof of concept before a single unit ships anywhere else. And it isn't just a factory: it's a sauna, a gym, a game room, an open-source community kitchen, a greenhouse, and a garden, all on the same site, aesthetically deliberate enough that people want to be there whether or not they're on shift. **It reads as a scene, not a workplace — but the people who do work there work hard, because they're doing work they actually love.**
+
+---
+
+## 0. Site Logic
+
+**REFORGE (feedstock, off-site or site-adjacent) → FORGEHOUSE Manufacturing Core (structural members, wall panels, floor cassettes) → outbound product** running in parallel with **FORGEHOUSE as inhabited place** — production and community aren't separated into an industrial zone and a break room. The manufacturing core and the amenity wings share the same FORGE chassis, the same Channel A power/data bus, and the same visible-structure aesthetic principle already established at Freshkills Under: **nothing important is hidden behind drywall, including the building's own supply chain.**
+
+---
+
+## 1. Manufacturing Core
+
+- **Structure:** built entirely from SUNFORGE (exterior envelope) and AMBIENTFORGE (interior partitions/mezzanines), the same chassis the plant exists to produce — a visitor walking the production floor is standing inside the product.
+- **Feedstock intake:** direct tie-in to GERALD: REFORGE output where site-adjacent, or standard REFORGE-graded material shipped in where it isn't — same five sort-stream categories (ferrous, non-ferrous, polymer, glass/mineral, organic) feeding the relevant production lines.
+- **Production lines, visible not hidden:** structural member extrusion/roll-forming, Wall Platform panel assembly (skin + core + service chase lamination), Floor Forge cassette assembly — all behind glass-walled viewing corridors, same principle as Freshkills Under's "the building is the museum." A visitor or a break-taking worker can watch a FORGE-4 member come off the line the same way Freshkills lets a visitor watch the water filtration train.
+- **Quality control station:** contamination testing and grade tiering from the REFORGE spec happens here, logged and displayed on an analog-style facility dashboard — same "no login required, real numbers, visible to everyone" ethos as WATTWORKS's WW-08 credit ledger.
+
+---
+
+## 2. The Amenity Wings
+
+None of the following are separate buildings bolted onto a factory — each one is constructed from the same Wall Platform/Floor Forge/FLOORFORGE catalog the plant produces, so the amenity wings double as a living showroom.
+
+### 2.1 Sauna
+Built using **SAUNAWALL** (high-temp/high-humidity wall class, insulated, moisture-managed, non-toxic at elevated temperature) — one of the two remaining wall classes still needing a full BOM close-out, so the Forgehouse sauna doubles as the reason to finally finish that spec properly rather than leaving it a placeholder.
+
+### 2.2 Game Room / Gym — FLOORFORGE + WATTWORKS
+The game room and gym are one FLOORFORGE room running in different modes rather than two separate spaces: **Gym Mode** for conditioning/strength work, **Bounce Mode** and **Blank Mode** covering the more casual game-room use, with the training-focused modes (Dojo, Boxing, Wing Chun) available for anyone who wants them.
+
+**WATTWORKS retrofit runs on every rotational-motion machine in the gym** — stationary bikes, rowers, ellipticals, cable machines — converting workout effort into real, metered electricity via WW-01 through WW-08, tagged per-person via RFID fob (no app, no login), credited toward whatever the facility decides (kitchen meal credit, a facility-wide visible total, etc.), and routed through WW-07's relay straight into the on-site Commons Kitchen's load. The same honest framing WATTWORKS already established applies here without inflation: this is a real, non-trivial contribution to the kitchen's power draw, not the building's sole power source.
+
+### 2.3 Open-Source Community Kitchen
+Runs on existing **Commons Kitchen** canon directly — explicit anti-social-media-era inversion, open community gathering hub — sited here as the literal building where WATTWORKS's harvested gym power and the plant's own SOLSHADE/THERMWEAVE harvest both land. Whoever built the FORGE-4 member on the production floor an hour ago can eat lunch here, in a kitchen partly powered by whoever's on the rowing machine next door.
+
+### 2.4 Greenhouse & Garden
+Built from **GREENHOUSEWALL** (translucent daylighting + growing infrastructure, formerly SUNWALL/GREENWALL) for the enclosed greenhouse structure, with **GROWINGWALL** covering vertical growing surfaces elsewhere on site (interior corridors, the kitchen's own walls where light allows) and an open-air garden outside using standard GERALD-recovered mineral/compost feedstock from REFORGE's organic stream as growing medium where contamination testing clears it. Food grown here feeds the Commons Kitchen directly, same "menu tells you exactly where it came from, the answer is usually fifty feet" principle already established at Freshkills Under.
+
+---
+
+## 3. Power & Resource Loop
+
+**SUNFORGE PV/THERMWEAVE harvest (building envelope) + WATTWORKS (gym) + rooftop SOLSHADE where applicable → shared low-voltage bus (FORGE Channel A) → Commons Kitchen + manufacturing core + amenity wings**, with REFORGE's organic stream optionally contributing supplemental process heat on the same honest "supplemental not primary" framing used everywhere else in canon. Nothing here is claimed to power the whole site alone — it's the same aggregate-contribution logic as THERMWEAVE and WATTWORKS both stated explicitly in their own specs, stacked together rather than any single source doing the whole job.
+
+---
+
+## 4. Aesthetic & Culture
+
+- **Visible structural honesty** — the Freshkills Under design principle carries over directly: nothing important hidden behind a finish surface, including how the building itself gets fed, powered, and repaired.
+- **A scene, not a workplace** — the sauna, game room, gym, kitchen, and greenhouse aren't perks bolted onto a factory to improve morale metrics; they're built with the same care and material quality as the production floor, because they're made from the same catalog. There's no "nice front office, ugly warehouse" split.
+- **The work ethic this earns** — the facility doesn't ask people to work hard as a condition of access to a nice place; it's built nice because the people who end up there are already doing work they chose and care about. The place reflects that rather than manufacturing it.
+
+---
+
+## 5. Open Questions
+
+- **Site scale/location** — this spec is facility-program-level, not sited to a specific plot; scale (a single building vs. a Freshkills-adjacent campus) depends on where it actually gets built.
+- **SAUNAWALL and HUMIDORWALL still need full BOM close-outs** — the Forgehouse sauna is a real, concrete reason to finally finish that spec rather than leaving it a taxonomy entry.
+- **REFORGE feedstock proximity** — whether Forgehouse sites adjacent to an actual REFORGE-equipped landfill recovery operation or receives graded material by shipment changes a lot of the site logistics and hasn't been decided.
+- **WATTWORKS-to-kitchen load matching** — WW-07's relay routes gym-generated power to the kitchen, but the actual load-matching engineering (how much of the kitchen's real draw that realistically offsets on a busy day) needs real numbers, same honesty standard WATTWORKS already holds itself to.
