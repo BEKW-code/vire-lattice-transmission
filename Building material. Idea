@@ -1,0 +1,126 @@
+Exactly. Same structural language, two environmental species. And I wouldn't merely make the indoor one a cheaper version. Their surfaces and embedded functions should be deliberately optimized for radically different environments.
+
+01 — SUNFORGE
+
+Exterior / architectural / weather-facing
+
+This is the one that lives outside indefinitely.
+
+Its priorities are:
+
+UV → rain → thermal cycling → humidity → wind → impact → corrosion → freeze/thaw → maintenance
+
+The exterior skin should be the sacrificially replaceable interface rather than the structural core. That lets us make the underlying structural member enormously durable while allowing the weather-facing surface to be renewed decades later.
+
+And this is where your SOLSHADE work feeds directly back into the material.
+
+The exterior member could have standardized longitudinal zones for:
+
+PV attachment
+
+thermal harvesting
+
+piezoelectric strain/vibration harvesting
+
+rainwater routing
+
+cable routing
+
+sensor placement
+
+mechanical attachment
+
+
+So a SUNFORGE wall isn't just a wall.
+
+It's potentially a distributed environmental-energy/sensing network.
+
+Sun heats it → thermal differential becomes available.
+Wind flexes it → strain/vibration becomes available.
+Rain hits it → vibration/impact becomes available.
+People walk on attached floors → mechanical energy becomes available.
+Temperature cycles → structural-health data becomes available.
+
+Tiny contributions individually.
+
+Everywhere. All the time.
+
+That's the interesting part.
+
+
+---
+
+02 — AMBIENTFORGE
+
+Interior / never intentionally sun-exposed
+
+This one gets a completely different optimization target.
+
+No need to spend engineering budget defending the outer surface against decades of direct UV.
+
+Instead:
+
+human vibration → footsteps → doors → machinery → HVAC → plumbing → acoustic vibration → thermal gradients → electromagnetic/electrical infrastructure → structural strain
+
+become the playground.
+
+And because it's indoors, we can potentially make the member much more aggressive about embedded instrumentation.
+
+Imagine a floor system where the structural members know:
+
+> Something is vibrating unusually here.
+
+
+
+Or a building where repeated foot traffic generates tiny harvested electrical pulses while simultaneously providing occupancy/activity information.
+
+Or HVAC ducting and structural framing where temperature gradients become measurable.
+
+Again, not pretending we're going to power the building with footsteps. 😂
+
+The value is distributed micro-harvesting + distributed sensing, using infrastructure that was already going to exist.
+
+
+---
+
+And here's the part I REALLY like
+
+Don't create two incompatible standards.
+
+Create one dimensional/interlocking grammar:
+
+2×4
+2×6
+2×8
+2×10
+2×12
+
+and corresponding panels, connectors, corners, plates, joists, studs, trusses, etc.
+
+Then:
+
+SUNFORGE = EXTERIOR·SKIN
+AMBIENTFORGE = INTERIOR·SKIN
+
+Same attachment geometry.
+
+Same structural dimensions.
+
+Same connection language.
+
+Same repair philosophy.
+
+Different environmental envelope.
+
+That means somebody could eventually design a building where the outside is SUNFORGE and the inside is AMBIENTFORGE, with the two systems mechanically joining through the same standardized interface.
+
+And now the building material isn't merely "better metal 2×4."
+
+It's a universal structural chassis with environmental-specific skins.
+
+That's a very BEKW-CODE move:
+
+ONE·GEOMETRY
+MANY·MATERIAL·FUNCTIONS
+NO·WASTED·SURFACE
+NO·SINGLE·PURPOSE·MEMBER
