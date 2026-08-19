@@ -1,0 +1,70 @@
+BEKW-CODE // WALL PLATFORM ADDENDUM
+FREEZERWALL — THERMWEAVE Insulation Shell for Walk-In Coolers/Freezers
+Status: Conceptual engineering / development BOM addendum Parent spec: WALL PLATFORM (BOM Series I) — completes FREEZERWALL, previously named-only Canon tie-in: THERMWEAVE (bolt-on Seebeck/TEG waste-heat harvest module), FORGE chassis (SUNFORGE/AMBIENTFORGE structural bay), common Wall Platform interface (0.1/0.2 in the base Wall Platform doc)
+1. Function
+A wall built to hold a hard, stable cold boundary indefinitely, on the same swappable-panel/service-chase platform as every other FREEZERWALL sibling — and to treat the constant hot-side/cold-side temperature differential across that boundary as a standing THERMWEAVE harvest opportunity rather than pure waste, since a walk-in cooler or freezer runs that differential 24/7 for its entire service life.
+Unlike DEWALL (managing humidity) or SAUNAWALL (managing heat), FREEZERWALL's core problem is the opposite of BATHWALL/QUIETWALL's occasional-load cases: this is a continuous, unrelenting thermal gradient, which makes it the single best THERMWEAVE application point identified anywhere in canon so far — better than SOLSHADE's day/night cycling or SOLSHADE:LINE's hot-line/walk-in body-differential cycling, because the gradient here never stops.
+2. Layer Architecture
+Interior cold-side finish → vapor barrier (cold-side) → structural insulation core → THERMWEAVE TEG layer → vapor barrier (warm-side) → structural frame (FORGE chassis) → exterior warm-side finish
+Critical rule, same family as BATHWALL's "the finish is not the waterproofing system": THE INSULATION CORE IS NOT THE VAPOR BARRIER. Two separate vapor barriers, one on each side of the insulation core, prevent moisture migration into the insulation from either direction — condensation inside wall cavities is the single most common failure mode in conventional walk-in cooler/freezer construction, and it's what actually kills insulation performance over time, not the insulation material itself aging.
+3. Structural Insulation Core
+Candidate materials: closed-cell rigid foam panel (polyurethane/polyisocyanurate class), vacuum-insulated panel (VIP) for high-performance/space-constrained applications, or engineered mineral-fiber board where fire rating outweighs raw R-value
+Requirements: dimensionally stable across the full freeze/thaw or cooler-cycle range, closed-cell (no open path for moisture wicking), compressive strength sufficient to carry panel/racking loads without insulation crush over time
+Thickness by class: cooler-class targets moderate R-value; freezer-class (well below 0°F) needs substantially more insulation depth — same FORGE-8/FORGE-10/FORGE-12 chassis depth options as the rest of the Wall Platform accommodate this without a different structural system, just a deeper bay
+4. THERMWEAVE TEG Layer
+Mounted at the insulation core's warm-side face, riding the standing temperature differential across the wall rather than needing its own dedicated hot/cold source — the wall's whole job is already maintaining that gradient
+Same ~5-8% harvest efficiency ceiling already established for THERMWEAVE elsewhere in canon — explicitly supplemental, not a real power contributor to running the compressor. The honest framing: a walk-in's refrigeration system is the real energy story here; THERMWEAVE just stops the gradient from being pure waste while it's already there
+Because the gradient is continuous rather than cyclical (unlike SOLSHADE's day/night swing or SOLSHADE:LINE's hot-line/walk-in cycling), THERMWEAVE output here should be steadier if lower-peak than those other applications — worth a real comparative efficiency study once any of these get prototyped
+TEG wiring routes through the same Channel C harvest-wiring path already standardized in the FORGE chassis, so FREEZERWALL doesn't need a custom electrical routing scheme — it uses the same channel every other FORGE-mounted wall uses
+5. Vapor Barriers
+Cold-side barrier: placed on the warm-in-winter/room-temperature-facing side relative to the cold interior — i.e., positioned to stop warm ambient moisture from migrating toward the cold core and condensing inside the insulation
+Warm-side barrier: stops any moisture on the building's exterior/service-cavity side from migrating inward
+Both barriers use continuous, taped/sealed seams — a vapor barrier with gaps is not meaningfully different from no vapor barrier at all
+Moisture sensors (optional, same component family as DEWALL/BATHWALL): leak/humidity sensors inside the insulation core cavity itself, catching moisture intrusion before it's visible on either finished face
+6. Interior Cold-Side Finish
+Washable, impact-resistant, NSF-compatible surface (this wall lives in food-service and cold-storage environments as often as not) — same "replaceable surface over durable core" philosophy as every Wall Platform sibling, since the interior finish is what takes racking impacts and daily cart traffic
+Corner and floor-transition details need continuous vapor-barrier integrity, not just a caulk bead — a break at the floor/wall junction is a known chronic failure point in conventional walk-in construction and should get explicit design attention rather than being treated as a finish-carpentry afterthought
+7. Service Chase / Door Interface
+Standard FREEZERWALL bay carries the usual Wall Platform service chase for electrical (interior lighting, THERMWEAVE bus, optional temperature/humidity sensors) and adds a defined door-frame interface — walk-in door frames are almost always the weakest thermal/vapor point in a conventional build, so FREEZERWALL should treat the door jamb as a first-class designed component, not a site-built afterthought bolted onto standard panel
+Door gasket and frame heater strip (standard on commercial freezer doors to prevent frame frost/ice buildup) route through the same service chase
+8. Addendum BOM
+Component
+Qty/module
+Development material
+Structural frame
+1
+FORGE chassis (FORGE-8/10/12 depending on class)
+Structural insulation core
+1
+Closed-cell rigid foam / VIP / mineral fiber
+Cold-side vapor barrier
+1
+Continuous sealed membrane
+Warm-side vapor barrier
+1
+Continuous sealed membrane
+THERMWEAVE TEG strip
+1 run
+Per THERMWEAVE base spec
+Interior cold-side finish
+1
+NSF-compatible washable panel
+Exterior warm-side finish
+1
+Per building context
+Moisture sensor (optional)
+1+
+Electronic, embedded in core cavity
+Door frame assembly
+1
+Gasket + frame heater strip
+Mechanical locks
+4+
+Corrosion-resistant, cold-rated
+Service chase
+1
+Platform standard + door interface
+9. Open Questions
+VIP vs. rigid foam cost/performance tradeoff — needs a real comparison once a prototype exists; VIP is a meaningfully different cost and installation-tolerance story
+THERMWEAVE steady-state output vs. cyclical applications — flagged above, worth measuring rather than assuming
+Fire rating at the insulation core — same open question already logged against the base FORGE chassis; closed-cell foam cores in particular need a real fire-code pass
