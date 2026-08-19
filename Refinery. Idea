@@ -1,0 +1,85 @@
+# BEKW-CODE // GERALD: REFORGE CLASS
+## Landfill Recovery Refinery Attachment
+
+**Status:** Conceptual engineering — process architecture and feedstock/output mapping defined, unit-operation BOM pending
+**Canon tie-ins:** GERALD (Gyre Class ocean remediation, fate-branches Reef/Island/Ship/Roam), Azrael Alabama Red Dirt Foundry (parallel closed-loop metal refining precedent — laterite feedstock → Alabama Tamahagane), FORGE SYSTEM / Wall Platform / Floor Forge / THE 17 WALLS (the entire downstream materials catalog this refinery exists to feed)
+**Design thesis:** The landfill isn't waste. It's an unmined ore body of exactly the materials FORGE, the Wall Platform, and Floor Forge already need — steel, aluminum, polymer, glass, and insulation feedstock, sitting there instead of being dug or drilled for. GERALD: REFORGE closes the loop: landfill in, FORGE-compatible raw material out.
+
+---
+
+## 0. The Core Loop
+
+**MINE (landfill) → SORT → REFINE → CAST/EXTRUDE/COMPOUND → FORGE-COMPATIBLE FEEDSTOCK → downstream FORGE/Wall Platform/Floor Forge manufacturing**
+
+This is the same structural move as Azrael turning depleted-uranium/laterite waste into monument glass and Tamahagane steel, applied at landfill scale instead of contamination-site scale: don't just remediate the waste, extract the exact material streams the rest of the canon is already built to consume.
+
+---
+
+## 1. GERALD: REFORGE as a Fate-Branch
+
+Sits alongside GERALD's existing Reef/Island/Ship/Roam modes as a fifth deployment configuration, but land-based rather than gyre-based:
+
+- **Roam-adjacent mobility** — GERALD's existing autonomous roaming chassis and manipulator systems carry over directly; a landfill is a stationary, bounded, navigable site in the same way an ocean gyre patch is, just on solid ground with different terrain-mobility requirements (tracked/wheeled rather than surface-float)
+- **Fixed-installation option** — for landfills large or active enough to warrant it, REFORGE can also deploy as a stationary refinery plant with GERALD units functioning as the mobile mining/sorting front-end feeding a central fixed processing core, rather than each unit carrying full refinery capability itself
+
+---
+
+## 2. Feedstock Sort Streams
+
+Landfill material sorts into five processing streams, each feeding a different part of the FORGE/Wall Platform materials catalog:
+
+### 2.1 Ferrous & Structural Metal
+- **Source:** rebar, appliance steel, automotive scrap, structural metal debris
+- **Process:** magnetic separation → shredding → melt/refine (same furnace logic as the Azrael foundry, scaled/adapted for mixed scrap rather than laterite ore)
+- **Output:** FORGE chassis structural steel stock (SUNFORGE/AMBIENTFORGE core material), Wall Platform structural receiver rail stock, POWERWALL/UTILITYWALL structural framing
+
+### 2.2 Non-Ferrous Metal
+- **Source:** aluminum cans/siding/extrusions, copper wiring, brass fittings
+- **Process:** eddy-current separation (non-ferrous metals don't respond to magnetic separation, so this needs its own dedicated sort stage) → melt/refine per-alloy
+- **Output:** aluminum for lightweight FORGE-4/6 members and Wall Platform receiver rails; copper for Channel A power/data bus wiring across every FORGE-mounted wall and floor class
+
+### 2.3 Polymer / Plastic
+- **Source:** HDPE, PP, PVC, mixed film plastics — the actual bulk mass problem in most landfills
+- **Process:** sort by resin type (density separation + optical sorting) → wash → shred → compound into engineered composite stock
+- **Output:** SUNFORGE/AMBIENTFORGE skin panel composite backing, GREENHOUSEWALL/SUNWALL translucent-core candidate feedstock where resin quality supports it, BATHROOMWALL/BATHWALL nonporous finish panels, general Wall Platform gasket-adjacent elastomer stock where the plastic stream includes rubber/elastomer waste
+
+### 2.4 Glass & Mineral
+- **Source:** waste glass, ceramic, concrete rubble, mineral debris
+- **Process:** crush → sort by color/composition → melt (glass) or grind (mineral aggregate)
+- **Output:** GREENHOUSEWALL glazing stock where glass quality supports it, mineral-fiber insulation core feedstock for FREEZERWALL/THERMALWALL, aggregate filler for structural composite panels
+
+### 2.5 Organic / Unrecoverable
+- **Source:** everything that isn't cleanly recoverable as a material stream — the fraction every landfill-recovery system has to be honest about
+- **Process:** where feasible, routed to controlled composting or waste-to-energy rather than re-landfilled; this stream should never be inflated by counting it as "recovered" when it isn't
+- **Output:** compost feedstock for GROWINGWALL/GREENHOUSEWALL growing-media applications where contamination testing clears it; supplemental process heat if waste-to-energy is used, on the same honest "supplemental, not primary" framing as THERMWEAVE
+
+---
+
+## 3. Insulation Core Feedstock (direct tie to FREEZERWALL)
+
+Worth calling out specifically since FREEZERWALL's insulation core is one of the most material-intensive single components in the whole Wall Platform: mineral-fiber board (Stream 2.4) and select polymer composite (Stream 2.3) both feed candidate insulation core material, meaning FREEZERWALL's closed-cell foam/VIP/mineral-fiber options in Section 3 of its own spec could eventually source at least the mineral-fiber option directly from REFORGE output rather than virgin material.
+
+---
+
+## 4. Contamination & Quality Control
+
+This is the part that makes landfill feedstock fundamentally different from clean scrap or ore, and can't be glossed over:
+
+- **Per-stream contamination testing** before any material moves downstream to a structural or food-adjacent (BATHROOMWALL, FREEZERWALL) application — landfill material carries an unknown history, and a wall that's going in a walk-in cooler or a kid's FLOORFORGE room has a much lower contamination tolerance than a structural stud buried in a wall cavity
+- **Grade tiering** — not all recovered material is fit for the same downstream use. Structural-grade steel from clean rebar scrap is a different quality tier than steel recovered from mixed unsorted debris; the refinery output should carry an honest grade stamp rather than treating all "recovered steel" as interchangeable
+- **Traceable batch logging** — same repair/inspection philosophy as the rest of FORGE canon (a structure should be inspectable and understandable decades later): recovered-material batches should be logged so a downstream failure can be traced back to a specific feedstock batch if something goes wrong
+
+---
+
+## 5. Where This Sits in the Larger Ecosystem
+
+GERALD: REFORGE completes a loop that was previously one-directional: FORGE/Wall Platform/Floor Forge specs so far assumed "structural steel," "insulation core," "polymer composite" as generic material inputs without asking where those specifically come from. REFORGE is the answer — the same zero-waste autonomous-builder logic already established for Azrael (contamination remediation → monument material) and GERALD (ocean plastic → Reef/Island/Ship/Roam builds) now closes the loop on land-based landfill waste feeding directly into the building-materials standard the user has declared canon-wide.
+
+---
+
+## 6. Open Questions
+
+- **Per-landfill feedstock variability** — real landfills vary wildly in composition by region/era/waste-stream history; REFORGE's sort/refine process needs to be robust to that variability rather than tuned to one idealized waste mix
+- **Energy cost of refining vs. virgin material** — melting/refining mixed scrap isn't free; a real energy-balance comparison against virgin material extraction is needed before claiming this is unambiguously better, not just assumed
+- **Fixed-plant vs. mobile-unit economics** — which deployment mode (roaming GERALD units vs. a stationary REFORGE plant with mobile front-end) makes sense depends on landfill size/density, and hasn't been modeled yet
+- **Legal/regulatory landfill-mining framework** — actual landfill mining is a regulated activity in most jurisdictions; this spec is silent on that because it's a real-world permitting question, not an engineering one, but it's a hard dependency for any real deployment
