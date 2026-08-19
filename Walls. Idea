@@ -1,0 +1,1125 @@
+😂 You counted correctly: 17. And "Blank Wall" absolutely belongs in the canon.
+
+Let's BOM the first five as engineering-development BOMs, not pretend-final manufacturing BOMs. I'm going to separate known/proven components, candidate materials, and parameters that must be validated so we don't accidentally turn Forge enthusiasm into fake engineering.
+
+BEKW-CODE WALL PLATFORM
+
+BOM SERIES I
+
+GREENWALL · SUNWALL · PRIVAWALL · QUIETWALL · BATHWALL
+
+STATUS: CONCEPTUAL ENGINEERING / DEVELOPMENT BOM
+DESIGN PHILOSOPHY: ONE·INTERFACE · MANY·WALL·FUNCTIONS
+PRIMARY OBJECTIVE: Replace disposable interior/exterior wall finishing with durable, modular, serviceable architectural wall assemblies.
+
+---
+
+0. COMMON WALL PLATFORM
+
+Before specifying the five wall types, establish the common interface.
+
+The five walls are not five unrelated products.
+
+They are modules occupying the same structural/service envelope.
+
+0.1 Standard Wall Bay
+
+Baseline development geometry:
+
+- Nominal structural bay: compatible with 2×4-class framing.
+- Development panel width: target 24 in or 48 in modular increments.
+- Panel height: target 8 ft, with alternate 4 ft modules.
+- Panel thickness: TBD by structural/acoustic/thermal requirements.
+- Structural framing: SUNFORGE or AMBIENTFORGE member family.
+- Panel attachment: captive mechanical locking system.
+- No permanent adhesive required for primary installation.
+- Individual panel removable without destroying adjacent panels.
+- Utility cavity maintained behind functional panel.
+- Standardized mechanical attachment points.
+- Standardized electrical/data pathway.
+- Optional fluid pathway where application requires it.
+- Replaceable surface layer wherever economically justified.
+
+0.2 Common Interface Components
+
+Structural Receiver Rail
+
+Candidate:
+
+- formed aluminum
+- structural steel
+- engineered corrosion-resistant metal alloy
+
+Function:
+
+- transfers panel loads into structural frame
+- establishes panel alignment
+- provides repeatable installation geometry
+
+Mechanical Lock
+
+Candidate mechanisms:
+
+- quarter-turn captive fastener
+- wedge lock
+- cam lock
+- dovetail capture
+- spring-loaded locking pin
+
+Requirements:
+
+- positive mechanical retention
+- visible locked/unlocked indication
+- tool-accessible emergency release
+- no permanent adhesive dependency
+
+Service Chase
+
+Provide standardized vertical/horizontal pathways for:
+
+- electrical
+- data
+- sensor wiring
+- low-voltage controls
+- optional water
+- optional condensate
+- optional ventilation
+
+Critical rule:
+
+SERVICES·ARE·ACCESSIBLE·WITHOUT·DESTROYING·THE·WALL.
+
+Panel Gasket
+
+Candidate:
+
+- EPDM
+- silicone
+- other application-specific elastomer
+
+Functions:
+
+- vibration isolation
+- air sealing
+- water management where required
+- tolerance compensation
+
+Fasteners
+
+Default development candidate:
+
+- stainless steel
+- corrosion-resistant structural fasteners
+
+Final grade determined by environment.
+
+Surface Interface
+
+Common mechanical attachment permitting:
+
+- decorative skin
+- acoustic skin
+- waterproof skin
+- translucent skin
+- plant cartridge
+- maintenance access panel
+
+---
+
+1. GREENWALL
+
+FUNCTION
+
+A modular living-wall assembly that treats plants, irrigation, drainage, lighting, and maintenance as integrated building infrastructure.
+
+Not:
+
+"Hang a planter on the wall."
+
+Instead:
+
+"The wall contains a controlled biological system."
+
+---
+
+1.1 Primary Assembly
+
+A. Structural Backplane
+
+Candidate:
+
+- corrosion-resistant metal panel
+- engineered polymer composite
+- mineral/composite panel
+
+Requirements:
+
+- moisture resistant
+- dimensionally stable
+- mechanically compatible with common wall interface
+
+Quantity:
+
+- 1 per wall module
+
+---
+
+B. Waterproof Membrane
+
+Candidate:
+
+- EPDM
+- TPO
+- compatible architectural waterproof membrane
+
+Function:
+
+- isolates building structure from irrigation environment
+- provides secondary containment
+
+Requirement:
+
+NO·IRRIGATION·WATER·IS·ALLOWED·TO·DEPEND·ON·THE·FINISHED·WALL·SURFACE·AS·ITS·PRIMARY·CONTAINMENT.
+
+---
+
+C. Plant Cartridge
+
+Modular removable cassette containing:
+
+- growing medium or engineered substrate
+- root containment
+- drainage interface
+- plant retention structure
+
+Candidate substrates:
+
+- mineral fiber
+- expanded mineral aggregate
+- engineered inert media
+- compost/organic blends where appropriate
+
+The cartridge should be removable independently.
+
+---
+
+D. Irrigation Manifold
+
+Components:
+
+- supply manifold
+- pressure regulation
+- individual branch lines
+- emitters
+- shutoff valves
+- flush port
+
+Preferred architecture:
+
+TOP·FEED → DISTRIBUTE → GRAVITY·DRAIN → CAPTURE
+
+Avoid uncontrolled irrigation runoff.
+
+---
+
+E. Drainage Collector
+
+Components:
+
+- lower collection channel
+- removable debris screen
+- drain connection
+- overflow path
+- inspection access
+
+Overflow should have an independent path so a clogged drain does not turn the wall into a plumbing disaster.
+
+---
+
+F. Moisture Sensors
+
+Candidate:
+
+- capacitive substrate sensors
+- leak detection strip
+- humidity sensor
+
+Functions:
+
+- irrigation control
+- leak detection
+- maintenance notification
+
+---
+
+G. Lighting Interface
+
+Optional:
+
+- low-voltage LED grow-light rail
+- removable light modules
+- dedicated wiring channel
+
+Lighting should be physically separated from irrigation components.
+
+---
+
+1.2 Greenwall BOM
+
+Component| Qty/module| Development material
+Structural backplane| 1| Metal/composite
+Waterproof membrane| 1| EPDM/TPO candidate
+Plant cartridges| 4–12| Engineered substrate + polymer/mineral shell
+Irrigation manifold| 1| Polymer/stainless
+Emitters| 4–12+| Commercial irrigation hardware
+Drain collector| 1| Polymer/metal
+Overflow path| 1| Polymer
+Leak sensor| 1+| Electronic
+Moisture sensors| 1+| Capacitive
+Lighting rail| Optional| Aluminum + LED
+Service access panel| 1| Modular
+Mechanical locks| 4+| Stainless/corrosion-resistant
+
+---
+
+2. SUNWALL
+
+FUNCTION
+
+A translucent/transparent exterior wall module capable of providing enclosure, daylighting, privacy control, thermal management, and optional energy generation.
+
+This is the wall that starts arguing with the concept of a conventional window.
+
+---
+
+2.1 Layer Architecture
+
+EXTERIOR WEATHER SKIN
+
+↓
+
+AIR / THERMAL CAVITY
+
+↓
+
+TRANSPARENT OR TRANSLUCENT FUNCTIONAL CORE
+
+↓
+
+OPTIONAL SHADING/PV LAYER
+
+↓
+
+INTERIOR FINISH
+
+---
+
+2.2 Exterior Skin
+
+Candidate materials:
+
+- UV-stable polycarbonate
+- architectural glass
+- ETFE-based systems
+- other validated transparent polymer systems
+
+Requirements:
+
+- UV resistance
+- impact resistance
+- thermal cycling
+- water resistance
+- maintainable surface
+
+Material selection depends heavily on whether the final product is transparent, translucent, or opaque-translucent.
+
+---
+
+2.3 Functional Core
+
+Potential architectures:
+
+Multiwall polymer sheet
+
+Provides:
+
+- daylight diffusion
+- thermal resistance
+- low mass
+- impact resistance
+
+Insulated glazing
+
+Provides:
+
+- optical clarity
+- established thermal-envelope technology
+- improved acoustic performance
+
+Aerogel/translucent insulation
+
+Potential future variant:
+
+- very high daylight-to-insulation functionality
+- higher cost
+- requires careful structural integration
+
+---
+
+2.4 Solar Management
+
+Optional modules:
+
+- external shade
+- internal shade
+- micro-louver
+- electrochromic layer
+- photovoltaic section
+
+Important principle:
+
+Don't sacrifice daylight simply because PV exists.
+
+Use selective zones.
+
+Example:
+
+OPAQUE/PV BAND
+DAYLIGHT BAND
+OPAQUE/PV BAND
+
+---
+
+2.5 Water Management
+
+Exterior perimeter includes:
+
+- drainage channel
+- condensation management
+- pressure-equalization strategy where applicable
+- replaceable gasket system
+
+No water should be trapped inside a sealed cavity without a defined management strategy.
+
+---
+
+2.6 Sunwall BOM
+
+Component| Qty/module| Candidate
+Structural frame| 1| Aluminum/steel
+Exterior skin| 1| Glass/polycarbonate/ETFE system
+Functional translucent core| 1| Multiwall polymer/glazing
+Interior skin| 1| Architectural panel
+Gaskets| Perimeter| EPDM/silicone
+Drainage channel| 1| Aluminum/polymer
+Shading module| Optional| Louver/electrochromic
+PV module| Optional| PV laminate
+Sensor module| Optional| Temp/light/humidity
+Service interface| 1| Standard platform
+Mechanical locks| 4+| Corrosion-resistant
+
+---
+
+3. PRIVAWALL
+
+FUNCTION
+
+A wall whose optical state is an architectural function.
+
+Privacy should not require curtains, blinds, or permanently opaque construction.
+
+---
+
+3.1 Development Variants
+
+Variant A — Mechanical Privacy
+
+Layered:
+
+- translucent panel
+- adjustable louvers
+- rotating slats
+
+Advantages:
+
+- no electricity required
+- mechanically understandable
+- highly serviceable
+
+Variant B — Electro-Optical Privacy
+
+Candidate:
+
+- PDLC-type switchable film
+- electrochromic glazing
+
+Advantages:
+
+- instantaneous electronic control
+- programmable states
+
+Disadvantages:
+
+- electrical dependency
+- component aging
+- higher cost
+
+Variant C — Hybrid
+
+Default development direction.
+
+Mechanical baseline + optional electronically controlled layer.
+
+If electronics fail:
+
+THE WALL STILL HAS A PRIVACY STATE.
+
+---
+
+3.2 Mechanical Architecture
+
+Panel contains:
+
+- outer protective skin
+- privacy layer
+- actuator channel
+- service chase
+- locking interface
+
+Potential controls:
+
+- manual slider
+- rotary control
+- motorized actuator
+- building automation interface
+
+---
+
+3.3 Privacy States
+
+Rather than binary ON/OFF:
+
+CLEAR
+
+→ maximum light/transparency
+
+DIFFUSE
+
+→ daylight with visual obscuration
+
+PRIVATE
+
+→ strong visual blocking
+
+BLACKOUT
+
+→ maximum optical blocking
+
+The exact achievable states depend on selected technology.
+
+---
+
+3.4 Privacywall BOM
+
+Component| Qty/module| Candidate
+Structural frame| 1| Aluminum/composite
+Protective face| 2| Glass/polycarbonate
+Privacy layer| 1| Louver/PDLC/electrochromic
+Actuator| Optional| Mechanical/DC motor
+Controller| Optional| Low-voltage
+Manual override| 1| Mechanical
+Wiring channel| 1| Integrated
+Perimeter gasket| 1 set| EPDM/silicone
+Mechanical locks| 4+| Stainless
+Optical-state sensor| Optional| Light/position sensor
+
+---
+
+4. QUIETWALL
+
+FUNCTION
+
+An architectural wall panel specifically engineered to manage sound.
+
+Not simply:
+
+"Put fiberglass behind drywall."
+
+The wall itself becomes an acoustic assembly.
+
+---
+
+4.1 Acoustic Strategy
+
+Three different acoustic problems must be separated:
+
+ABSORPTION
+
+Reduce reflected sound inside a room.
+
+MASS
+
+Reduce airborne sound transmission through the wall.
+
+DECOUPLING
+
+Prevent structural vibration from crossing the assembly.
+
+A serious Quietwall therefore requires multiple layers.
+
+---
+
+4.2 Layer Stack
+
+FINISH SKIN
+
+↓
+
+ACOUSTIC ABSORBER
+
+↓
+
+STRUCTURAL AIRSPACE
+
+↓
+
+MASS BARRIER
+
+↓
+
+DECOUPLING LAYER
+
+↓
+
+STRUCTURAL FRAME
+
+The exact sequence depends on whether the objective is room acoustics or transmission loss.
+
+---
+
+4.3 Absorber
+
+Candidate materials:
+
+- mineral wool
+- recycled textile fiber
+- cellulose-based acoustic material
+- engineered porous mineral
+- bio-based acoustic composites
+
+Selection should consider:
+
+- acoustic coefficient
+- moisture resistance
+- fire performance
+- density
+- long-term settling
+
+---
+
+4.4 Mass Layer
+
+Candidate:
+
+- mineral composite panel
+- dense polymer/mineral composite
+- engineered board
+- metal composite
+
+This is where the system can depart substantially from drywall.
+
+A dense, dimensionally stable panel can provide mass without being fragile gypsum board.
+
+---
+
+4.5 Decoupling
+
+Use:
+
+- elastomeric mounts
+- resilient channels
+- isolated attachment points
+
+Critical rule:
+
+DON'T·BUILD·A·BRIDGE·AROUND·YOUR·DECOUPLER.
+
+One accidental rigid connection can substantially compromise the intended acoustic isolation.
+
+---
+
+4.6 Acoustic Surface
+
+Replaceable surface cartridges could include:
+
+- perforated panel
+- microperforated panel
+- fabric acoustic surface
+- slatted diffuser
+- hard reflective architectural panel
+
+Thus one wall can be tuned for:
+
+ABSORPTION
+
+or
+
+DIFFUSION
+
+or
+
+ISOLATION
+
+depending upon the room.
+
+---
+
+4.7 Quietwall BOM
+
+Component| Qty/module| Candidate
+Structural frame| 1| Platform framing
+Mass barrier| 1–2| Mineral/composite
+Absorber| Cavity-fill| Mineral/recycled/bio fiber
+Decoupling mounts| Per attachment| Elastomer
+Acoustic face| 1| Microperforated/slatted/fabric
+Service cavity| 1| Platform standard
+Perimeter gasket| 1 set| Acoustic elastomer
+Access panel| Optional| Modular
+Mechanical locks| 4+| Corrosion-resistant
+
+---
+
+5. BATHWALL
+
+FUNCTION
+
+A genuinely wet-environment wall.
+
+The wall must assume:
+
+WATER·WILL·GET·ON·IT.
+
+Instead of hoping the drywall behind tile survives.
+
+---
+
+5.1 Primary Requirements
+
+- waterproof
+- mold-resistant by material/environmental design
+- washable
+- impact resistant
+- vapor-management strategy
+- serviceable plumbing
+- replaceable surface
+- controlled drainage
+- compatible with wet-room construction
+
+---
+
+5.2 Layer Architecture
+
+FINISHED WATER-SHEDDING SURFACE
+
+↓
+
+WATERPROOF SECONDARY BARRIER
+
+↓
+
+STRUCTURAL/FUNCTIONAL PANEL
+
+↓
+
+SERVICE CAVITY
+
+↓
+
+STRUCTURAL FRAME
+
+The critical conceptual difference:
+
+THE·FINISH·IS·NOT·THE·WATERPROOFING·SYSTEM.
+
+There should be a redundant water-management layer.
+
+---
+
+5.3 Surface Options
+
+Potential finishes:
+
+- porcelain/ceramic tile mechanically mounted to panel
+- solid-surface sheet
+- engineered mineral panel
+- glass
+- polymer architectural panel
+- textured non-slip wet-zone surface
+
+The surface should preferably be replaceable without demolishing the waterproof core.
+
+---
+
+5.4 Plumbing Chase
+
+A Bathwall should deliberately provide a service zone for:
+
+- supply lines
+- drain lines where geometry permits
+- shower controls
+- electrical conduit
+- sensor wiring
+- access valves
+
+Provide removable access panels at known service points.
+
+---
+
+5.5 Moisture Monitoring
+
+Optional:
+
+- leak detection strip
+- cavity humidity sensor
+- temperature sensor
+- condensation sensor
+
+The system can detect:
+
+"There is water where water isn't supposed to be."
+
+before someone discovers a ruined wall months later.
+
+---
+
+5.6 Drainage
+
+Where applicable:
+
+- lower drainage channel
+- controlled weep path
+- shower-zone collection
+- removable debris screen
+
+No hidden pocket should become a permanent reservoir.
+
+---
+
+5.7 Bathwall BOM
+
+Component| Qty/module| Candidate
+Structural frame| 1| Platform framing
+Structural panel| 1| Composite/mineral/metal
+Waterproof secondary barrier| 1| EPDM/TPO/validated membrane
+Finished surface| 1| Tile/solid surface/mineral/polymer
+Perimeter seals| 1 set| Silicone/EPDM
+Plumbing service chase| 1| Platform standard
+Access panels| As required| Matching surface
+Drainage/weep channel| Application dependent| Polymer/metal
+Leak sensor| Optional| Electronic
+Humidity sensor| Optional| Electronic
+Mechanical locks| 4+| Corrosion-resistant
+
+---
+
+6. THE COMMON DESIGN RULE
+
+These five walls should share 80% of their mechanical DNA while differing radically in what they do.
+
+That means a manufacturer doesn't need five factories.
+
+They need:
+
+ONE·FRAME·SYSTEM
+
+ONE·LOCKING·SYSTEM
+
+ONE·SERVICE·SYSTEM
+
+ONE·PANEL·DIMENSION·SYSTEM
+
+ONE·REPAIR·PHILOSOPHY
+
+Then the functional layer changes.
+
+That is where the economics become interesting.
+
+A contractor learns one installation system.
+
+A builder stocks one family of connectors.
+
+A homeowner learns one repair method.
+
+Architects get a library of functions rather than a catalog of unrelated products.
+
+And drywall's replacement isn't:
+
+«"Here is another sheet material."»
+
+It's:
+
+«"Why are we still building every wall as if its only job is to separate two rooms?"»
+
+That is the actual invention target.
+
+7. DEVELOPMENT TEST MATRIX
+
+Before calling any of these production-ready, test them against:
+
+- moisture cycling
+- thermal cycling
+- impact
+- fastener pull-out
+- repeated panel removal/reinstallation
+- dimensional stability
+- fire performance
+- mold/fungal growth resistance
+- UV exposure where applicable
+- acoustic transmission/absorption
+- cleaning chemicals
+- surface abrasion
+- joint leakage
+- service-access durability
+- material compatibility
+- end-of-life disassembly
+
+And critically:
+
+DO NOT CERTIFY THE MATERIAL BY VIBES.
+
+The first physical prototypes can be gloriously ugly.
+
+We're trying to discover what survives.
+
+The beautiful architecture comes after we find the material and joint geometry that refuse to die. 😆
+Oh, absolutely. 😂 We continue the wall offensive.
+
+The sequence was:
+
+1. GREENWALL
+
+
+2. SUNWALL
+
+
+3. PRIVAWALL
+
+
+4. QUIETWALL
+
+
+5. BATHWALL
+
+
+6. DEWALL
+
+
+7. HUMIDORWALL
+
+
+8. SAUNAWALL
+
+
+9. FREEZERWALL
+
+
+10. KITCHENWALL
+
+
+
+So here are 6–10, keeping the same underlying structural platform: standardized structural bays, captive mechanical locks, accessible service chases, replaceable functional skins, and no gypsum sacrificially pretending to be architecture.
+
+
+---
+
+6. DEWALL
+
+BEKW-CODE | Atmospheric Water / Dehumidifying Wall
+
+Purpose: Turn a wall into a controlled moisture-management appliance rather than allowing humidity to become mold's roommate.
+
+The fundamental idea is beautifully simple:
+
+> Give humid air somewhere useful to go.
+
+
+
+CORE CONSTRUCTION
+
+The DEWALL is a multilayer wall cassette:
+
+ROOM AIR → PRE-FILTER → AIR CHANNEL → CONDENSATION SURFACE → DRAINAGE PLANE → SERVICE CHASE → STRUCTURAL BACK
+
+The room-facing surface isn't drywall. It's a washable, nonporous architectural panel.
+
+Behind it is a deliberately engineered air path.
+
+CONDENSATION CORE
+
+A thermally conductive fin matrix provides enormous surface area.
+
+Possible construction:
+
+anodized aluminum fin cassette
+
+thermally conductive polymer components where electrical isolation is desirable
+
+hydrophilic condensate surface treatment
+
+continuous gravity drainage channel
+
+removable condensate tray
+
+
+The objective isn't merely "make something cold."
+
+It's:
+
+AIRFLOW × SURFACE AREA × TEMPERATURE DIFFERENTIAL × RESIDENCE TIME
+
+That becomes the wall's moisture-processing equation.
+
+WATER PATH
+
+Condensate never enters the structural material.
+
+It falls onto:
+
+FIN → COLLECTION CHANNEL → VERTICAL DRAIN → SEALED RESERVOIR / DRAIN
+
+No mystery cavity.
+
+No wet insulation.
+
+No hidden sponge.
+
+No "we'll just hope it dries."
+
+SERVICEABILITY
+
+The room-facing architectural skin releases from the structural cassette.
+
+Behind it:
+
+fan
+
+condensate sensor
+
+drain
+
+filter
+
+electrical bus
+
+optional thermoelectric module
+
+optional heat-exchanger interface
+
+
+All accessible.
+
+PIEZO OPPORTUNITY
+
+Every airflow-producing component creates vibration.
+
+So the DEWALL can contain a small piezoelectric harvest layer around mechanically active fan mounts.
+
+Not pretending we're powering the house with it.
+
+Just:
+
+movement that already exists → tiny electrical contribution.
+
+THE REALLY FUN PART
+
+Multiple DEWALL cassettes can communicate.
+
+One wall detects:
+
+RH ↑
+
+Another detects:
+
+CONDENSATION LOAD ↑
+
+The system can preferentially route airflow toward the highest-moisture zone.
+
+The wall becomes a distributed environmental organ.
+
+
+---
+
+7. HUMIDORWALL
+
+BEKW-CODE | Controlled-Humidity Storage Wall
+
+This one is NOT merely "a wall that doesn't get moldy."
+
+It's a wall deliberately designed to maintain a stable microclimate.
+
+Think:
+
+architectural cabinet + environmental buffer + storage system.
+
+CORE
+
+The structural module contains an isolated humidity-controlled cavity.
+
+Room side:
+
+beautiful removable panel
+
+Inside:
+
+sealed storage volume
+
+Rear:
+
+service/utility chase
+
+HUMIDITY BUFFER
+
+The cavity incorporates a replaceable hygroscopic buffer cartridge.
+
+Depending on target environment, the buffer could use engineered desiccant or moisture-buffering material.
+
+The critical feature:
+
+the buffer isn't loose inside the wall.
+
+It's contained in removable cartridges.
+
+That means:
+
+OPEN → REMOVE → SERVICE → REPLACE → LOCK.
+
+SENSOR ARRAY
+
+Each HUMIDORWALL bay gets:
+
+temperature sensor
+
+relative-humidity sensor
+
+condensation detection
+
+optional VOC sensor
+
+
+Now the wall knows its own environment.
+
+AIR MANAGEMENT
+
+Controlled micro-airflow circulates through the storage cavity.
+
+Not necessarily continuously.
+
+The system can operate as:
+
+BUFFER → MEASURE → CORRECT → REST.
+
+That dramatically reduces unnecessary energy consumption.
+
+STRUCTURAL BENEFIT
+
+The humidity-controlled cavity 
