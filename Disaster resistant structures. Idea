@@ -1,0 +1,61 @@
+# BEKW-CODE // RESILIENCE FORGE
+## QUAKEFORGE (Seismic) + TIDEFORGE (Tsunami) — Disaster-Resistant Variants of the FORGE Chassis
+
+**Status:** Full design spec, grounded in established structural/coastal engineering practice
+**Canon tie-ins:** FORGE SYSTEM (base chassis — Channel A/B/C/D interlocking framing), THE WALL PLATFORM (breakaway panel logic), HAVEN (existing storm refuge, different failure mode — wind/surge, not seismic/tsunami)
+**Design thesis:** Earthquakes and tsunamis fail buildings in opposite ways. A quake needs the structure to move without breaking. A tsunami needs the *water* to move through the structure without the structure resisting it. Most disaster-proofing fails because it tries to make a building rigid and impermeable — exactly wrong for both problems. QUAKEFORGE and TIDEFORGE both work by giving the hazard somewhere to go instead of fighting it head-on.
+
+---
+
+## PART 1 — QUAKEFORGE (Seismic)
+
+### 1.1 Base Isolation, Not Rigid Foundation
+The single highest-leverage seismic intervention is decoupling the structure from ground motion rather than trying to out-build it. QUAKEFORGE mounts the FORGE chassis on a base isolation layer between foundation and first-floor Channel A/B grid:
+- **Friction pendulum bearings** (curved sliding surface, structure re-centers under gravity after motion) at every primary column point — well-proven technology, not experimental
+- Isolation layer sized to shift the building's natural period well clear of typical destructive earthquake frequencies (site-specific, requires local seismic data — this is the one number in the whole system that can't be standardized)
+- A flexible utility loop (Channel A power/data, Channel D plumbing) crosses the isolation gap in slack service loops, not rigid runs — same "everything is a repairable cassette" philosophy as the rest of FORGE, just applied to the gap itself
+
+### 1.2 Ductile Frame, Not Stiff Frame
+FORGE's existing interlocking chassis is already modular at the joint level, which is the right starting point — the fix is making the joints *yield in a controlled, predictable place* rather than the members themselves:
+- **Sacrificial yield fuses** at designated Channel B mechanical-lock points: an intentionally weaker connector element that deforms first and absorbs energy, replaceable after an event without touching the load-bearing members around it — same swap-the-part-not-the-building logic as FORGE's existing skin-panel repair philosophy
+- Cross-bracing follows a chevron/eccentric pattern (allows the brace itself to buckle predictably rather than transferring full force into the frame)
+- Every yield fuse gets the same piezo sensor layer FLOORFORGE already uses for impact — post-quake, the building can report exactly which fuses need replacing instead of requiring a full structural inspection
+
+### 1.3 Mass and Damping
+- TMD (tuned mass damper) siting at roof level for taller QUAKEFORGE builds, sized to counter-oscillate against the structure's dominant sway mode
+- Where a THERMWEAVE or WATTWORKS mass is already present (mechanical room, water tank, elevated garden bed), the design deliberately uses it as dual-purpose damping mass rather than adding dead weight solely for damping
+
+### 1.4 Non-Structural Survival
+Most seismic deaths and injuries come from non-structural failure — falling ceiling material, unsecured heavy objects, blocked egress — not full collapse:
+- Wall Platform panels (GREENWALL, POWERWALL, etc.) lock into the chassis with the same mechanical interlock used everywhere else in FORGE, which already resists panel ejection under lateral shake far better than typical drywall-on-stud construction
+- Egress paths run inside AMBIENTFORGE's denser interior sensing zone specifically so post-quake path-clearing sensors (debris/blockage detection) are already wired in, not retrofitted
+
+---
+
+## PART 2 — TIDEFORGE (Tsunami)
+
+### 2.1 The Core Principle: Let the Water Through
+A rigid wall facing a tsunami either fails catastrophically or transfers the full hydrodynamic load into the foundation. Established tsunami-resistant design (the same logic behind FEMA P-55/ASCE 7 Chapter 6 guidance) instead **elevates the occupied structure and lets the wave pass underneath and through the ground level**, rather than fighting it.
+
+- **Open pile/breakaway ground floor** — TIDEFORGE's ground level is either open piloti (structure elevated on the FORGE chassis's own column grid, no enclosing walls) or, where ground-floor use is required, enclosed with **breakaway Wall Platform panels** engineered to release from their Channel B lock under a calibrated hydrodynamic load threshold well below what would damage the primary structure — the wall becomes the sacrificial element, same swap-not-rebuild logic as everywhere else in FORGE
+- **Occupied floors elevated above calculated maximum runup + freeboard margin** for the specific coastline (site-specific number, same caveat as seismic period — no universal height, has to be modeled against local bathymetry and historical runup data)
+- **Foundation/pile system resists uplift and scour**, not lateral wave force — piles driven deep enough that the ground floor's own breakaway design means they're never asked to resist the full wave load in the first place
+
+### 2.2 Vertical Evacuation
+Where horizontal evacuation to high ground isn't realistic in the available warning time, TIDEFORGE structures are rated as **vertical evacuation refuges** in their own right — same category as a standalone tsunami vertical evacuation structure, but built into the standard occupied building instead of requiring a separate dedicated structure:
+- Refuge floor elevation independently verified above maximum credible runup, not just "upper floor is probably fine"
+- Refuge floor structurally isolated from ground-floor breakaway zone by a full Channel A/B/C/D chassis transition, so a ground-floor failure event can't propagate damage upward
+- External stair access redundant to interior stairs, sited so it isn't the first thing the wave hits
+
+### 2.3 Buoyancy and Anchorage
+A structure that survives the wave load but then floats off its foundation is still a failure:
+- Below the occupied refuge floor, any enclosed volume is either flood-vented (breakaway panels again) or explicitly designed for controlled buoyant uplift resistance — anchored, not sealed-and-hoping
+- Anchorage sized against full flotation force of any sealed volume in the structure, not just against lateral wave drag
+
+### 2.4 What This Doesn't Claim
+Site-specific numbers — actual isolation period, actual runup elevation, actual freeboard margin — depend entirely on local seismic and bathymetric data and can't be generalized in a framework doc. This spec establishes the chassis-level design pattern (isolate/yield-controlled for quake, elevate/let-through for tsunami); the numbers that make a specific building on a specific coastline actually rated come from a site engineer, same as they would for any code-compliant structure anywhere.
+
+---
+
+## 3. Where This Plugs Into Existing Canon
+Both QUAKEFORGE and TIDEFORGE are chassis-level variants, not new buildings — a Forgehouse, a Wall Platform home, or any FORGE structure sited somewhere seismically or tidally active adopts these as configuration choices on the same underlying system, the same way SUNFORGE vs. AMBIENTFORGE is a configuration choice rather than a different product line.
