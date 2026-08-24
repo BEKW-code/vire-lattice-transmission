@@ -1,0 +1,97 @@
+# WORKSHOPPING WITH AN AI
+### A non-coder's protocol for getting precise results — extracted from how LOBSTER actually got built
+
+*This isn't theory. Every principle below is something that happened in this exact project, in order, and worked.*
+
+---
+
+## The core idea
+
+You don't need to know how to code. You need to know what you want, what you don't want, and how to say both clearly enough that the gap between your intent and the output gets small. That's the whole skill. Everything below is just that idea broken into practice.
+
+---
+
+## 1. Spitball before you build
+
+Don't ask for a finished thing on the first message. Say the idea out loud, loosely, and let it get pushed back on before any code exists. In this project, the entire K-3 skeleton, the aesthetic, the mission-framing — all of it got argued into shape across several rounds of "here's what I'm picturing" before a single file was built. Building too early locks in a version of the idea nobody's tested with words yet.
+
+**In practice:** say "just spitballing here" or "workshopping, don't build yet" out loud, if that's where you are. It changes what kind of response you get — ideas and pushback instead of a premature deliverable.
+
+## 2. Say what you don't want, not just what you want
+
+"Make it fun" is vague. "Not a full video game — more like a living worksheet, closer to old MS-DOS text adventures" is a real constraint, because it rules things out. Every strong creative brief in this project came from naming the boundary, not just the target.
+
+**In practice:** for every "I want X," try adding "but not Y." The "not Y" often does more work than the "X" did.
+
+## 3. Name the capability you're calling for — even if you don't know how it works
+
+You don't need to know how Web Audio API generates sound to say "each module should have its own 8-bit soundtrack, generated in-browser, no audio files." You're naming the outcome and the constraint (no external files); the how is the other side's job. Every technical decision in this project started as a plain-language ask, not a spec.
+
+**In practice:** describe the result and any hard constraint around it (free, offline, no account, must work on old hardware). Leave the implementation details out — that's what you're delegating.
+
+## 4. Hold the end vision, even a rough one
+
+"An Encyclopedia Britannica of modules, several a day, anyone anywhere can use for free forever" is not a technical spec. It's a vision. But it shaped every decision after it — module size, file format, aesthetic restraint, the whole "no server" commitment. A vision this rough is still doing real work, as long as you actually hold it and keep checking new decisions against it.
+
+**In practice:** write your end vision down in one or two sentences, even if it sounds too big. Use it as a filter: "does this decision still fit the vision?"
+
+## 5. Precision comes from being wrong out loud
+
+The exact-repeat-answer-position bug in this project only got fixed because it was actually played, actually noticed, and actually reported — not because it was theorized about in advance. "The middle button was always the answer" is a precise, checkable complaint. Precision doesn't mean getting it right the first time; it means describing what's wrong specifically enough that it can be tested and fixed.
+
+**In practice:** when something's off, describe the specific pattern you noticed, not just "something feels wrong." "The middle button" beats "it feels too easy."
+
+## 6. Ask for verification, not just agreement
+
+When a claim mattered (was the button-position bug real, or a coincidence?), the right move was to ask for it to be checked, not just asserted either way. The check ran, the numbers came back, and the actual fix that followed was better-targeted because of it — a permanent rule, not a guess. Precision isn't just in what you ask for; it's in staying willing to have your own read of a problem checked against reality.
+
+**In practice:** if you're not sure whether something's a real bug or a coincidence, say so and ask for it to be tested, rather than assuming either way.
+
+## 7. Write down the save state before you lose the thread
+
+Long creative sessions run into limits — memory, context, time, energy. The fix isn't to rush the whole project into one sitting. It's to periodically stop and write down everything decided so far, in plain language, so anyone (including a future version of the same conversation) can pick it up cold. This document, and the ones before it, are exactly that: not the code, not the visuals — the decisions, and the reasoning behind them.
+
+**In practice:** every so often, ask for "everything we've established" laid out plainly. Do this *before* you're out of room, not after.
+
+## 8. Collaboration, not delegation
+
+The strongest results here came from treating this as genuinely two-sided — one side holds the vision, the values, the "why"; the other side holds the execution and the technical range. Neither side did the whole thing alone. Handing over a vague idea and expecting a finished product back skips the part where precision actually gets built — in the back-and-forth, not in either party working solo.
+
+**In practice:** expect to go back and forth. If the first result isn't quite right, that's often the process working, not it failing.
+
+---
+
+## Addendum: How to actually wield HTML, start to finish
+
+You don't need an IDE, a compiler, or any developer tools. HTML is just text. If you can save a note, you can run a webpage. Here's the whole path, tablet-friendly.
+
+**1. Get the code.**
+When an AI gives you HTML — either as a file you can download directly, or as a block of text in the conversation — that's the entire program. There's nothing else to install. If it's already handed to you as a downloadable file, skip to step 4.
+
+**2. If it's given as text instead of a file, get a plain text editor.**
+Not a word processor — Notes, Word, and Google Docs add hidden formatting that breaks code. You need something that saves plain text with no formatting: on a phone or tablet, apps like Notepad, iA Writer, Textastic, or a "Plain Text" mode in your notes app all work. This was the exact wall hit early in this project — the fix is a dedicated plain-text app, once, and it's solved permanently.
+
+**3. Paste the code in, and save it.**
+Copy everything the AI gave you — the whole block, starting from `<!DOCTYPE html>` down to the final `</html>` — and paste it into the plain text app. Save it.
+
+**4. Name the file correctly.**
+This is the one step that trips people up: the file has to end in `.html`, not `.txt`. Most text apps default to `.txt`. You need to rename the file (or set the extension when saving) to something like `my-module.html`. On most phones and tablets, this happens from the Files app — long-press the file, choose Rename, change the ending. That extension is the only thing telling your device "open this like a webpage, not like a note."
+
+**5. Open it.**
+Tap the `.html` file (or open it from your Files app) and it should open directly in your browser, running the whole thing — no internet required after the download, no install, no account. If it opens as plain text instead of running, the extension usually wasn't actually changed to `.html` — back to step 4.
+
+**6. Test it like a real user, not like the person who built it.**
+Play through it the way someone who's never seen it would. This is exactly how the answer-position bug in this project got caught — not by reading code, by actually playing the thing several times and noticing a pattern. No code-reading required to catch a real problem. Just honest use.
+
+**7. Report what you actually saw, specifically, and get a fixed file back.**
+Describe the exact thing that felt off — not "something's wrong," but what actually happened. Get an updated file back, save it over the old one (or as a new version), test again.
+
+That's the entire loop, forever: get the file, name it right, open it, play it honestly, report what's actually true, get it fixed. No coding required anywhere in that chain — the only real skill is naming a file correctly and describing what was actually noticed.
+
+---
+
+## The short version
+
+Know what you want. Know what you don't want. Name the outcome, not the mechanism. Hold a rough vision and check decisions against it. Report specific problems, not vague unease. Ask for verification when it matters. Save the state before you run out of room. Treat it as two-sided work.
+
+That's the whole method. Everything else is just this, applied to a specific project.
