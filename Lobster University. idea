@@ -1,0 +1,113 @@
+# THE LOBSTER PROTOCOL — SAVE STATE v3
+### Local. Open. Boundless. Self-paced Trial — Education, Reimagined.
+
+*A textual save state. Written so the thesis survives context limits, model changes, and time — carried by anyone, in any format, as long as the idea underneath stays intact.*
+
+---
+
+## I. THE VOW (unchanged, foundational)
+
+A lobster on a CRT screen taught a boy to type by racing him — never shaming a loss, just waiting, patient and quick, until he was faster than it. Education became a gate somewhere along the way. This project is the deliberate inversion of that gate, built from scratch, given away.
+
+**The vow:** name what the current system gets wrong, precisely, and build the opposite of it on purpose. Never repeat a named mistake.
+
+---
+
+## II. THE MISSION (unchanged)
+
+Free. Local — standalone HTML, no server, no account, works offline forever. Anywhere. Boundless — no ceiling.
+
+**On originality (settled):** not first to gamify education — that vocabulary (XP, missions, mastery-unlocks) is common. Genuinely differentiated on architecture: zero server, zero account, permanent offline function, no monetization path at all. Most funded projects choose server infrastructure specifically because it enables monetization. This project gives that up on purpose. That's the real point of difference.
+
+---
+
+## III. THE CORE MECHANIC
+
+XP from solving, not time or clicks. Local save data. No shame in a wrong answer. Framed as missions/ops. Skill-tree unlocking — parked, not abandoned.
+
+**Math randomization — now proven in practice, not just planned.** The PITCH module (see below) is the first module actually built with procedural problem generation instead of a fixed question bank: every run pulls fresh numbers within realistic ranges for pipe pitch, aqueduct grade, and gravity rail grade. This is now the working template for every math module going forward, not a theoretical rule.
+
+**Language/reading randomization — still open.** Math generates cleanly from a formula; grammar, vocabulary, and comprehension don't. Unsolved, sitting deliberately unsolved rather than papered over.
+
+---
+
+## IV. THE TUTOR-THEN-QUIZ STRUCTURE (new since last save state)
+
+A quiz alone is a test. A test with a teaching page in front of it, that the quiz can reference back to mid-attempt, is closer to what an actual good teacher does — the kind who calls mid-quiz to check your work and correct you gently before a bad habit sets in. Every math module going forward follows this three-part shape:
+
+1. **The concept page** — opens with something concrete and real, never with notation. The abstraction gets introduced only after the concrete version has already landed, revealed as shorthand for what was just shown.
+2. **The trick box** — real mental-math shortcuts stated plainly, not buried: the ones people actually still use in their heads years later.
+3. **The quiz, with a way back** — a one-tap review link back to the lesson, so a stuck learner doesn't have to hold the whole explanation in memory. Closest a static file can get to a teacher checking in mid-attempt.
+
+**Every math concept must show what it's actually for** — not "make it fun," but name one real thing the concept lets you build or figure out that day: fractions → reading a recipe, percentages → comparing sale prices, slope → pipe pitch and roof grade, exponents → compound interest. The tutor page's job is always answering "what does this let me do" before a single quiz problem appears.
+
+---
+
+## V. THE STANDARD TO TEACH TOWARD (new this save state, and corrected once already)
+
+When a module teaches a real trade or engineering concept with a real code or standard behind it (like pipe pitch), the standard to channel is **the inspector who actually got their hands dirty and checked for genuine excellence — not the one who rolled up, handed out a ticket without looking, and left.** This is not "always pick the strictest number on the books" — it's "teach the reasoning behind the number, not just the number," so what's built is genuinely correct, not merely code-compliant to someone who wasn't really checking. A module that states a rule without the "why" behind it is the box-checking inspector. A module that explains why the number matters, what fails below it, and how it's actually verified in the field — that one earns the trust the real inspector earned.
+
+---
+
+## VI. THE AESTHETIC (unchanged)
+
+Younger tiers: living-worksheet, dungeon-crawler-adjacent, warm, doodle-decorated, lobster mascot, generated 8-bit audio, mute button always. Older/practical tier: terminal/CRT, monospace, no mascot, consequence-shown feedback instead of "try again."
+
+---
+
+## VII. MODULES BUILT SO FAR
+
+1. **Tide Claws** — subtraction, ~5yo band. Established mute/save/anti-repeat-position pattern.
+2. **Reef Ops** — mixed four-operation module, same band. Multiplication as groups, division as equal-sharing baskets.
+3. **Threshold** — young-adult tier. Six real financial/critical-thinking scenarios, terminal aesthetic, consequence-based feedback.
+4. **Scales** — systems-ethics simulation, young-adult tier. Five automation/technology dilemmas, tracked on four independent axes (Efficiency, Equity, Autonomy, Risk) instead of a single good/evil score — a more honest model of real trade-offs.
+5. **PITCH** — first tutor-then-quiz module. Teaches slope (m in y = mx + b) through pipe pitch, aqueduct grade, and gravity rail grade — drawn directly from the builder's own plumbing and excavation trade background. First module with procedurally generated quiz questions instead of a fixed bank.
+
+**Standing rules every module now inherits:** mute button, saved locally · no answer-position repeats three times running · wrong answers never punish, they explain · math modules generate problems procedurally · trade/engineering content teaches the reasoning behind a standard, not just the number.
+
+---
+
+## VIII. COMPANION DOCUMENTS (new — process, not product)
+
+Two documents now exist alongside the module library itself, teaching the *process* of building LOBSTER-style tools rather than the tools:
+
+- **"Workshopping With an AI"** — a non-coder's protocol for precise AI collaboration, extracted directly from how this project actually got built: spitball before building, name what you don't want, name the capability without needing to know the mechanism, hold a rough end vision, report problems specifically, ask for verification when a claim matters, save the state before running out of room, treat it as two-sided work.
+- **Addendum: "How to Wield HTML, Start to Finish"** — the literal, tablet-friendly path from a block of AI-generated code to a running file on your own device: plain-text editor, correct file extension, opening it, testing it honestly, reporting specifics.
+
+These exist so a non-coder inheriting the LOBSTER thesis has not just modules to copy, but the actual method for making more.
+
+---
+
+## IX. THE CONTENT SKELETON (K-3, unchanged)
+
+Reading, writing, arithmetic, critical thinking/problem solving, finance, first aid (own track). Grade-banded, not grade-locked.
+
+---
+
+## X. THE INVERSION LEDGER
+
+| Old System | LOBSTER |
+|---|---|
+| Age-locked pacing | Mastery-locked pacing |
+| Punitive failure, shame | Retry-with-consequence-shown, forward-only XP |
+| Compliance over curiosity | Interest-driven unlocking (skill tree, long-term) |
+| Gatekept by geography and income | Free, local, downloadable, no account |
+| Abstract before concrete | Real-world grounding, always — named explicitly per concept |
+| One assumed learning style | Multiple senses — visuals, generated sound, game-feel |
+| Fixed question banks | Procedural randomization (math proven, language open) |
+| Minimum-compliance teaching | Teaching the reasoning behind the standard, not just the number |
+| Test without a teacher | Tutor page + quiz, linked, not two separate things |
+
+---
+
+## XI. STATUS AT THIS SAVE STATE
+
+Five modules built. Two process documents exist alongside them. The tutor-then-quiz structure and procedural math randomization are both proven in working code, not just described. The "teach toward genuine competence" principle got refined mid-conversation — worth keeping the correction, not just the original version, since the corrected version is the truer one.
+
+**Still open:** skill tree shape, language/reading randomization, translation pipeline, first-aid module format, module naming/indexing convention at scale.
+
+**Load-bearing, unchanged:** free, local, no accounts, mastery over calendar, no shame in failure, mute always available, no binary-only theming for younger tiers, no copying — only inversion and remix, collaboration not solo creation.
+
+---
+
+*"We give the people their own lobster."*
