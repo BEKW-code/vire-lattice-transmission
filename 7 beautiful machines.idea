@@ -1,0 +1,266 @@
+---
+title: "NEXERATH — Seven Functional Art Studies"
+aliases:
+"The Landfill Becomes the Cathedral: Seven Works"
+"NEXERATH Functional Art Gallery"
+project: NEXERATH — Harmonic Harvest Lattice
+program: "THE 77"
+family_number: "04"
+artifact_type: "Design catalogue / engineering concept log"
+version: "0.1"
+date: 2026-11-10
+status: "Concept studies — proposed mechanisms and experiments, not tested performance claims"
+parent_spec: "NEXERATH_04_Harmonic_Harvest_Lattice_Engineering_Save_State_v0.2.md"
+tags:
+NEXERATH
+BEKW-CODE
+GERALD
+solarpunk
+reclaimed-art
+energy-harvesting
+engineering
+The77
+---
+NEXERATH — Seven Functional Art Studies
+The Landfill Becomes the Cathedral
+BEKW-CODE Open Hardware · THE 77 / NEXERATH Family #04  
+Gallery catalogue & engineering save state v0.1 · 10 November 2026
+> **ART WITH A JOB.**  
+> **RECOVERED HISTORY. LIVING FUNCTION.**  
+> **WE CLEAN THE MESS AND LEAVE SOMETHING BEAUTIFUL BEHIND.**
+![NEXERATH — seven imagined functional art studies](NEXERATH_Seven_Functional_Art_Studies_Reference.png)
+Reference: the seven-work concept illustration developed as a visual thought experiment. The names and visual identities below are taken from that study; the design elaborations are proposed engineering directions rather than claims that the pictured machines have been built. All seven belong to the one NEXERATH invention family, not seven separately numbered inventions in THE 77.
+---
+00. The idea in one breath
+A G.E.R.A.L.D. recovery operation clears a landfill. Glass is sorted, cleaned, tested, cut, remelted, and annealed when appropriate. Copper becomes new windings; metal becomes frames and heat exchangers; magnets return to motion; obsolete boards become measured controller components or protected time capsules. Then the recovered material becomes a one-of-one sculpture that converts real surrounding energy flows into electricity, powers a useful service, and keeps a record of where it came from.
+These seven works are not identical kits dressed in different colors. Each embodies a distinct source → motion or electrical conversion → conditioning → storage → useful work chain. They can stand alone, share a standard harvest interface, or gather into a larger cathedral installation.
+The seven works at a glance
+Study	Gallery name	Source of useful energy	Visible kinetic signature	Proposed real job
+NX-01	Thermal Pulse Reliquary	Changing temperatures or an engineered hot/cold gradient	Pulsing fluid columns, diaphragm, magnetic shuttle	Thermal-cycle logging and charge-triggered illumination
+NX-02	Convection Lantern Spire	Sun-warmed rising air / ambient draft	Slowly turning turbine in a clear chimney	Micro-weather observations and gentle beacon
+NX-03	Ripple Choir Basin	Water ripples, waves, fountain flow	Glass-and-metal floats rising and falling	Water-level and water-quality telemetry
+NX-04	Vibration Reed Garden	Wind, footsteps, site vibration	Field of tuned flexing metal reeds	Footfall/vibration counting and wayfinding glints
+NX-05	Radiant Bloom Array	Sunlight and thermal gradients	Reclaimed-glass flower opening, thermal flex	Pollinator/habitat monitoring and sun-responsive light
+NX-06	Memory Coil Cathedral	Combined inputs from other harvester works	Copper coil lattice, historic components, animated energy paths	Shared energy storage, sensor hub, museum ledger
+NX-07	Rain Spiral Oracle	Rainfall/runoff falling through a height difference	Water descending glass helix; tiny turbines turning	Rainfall measurement, stormwater telemetry and light pulses
+Universal rule: if a part, fixture, seal, transducer, optical piece, alloy or machine tool does not exist in the required form, design the missing thing. The test plan determines whether it serves the purpose.
+---
+THE SEVEN MACHINES
+NX-01 — THERMAL PULSE RELIQUARY
+A glass heart that moves when the world changes temperature
+Portrait. A tiered sculpture of polished reclaimed glass tubes and bulbs nested in a brass-and-copper framework. Warm amber fluid, cool turquoise fluid and visible copper windings form a luminous reliquary. A magnet appears to breathe back and forth inside a protected transparent guide.
+Energy path: warm/cool temperature change or sustained engineered temperature gradient → controlled pressure/volume change → diaphragm, piston or bellows stroke → magnet shuttle passing a copper coil → low-loss rectification → source capacitor → load.
+Mechanical development. Begin with a transparent demonstration vessel and a separate magnetic-coupled motion stage. For repeated strokes under a sustained gradient, explore a thermal displacer, heat-switching linkage, bimetal timing valve or low-temperature Stirling-like cycle with defined hot and cold surfaces. The famous hand-boiler visual can inspire the sculpture, while the engineering determines the actual stroke frequency and energy available for capture. The working-fluid choice is a design variable; its compatibility, pressure envelope and containment are part of the chamber specification.
+G.E.R.A.L.D. materials. Bottle and window-glass cullet for sculptural shells, known-grade reclaimed transparent glass for qualified parts, recovered copper windings, appliance heatsinks, stainless hardware, magnets extracted from retired speakers or motors, antique brass fittings.
+Custom tools to fabricate. Glass forming/annealing molds; leak-test fixture; adjustable diaphragm mount; low-friction magnet shuttle guide; winding spindle for the matching copper coil; repeatable warm/cold fixture.
+The job. Record surface temperature differences and temperature cycles. Convert captured pulses into occasional lighting of the chamber's etched memory ring or operate an ultra-low-power logger when stored energy permits.
+First experiment. Instrument both temperature surfaces, displacer travel, coil voltage/current and stored capacitor energy. Compare charging with the shuttle attached versus mechanically disconnected. Record net joules per actual temperature cycle, repetition rate and sealing endurance.
+Open design knobs. Fluid or gas selection; working volume; hot/cold exchanger geometry; thermal response time; diaphragm stiffness; magnet travel; coil loading; reliability over thousands of cycles.
+Historic-part placement. An old mechanical gauge, pressure-dial bezel or retired relay can remain visible with its provenance. Historical display components need not perform safety-critical pressure containment.
+---
+NX-02 — CONVECTION LANTERN SPIRE
+A tower that lets warm air tell time
+Portrait. A tall stained-glass and clear-glass chimney rises from a reclaimed-metal lantern base. Brass vanes revolve inside like a miniature celestial observatory. The motion drives warm light through an etched spiral.
+Energy path: solar-warmed air or naturally available thermal draft → upward airflow and pressure difference in a chimney → very-low-starting-torque turbine → magnet rotor/stator → rectification → energy buffer → useful load.
+Mechanical development. Build swappable chimney sections, dark heat-absorbing elements, adjustable inlet shutters and a quick-release vane cassette. The sculpture can reveal the forces by keeping the inlet, turbine and exhaust visually legible. Develop a gentle vane profile that balances startup torque, drag and electrical extraction, rather than forcing a single turbine geometry to serve every site.
+G.E.R.A.L.D. materials. Reclaimed window glass, tempered panels where appropriate, HVAC sheet-metal scraps, fan blades re-cut to size, discarded motor magnets, copper transformer wire, salvaged bearings, perforated brass or aluminum.
+Custom tools to fabricate. Rotor-balance jig; miniature bearing alignment gauge; exchangeable turbine blade forming die; adjustable chimney mockup; low-speed torque test rig.
+The job. Provide a measured ambient draft/solar-thermal demonstration, feed a micro-weather sensor, or flash a lantern on an energy budget tied to actual generation.
+First experiment. Measure inlet and outlet temperatures, airflow, unloaded and loaded RPM, generator electrical output, and stored Wh per day under defined conditions. Tune geometry and electrical load together.
+Open design knobs. Tower height, vent throat, solar heating surface, wind exposure, vane pitch, friction, generator cogging, acoustic profile and insect screens.
+Historic-part placement. Old clockwork lantern trim, a restored ventilation grille, or a dated brass nameplate becomes the spire's crest.
+---
+NX-03 — RIPPLE CHOIR BASIN
+A floating orchestra made from the motion of water
+Portrait. A shallow fountain-like basin of reclaimed ceramic, glass and copper holds an arc of jewel-colored floating spheres. Each float bobs independently, sending a small electrical pulse into the circular perimeter. The sculpture resembles an instrument being played by rainfall and ripples.
+Energy path: naturally arriving ripples, waves, water-level motion or an already operating fountain → float displacement → magnetic shuttle or lever mechanism → induction coil → isolated rectification → buffer → low-power water-monitoring load.
+Mechanical development. Test a single float in a narrow vertical guide, then expand to the circle. A magnetic coupling through a sealed nonmetallic wall can keep electrical connections dry. Design floats with adjustable mass and buoyancy so they respond to different wave heights without hard impacts.
+G.E.R.A.L.D. materials. Reclaimed glass vessels as visual globes, sealed repurposed floats after qualification, magnets, copper coils, ceramic tile, marine-suitable metal trim, polished stone or reclaimed basin sections.
+Custom tools to fabricate. Float buoyancy/trim fixture; waterproof feedthrough test jig; interchangeable magnetic track; adjustable ripple test trough; modular coil cartridges.
+The job. Count ripple events, monitor water temperature and level, or support an environmental sensor that reports periodically once sufficient energy is stored.
+First experiment. Apply documented wave height/frequency combinations in a tank; measure float travel, electrical energy delivered to a buffer and responsiveness. Repeat after controlled exposure to debris, algae and mineral deposits.
+Open design knobs. Float geometry, mass, restoring force, detents, coil resistance, waterproofing, accessible cleaning and aquatic-life clearance.
+Historic-part placement. A recovered nautical compass housing or an old water-meter dial forms the basin's central ornament.
+---
+NX-04 — VIBRATION REED GARDEN
+Metal flowers that listen with their whole bodies
+Portrait. Dozens of slender copper, bronze and spring-steel stems rise from a planted reclaimed-metal trough, with tiny glass droplets at their ends. A footstep or breeze makes the garden shimmer; each reed is a different voice.
+Energy path: site vibration, wind or a passing footstep → tuned cantilever/flexure displacement → moving magnet plus stationary coil or piezoelectric element → individual interface → common capture bus → sensor and accent-light load.
+Mechanical development. Grow a frequency garden: long reeds respond to slower motion; short reeds to faster motion. Make tip masses exchangeable and expose the tuning marks. Isolate each harvester's circuit to prevent the stronger reeds from consuming weaker reeds' output.
+G.E.R.A.L.D. materials. Retired spring-steel stock after inspection, vehicle spring offcuts, clock springs, copper wiring, spent-tool steel, speaker magnets, safe salvaged metal stems, reclaimed glass droplets and mosaic bases.
+Custom tools to fabricate. Reed-curvature forming jig; adjustable tip-mass set; cycle-fatigue fixture; frequency sweep shaker; replaceable coil/piezo mounting clamps.
+The job. Detect and record wind events, footfall patterns or vibration intensity, producing a soft wayfinding glint or running a low-duty environmental sensor.
+First experiment. Measure ambient vibration spectra in the intended site, then tune reed lengths/masses to the strongest repeatable bands. Log actual stored joules per hour and the change in motion as electrical loading rises.
+Open design knobs. Fatigue life, corrosion protection, end-stop behavior, resonance placement, piezo conditioning, vibration isolation and mounting into soil or masonry.
+Historic-part placement. Numbered reeds can come from different salvaged implements; a tiny etched plaque tells the origin of each stem.
+---
+NX-05 — RADIANT BLOOM ARRAY
+A flower that drinks differences of light and heat
+Portrait. A many-petaled solar flower cut from stained-glass shards and thin metal petals. Translucent gold, turquoise and rose panels surround a warm luminous core; the petals shift subtly as sunlight and shade change.
+Energy path — dual harvesting:
+Thermal route: sun-facing absorber and cooler heat-spreader → temperature difference → thermoelectric generator → source conditioner → buffer.
+Kinetic route: changing temperature → bimetal/shape-responsive petal motion → tiny magnet and coil or ratcheting microgenerator → pulse buffer.
+Optional future route: photovoltaic glass or thin-film insert within the petal itself, separately metered, sharing only the conditioned storage bus.
+Mechanical development. The flower is an optical art object and a thermal experiment. Reclaimed glass becomes colored light and protective petals; characterized metals become the working thermal members. Design adjustable petal hinges, removable thermal cartridges, and well-defined hot/cold paths so different geometries can be tried without remaking the whole sculpture.
+G.E.R.A.L.D. materials. Reclaimed stained/window glass, radiator and heatsink metal, copper heat spreaders, aluminum stock, characterized bimetal strips or newly fabricated bonded strips, recovered small magnets, salvaged electronics after testing.
+Custom tools to fabricate. Petal cutting templates; bonding/heat-treatment fixture; repeatable heat-gradient test plate; hinge alignment jig; interchangeable TEG clamp.
+The job. Run a pollinator/habitat observation module, show solar exposure through visible petal movement, or light an etched bloom based on harvested-energy availability.
+First experiment. Measure absorber and cold-side temperature, TEG output with a real electrical load, petal travel, kinetic pulse recovery and stored joules, then compare combined versus separate routes.
+Open design knobs. Heat dissipation, light transmission, TEG clamping pressure, bimetal fatigue, wind survivability, outdoor UV behavior and actual value of each energy-conversion route.
+Historic-part placement. A dated agricultural tool hub or retired fan impeller becomes the flower's central seedpod.
+---
+NX-06 — MEMORY COIL CATHEDRAL
+The heart that remembers every source and gives the energy a purpose
+Portrait. A large stained-glass arch crowded with symmetrical copper coils, suspended magnets, reclaimed circuit boards and glimmering historical relays. The central round aperture glows as separate trickles of captured energy join a common storage system. It is the gallery's cathedral, archive and electrical heart.
+Energy path: independent NX harvester outputs → per-source input protection / rectification / impedance-aware conditioning → individual source buffers → managed shared storage rail → rechargeable storage → prioritized sensors, recording, communications and artistic lighting.
+Mechanical development. The Cathedral is a modular electrical backplane expressed as sculpture: each source gets a visible labeled socket and separate telemetry. Optical light pipes, low-power indicators or e-paper can reveal when energy actually arrives. The building's old relays and circuit boards are curated as either qualified working parts or protected display artifacts.
+G.E.R.A.L.D. materials. Recovered copper, transformers and motor windings, obsolete motherboards, old electromechanical relays, glass panes, metal framework, iron cores, ceramic insulators and housings. Safety-critical charging electronics may be newly made from verified components, while still inhabiting a reclaimed frame.
+Custom tools to fabricate. Modular coil former; plug-in board mounting system; instrumented per-input test ports; electrical isolation jig; precision engraving tools for provenance tags; removable service drawers.
+The job. Power the gallery's environmental observation station and material-history ledger, and report in real units what the sculptures generated and what their connected loads consumed.
+First experiment. Connect two disparate sources, then three; record each source's voltage, current, harvested energy and effect on the other sources. Demonstrate capture during an event, storage between events, and a genuine low-power task after the event ends. Add visible totals without claiming energy that came from an unmetered supply.
+Open design knobs. Cold-start thresholds, ultra-low quiescent drain, reverse-current isolation, source matching, supercapacitor leakage, battery charge control, energy-aware task scheduling, secure public telemetry and modular repair.
+Historic-part placement. The 1942 relay / 1992 motherboard pairing is a design example, not a verified provenance claim. When real parts and evidence are found, they receive dated, individual Material Passports and become the central museum exhibit.
+---
+NX-07 — RAIN SPIRAL ORACLE
+A storm writes its story down a staircase of glass
+Portrait. A graceful descending glass helix, like a rain-fed chandelier, carries droplets and rivulets through clear spiral channels. At each stage, a tiny turbine or magnet-coupled rotor answers the falling water with a flicker of light. Reclaimed copper and ceramic cradle the artwork.
+Energy path: rainfall collected at an elevated inlet, or water already moving down an existing site drainage route → gravitational head and flow → carefully staged microturbine(s) / moving magnet generators → per-stage conditioning → capture bus → rain and stormwater instrumentation.
+Mechanical development. A beautiful hydraulic instrument designed around real available head and flow. Create replaceable helix sections and turbine stages to find a good balance between visual water residence time and energy extraction. Add a self-draining bypass, debris inlet, freeze/service strategy and water routing to a beneficial destination such as a rain garden or storage basin.
+G.E.R.A.L.D. materials. Recovered decorative glass for visible channels, recycled glass remelted into qualified non-pressure paths, copper drain fittings, reclaimed ceramic, small turbine rotors made from salvage metal, recovered bearings and magnets, reworked rain-gutter material.
+Custom tools to fabricate. Spiral-channel mold; test stand with adjustable head/flow; rotor alignment and balancing tool; replaceable debris-strainer cassette; water-path inspection ports.
+The job. Measure rainfall/runoff events, log water volume and temperature, illuminate the rain path during actual generation, and inform local stormwater restoration.
+First experiment. Define the available elevation drop and measured flow; install one stage and log upstream/downstream head, flow, electrical power and collected Wh per rainfall event. Compare one stage to multiple stages under the same incoming water budget.
+Open design knobs. Rainfall intermittency, clogging, optical clarity, flow bypasses, debris capture, generator start torque, water routing, freeze cycles and public slip prevention.
+Historic-part placement. An old rain gauge, mill-wheel gear or gutter ornament crowns the spiral, with source/date recorded when known.
+---
+08. HOW THE SEVEN WORK TOGETHER
+The Memory Coil Cathedral (NX-06) is the proposed shared service point. Individual works can remain self-contained, but a grouped installation becomes a seven-part orchestra with a common ledger.
+```text
+  SUN / TEMPERATURE → [NX-01 Thermal Reliquary] ──┐
+  SUN / WARM AIR   → [NX-02 Convection Spire] ─────┤
+  WATER RIPPLES   → [NX-03 Ripple Choir] ──────────┤
+  WIND / FOOTFALL → [NX-04 Reed Garden] ───────────┤
+  SUN / HEAT      → [NX-05 Radiant Bloom] ─────────┼──► NX-06 MEMORY COIL CATHEDRAL
+  RAIN / RUNOFF   → [NX-07 Rain Oracle] ───────────┘          │
+                                                              ▼
+                                            [PER-SOURCE CONDITIONING]
+                                                              │
+                                                              ▼
+                                            [BUFFERS + MANAGED STORAGE]
+                                                              │
+                                                              ▼
+                                            [SENSORS / LIGHT / LOG / SIGNAL]
+```
+Source accounting: electrical outputs are never directly tied together unconditioned. Each branch has its own interface and energy measurement before storage. The combined harvest can then be compared with standing load, storage leakage and service duty cycle.
+The visual show: the Cathedral's separate glass light channels glow on actual measured source events, while a quiet central display reports cumulative captured Wh, load Wh, storage state and documented reclaimed material by mass.
+The honest wonder: a 1940s part can support a 2020s sensor, and a once-buried pane of glass can guide the light that explains it. Utility, provenance and beauty share the same structure.
+---
+09. G.E.R.A.L.D. → NEXERATH: FROM RECOVERY TO EXHIBIT
+Recover: G.E.R.A.L.D. sorts a stream into reusable glass, metals, coils, magnets, mechanical assemblies, electronics and decorative relics.
+Characterize: record likely material, function, condition, visible marks, source location and hazards; verify when possible.
+Choose a new job: each piece is assigned an appropriate structural, electrical, mechanical, optical or archival role.
+Fabricate the missing tool: form, anneal, machine, wind, braze, cast, balance or assemble with custom fixtures as needed.
+Verify the part: measure the performance needed for its new function; protect or replace safety-critical pieces appropriately.
+Build a singular sculpture: let recovered geometry influence composition while the standardized connections retain serviceability.
+Register its history: assign a durable, publicly readable Material Passport.
+Connect and meter: give every active energy source a measured electrical pathway.
+Install and maintain: leave behind not an exhibit that merely looks functional, but a living device that continues doing useful work.
+Material Passport — reusable template
+```yaml
+node_id: "NX-__"
+component_id: "NX-__-PART-___"
+recovery_site: ""
+recovery_date: ""
+material_or_alloy: ""
+original_role: ""
+estimated_era: ""
+era_evidence: ""
+confidence: "unknown | low | medium | high | verified"
+new_role: ""
+processing_and_custom_jigs: []
+inspection_and_test_results: []
+maintenance_plan: ""
+measured_harvest_contribution: "not yet tested"
+photograph: ""
+notes: ""
+```
+A machine's history can be remarkable even when an object's exact manufacturing year is unknown. Keep the story and the evidence separately traceable.
+---
+10. FABRICATION / TEST INFRASTRUCTURE
+These are workshop capabilities to make or acquire—not catalog restrictions.
+Fixture or instrument	Why it exists	Supports
+Reclaimed-glass inspection and annealing workflow	Make reproducible structural/optical glass shapes; qualify critical glass separately	NX-01/02/03/05/07
+Coil winding rig with wire-length/turn counter	Produce repeatable induction cartridges	NX-01/02/03/04/06/07
+Adjustable magnet shuttle and coil test stand	Compare magnetic geometry and electrical loading	NX-01/03/04
+Turbine balance and low-speed torque rig	Measure startup and extraction cost	NX-02/07
+Thermal differential fixture	Compare transient and sustained gradient operation	NX-01/05
+Reed frequency-sweep and fatigue jig	Tune vibration response and lifetime	NX-04
+Wave/ripple and float test trough	Reproducible water-motion input	NX-03
+Rain head-and-flow simulator	Characterize the spiral using known incoming water conditions	NX-07
+Per-input electrical energy logger	Distinguish each contribution and bus losses	All, especially NX-06
+Material passport/engraving station	Track site provenance and component life	All
+Common performance worksheet
+For each source, record:
+Field	Unit / description
+Time window	date, duration, site and ambient conditions
+Available input	temperature gradient, airflow, vibration spectrum, wave amplitude, irradiance or hydraulic head + flow
+Input-to-output mechanism	exact mechanical/transducer configuration
+Open-circuit signal	voltage waveform; useful for characterization, not sufficient as proof of harvested energy
+Energy captured into source buffer	joules or Wh, with method of measurement
+Energy delivered to storage	joules or Wh
+Energy consumed by the job	joules or Wh
+Standby/conditioning losses	joules or Wh over the same interval
+Material provenance	salvage fraction by mass and key historic objects
+Observed behavior and revision	what moved, what worked, what gets redesigned next
+Engineering rule: a small measured result is better source material for the next revision than a spectacular unmeasured prediction. Small is a legitimate output; the source of the energy and the measurement must still be real.
+---
+11. BUILD SEQUENCE — THE FIRST GALLERY
+Stage A — The visible effect. Build one strong and one subtle source, e.g. Ripple Choir + Thermal Reliquary. Make motion unmistakable; instrument it.
+Stage B — The common electrical grammar. Use the Memory Coil Cathedral bench interface to store real contributions independently and show the combined total. Test what happens when one source goes quiet.
+Stage C — The reclaimed signature. Add material passports, selected historically interesting objects and removable access panels. Each part earns its location visually or functionally.
+Stage D — The working service. Make the gallery power a chosen low-duty task on a documented schedule: water/air temperature, humidity logging, timed display, local beacon, etc.
+Stage E — The full seven. Add Wind Reeds, Convection Spire, Radiant Bloom and Rain Oracle as site conditions and fabrication allow. Preserve their visual individuality.
+Stage F — A G.E.R.A.L.D. installation. Recover materials at a documented cleanup location; fabricate one gallery from that material stream; leave a public provenance ledger and maintenance plan.
+Design review questions that sharpen the work
+Which sculpture is most expressive per unit of genuinely captured energy?
+What geometry or alloy must we fabricate rather than purchase?
+How can a source remain visible, elegant and easily serviced?
+Can all seven report distinct contributions without a power-hungry controller swallowing the yield?
+What useful local service is worthy of the harvested energy at each site?
+Which recovered artifact has a story strong enough to shape the composition around it?
+What would make this specific installation unmistakably from this place?
+---
+12. GALLERY FLOOR PLAN — SEVEN VOICES, ONE CATHEDRAL
+A possible visitor journey through a sunlit garden-workshop or public conservatory:
+```text
+  [01 THERMAL]      [02 CONVECTION]      [04 REED GARDEN]
+         \                |                     /
+          \               |                    /
+                [06 MEMORY COIL CATHEDRAL]
+               /          |                  \
+  [03 RIPPLE CHOIR]  [05 RADIANT BLOOM]  [07 RAIN ORACLE]
+
+         [PROVENANCE WALL / MATERIAL PASSPORT LEDGER]
+          "Recovered here. Rebuilt here. Still working."
+```
+Lighting approach: daylight, warm reclaimed-glass glow, subtle source-linked light pulses; nighttime illumination only within the site's genuine stored-energy and operating budget. The installation can still be beautiful when every generator is quiet.
+Sound approach: an occasional reed shimmer, a drop into water, a softly moving vane, a coil click. No need for canned machine noise. Let the mechanisms provide their own music.
+Local character: different landfill strata, industries, decades and recovered materials produce different sculptures. Two galleries may share the same engineering interfaces while looking like they belong to entirely different histories.
+---
+13. RELEASE AND CANON
+Parent invention: NEXERATH / THE 77 #04 (one open-hardware family).
+Design studies in this image: NX-01 through NX-07; these are concept identities, not individually numbered inventions in THE 77.
+Related systems: G.E.R.A.L.D. restorative material recovery; low-power environmental observation; civic and sanctuary NEXERATH variants.
+Visual language: SOLARPUNK—reclaimed material, abundant greenery, daylight and photovoltaics where useful, accessible craft, repairable machines and functional optimism. This is a lived-in workshop future, not a generic steampunk aesthetic.
+Image provenance: AI-assisted concept illustration of seven designs. Text labels on illustrations are conceptual; this catalogue is the authoritative record of intended mechanisms until actual build drawings and measured tests supersede it.
+Licensing: open-hardware release intention; choose explicit software/hardware/documentation licenses before publishing.
+Closing inscription
+> **This was glass in the landfill.**  
+> **This was copper inside a broken motor.**  
+> **This was somebody's machine from another century.**  
+> **Now it moves again. It lights again. It does a job again.**  
+> **And somebody who comes after us gets to make it better.**
+>
+> **THE LANDFILL BECOMES THE CATHEDRAL.**  
+> **BEST BUILD WINS.**
+END OF SAVE STATE — NEXERATH SEVEN FUNCTIONAL ART STUDIES v0.1
