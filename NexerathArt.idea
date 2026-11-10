@@ -1,0 +1,310 @@
+NEXERATH — HARMONIC HARVEST LATTICE
+BEKW-CODE Open Hardware · Engineering Save State v0.2
+THE 77 / CANDIDATE #04  
+Design status: Concept architecture + buildable test plan; not a performance-certified product  
+Design lineage: NEXERATH × G.E.R.A.L.D. restorative-material pipeline  
+Doctrine: Art with a job. The landfill becomes the cathedral.  
+Release intent: Open technical collaboration; choose final licensing and attribution before public distribution.
+> **Prime statement:** NEXERATH is a family of kinetic, visibly functioning sculptures fabricated from documented reclaimed materials. Its modules intercept real ambient energy flows—temperature differences, sunlight, airflow, vibration, water motion, and deliberate human interaction—convert portions of those flows into electricity, combine intermittent outputs through a low-loss harvest lattice, and spend the accumulated energy on useful work. Each installation is a unique, repairable archive of the place from which its materials were recovered.
+Founding distinction: NEXERATH is neither a perpetual-motion claim nor a disposable art object. It has identifiable external energy inputs, a measurable electrical output, a persistent material provenance record, and a functional job. Custom components, tools, molds, alloys, and fabrication methods are first-class design options.
+---
+1. The invention, kept whole
+NEXERATH performs six functions concurrently:
+Harvest: collect available gradients and motion using multiple independent transducers.
+Aggregate: condition otherwise incompatible trickles, pulses, voltages, and waveforms onto a common energy-storage architecture.
+Work: power a real low-energy service—an environmental observation node, timed signal, civic information display, or local telemetry device.
+Remember: retain and display the history of recovered components, including old working parts and visible relics.
+Teach: expose mechanisms, measurements, and cause-and-effect directly to visitors.
+Restore: turn materials recovered by G.E.R.A.L.D. into durable public or domestic assets.
+The aspiration is a visible scientific cathedral: blown, cast, or reclaimed glass; copper and brass; rhythmic magnet shuttles; slow vanes; spring reeds; illuminated charge paths; the occasional historical component embedded where it can be admired and, where appropriate, still function.
+What counts as success
+A successful NEXERATH is beautiful, instrumented, honest about its inputs, repairable, and demonstrably powered by harvested energy over a specified operating interval. Yield need not be enormous. Measured useful work, material recovery, and educational merit together justify the machine.
+The distinctive engineering opportunity
+Many individual harvester technologies already exist. NEXERATH's innovation target is their materially diverse, low-loss aggregation inside a uniquely reclaimed, openly documented kinetic sculpture whose power budget and salvage provenance are publicly intelligible.
+---
+2. G.E.R.A.L.D. → NEXERATH: recovered-history pipeline
+Recovery stream	Candidate reuse	Processing and verification	Display value
+Bottle / window glass	Cast accents, polished light paths, enclosure panels when suitably characterized	Sort by glass family; remove contaminants; controlled remelting and annealing, or mechanically reuse known panes	Original city and site visible in cast layers
+Copper wire and motors	Coils, bus conductors, sculpted conductors	Strip, measure insulation and continuity; rewind; isolate exposed power nodes	Visible copper spirals
+Speaker / motor magnets	Induction rotors, shuttles, coupling links	Verify grade qualitatively, magnetization and corrosion protection; secure mechanically	Moving field sources
+Bearings and shafts	Turbines, displacers, pendulum pivots	Inspect runout, pitting, friction and lubrication compatibility	Motion from retired machines
+Aluminum / steel / brass	Frame, fins, turbine vanes, brackets, heat sinks	Identify alloy where necessary; inspect cracks; re-machine, coat or heat treat	Patina and engraved origin
+Springs and flexures	Tuned vibration harvesters	Inspect fatigue damage; characterize stiffness and resonant frequency	Kinetic reeds
+Retired circuit boards	Displayed history fragments or characterized control parts	Remove batteries and contaminated components; encapsulate or isolate ornamental boards	1992-era circuitry as a visible time capsule
+Historic relays / gears	Operational mechanisms if electrically and mechanically suitable, otherwise protected display	Document age and provenance; test; avoid unverified mains-voltage reuse	A 1942 component with its own story
+Crucial manufacturing distinction: reclaimed glass makes extraordinary sculpture, optical pathways, and protective shells. Pressure-bearing or chemically critical vessels require validated material and manufacturing processes; make a properly engineered inner chamber if random cullet or unknown reclaimed glass cannot be qualified for that duty. That is a fabrication requirement, not an abandonment of reclaimed-glass artistry.
+Provenance passport (one per installed item)
+`node_id`, `component_id`, `source_site`, `recovery_date`.
+`estimated_year_or_era` and evidence/confidence—a part thought to be from 1942 is not labeled as historical fact without provenance.
+`material`, `original_function`, `new_function`, `inspection_results`.
+`rework_steps`, `replaced_parts`, `known_hazards`, `maker`, `photograph`.
+`maintenance_history`, `measured_contribution` where instrumented.
+Each public node has a metal plate and a local/QR-accessible parts ledger. The installation is a museum with an electrical output.
+---
+3. Family architecture: one lattice, several deployment classes
+Class	Where it lives	Primary energy inputs	Meaningful job	Distinct engineering needs
+NEXERATH-A	General sculptural core	Thermal, flex, light, airflow	Prove source aggregation	Standard module mounts and bus
+NEXERATH-S	Interior sanctuary	Temperature transients, low vibration, light	Local sensing, timed illumination	Whisper-quiet, touch-safe, aesthetic priority
+NEXERATH-W	Pond / fountain	Ripple, water level cycling, solar, wind	Water/environment logging	Fouling, float seals, corrosion
+NEXERATH-C	Civic plaza	Sun, convection, wind, structural vibration	Site telemetry and public readout	Wind loads, vandal resistance, public safety
+NEXERATH-R	G.E.R.A.L.D. restoration outpost	Site-specific solar, thermal, vibration, runoff	Environmental sentinel / beacon	Autonomy, weatherization, maintenance interval
+Counting rule for THE 77: these begin as branches of the NEXERATH family. A branch receives its own numbered invention entry only when it introduces substantially different functional engineering, validation, and a separate usable design package. Aesthetic changes and simply swapping salvaged parts do not inflate the count.
+---
+4. Reference mechanical architecture
+A vertical sculpture is the canonical first full-form installation: transparent glass and copper around a protected load-bearing frame, with modules plugged into standardized mechanical/electrical sockets.
+Standardized interfaces (proposed, to be refined)
+Module footprint: 100 × 150 mm mounting land; slotted pattern to accept nonuniform reclaimed parts.
+Power connector: keyed, shrouded, two-pole low-voltage connector per source; never join raw outputs directly.
+Data connector: optional isolated low-voltage sensor link, separate from energy transport.
+Serviceability: remove one module without dismantling the frame or disturbing other sources.
+Visibility: at least one working conversion mechanism visible per installed class.
+Access: protected high-voltage or moving machinery inaccessible to visitors; source wiring and buffers inside a service-only zone.
+Physical form: a hand-built base of reclaimed steel/brass supports a transparent vertical spine, curved glass vanes, exposed but guarded copper windings, a deliberately visible storage indicator, and a small provenance plate. The form is unique; the mounting and electrical behavior are standardized.
+---
+5. Harvest modules — preserve the ambition, specify the machinery
+H1 — Thermal Breath / Pulse Chamber
+Purpose: make heat exchange visible as pressure, volume, or displacement changes; extract a share of mechanically useful movement.
+Two operating modes:
+Transient mode: warming a chamber moves a diaphragm or magnetic piston; cooling restores it. Produces charge events during changes, not continuous power from a static uniform temperature.
+Cyclic mode: add an engineered temperature-cycle mechanism (for example a low-temperature Stirling-like displacer, heat-switching linkage, or deliberately timed thermal contacts) between a hot side and a cooler sink. Aim for repeatable oscillation under a sustained gradient.
+Harvesting path: diaphragm/piston → guided magnet shuttle → wound copper coil → rectification/conditioning → source buffer. Magnetic coupling may keep a working-fluid chamber wholly sealed.
+Fabrication needs: pressure-appropriate vessel or lined transparent chamber, welded/brazed heat-transfer surfaces if appropriate, leak-test jig, low-friction guide, adjustable return spring, coil winder, force/displacement fixture.
+Working fluid workstream: first prove displacement with air or another benign test medium. Evaluate specialized low-boiling fluids only with chemical compatibility, containment, pressure rating, recovery/disposal and operating-temperature analysis. The common glass hand-boiler visual can guide aesthetics but does not prove an extractable continuous power cycle by itself.
+Observables: warm/cold face temperatures, pressure or displacement, stroke frequency, open-circuit voltage, loaded harvested joules and leakage rate.
+H2 — Convection Organ / Turbine
+Purpose: harvest pressure and flow generated by temperature differences or ambient draft through a sculpted vertical passage.
+Path: transparent chimney → designed inlet throat / hot zone / outlet → low-friction rotor → magnet-stator microgenerator → source buffer.
+Development knobs: chimney height, cross-section, solar absorptivity, buoyancy, side-wind influence, turbine blade pitch, magnetic drag, bearing friction and electrical load. Build a removable rotor cassette so these can be changed without destroying the artwork.
+Measurement: inlet/outlet temperature, airspeed and differential pressure where practical, unloaded RPM, loaded RPM and net energy delivered to buffer.
+H3 — Vibration Garden / Flex Reeds
+Purpose: capture actual available structural, acoustic or wind-induced mechanical vibration.
+Path: tuned reclaimed spring-steel reed → small moving magnet with fixed coil or characterized piezo element → suitable low-loss harvester IC/rectifier → buffer.
+Development knobs: mass, spring constant, damping, resonant frequency, base excitation, end stops and fatigue life. Use an adjustable-mass tuning jig and compare resonance peaks instead of guessing.
+Measurement: excitation spectrum, frequency, displacement, peak voltage, captured joules, cyclic fatigue.
+H4 — Magnetic Pendulum / Motion Cell
+Purpose: common electromechanical interface for other sources (thermal stroke, deliberate touch, wind vane, rotating wheel, floating buoy).
+Path: permanent-magnet motion relative to coil → rectifier → buffer. The return stroke may be harvested too; the external forcing and loss budget are always recorded.
+Development knobs: coil turns, wire gauge, magnet spacing, gap, shuttle friction, eddy-current damping, duty cycle and magnetic detent effects.
+H5 — Ripple Harp / Float Generator
+Purpose: harvest actual surface-wave and water-level motion in NEXERATH-W.
+Path: sealed float follows water → linkage or magnetic coupling across a static seal → shuttle/rotor generator → buffer.
+Design work: biofouling, debris screens, flood excursion limits, safe fish/wildlife spacing, corrosion and recoverable maintenance. Water-facing hardware must detach cleanly.
+H6 — Radiant Differential / Sun-Shade Plate
+Purpose: collect useful electrical energy from temperature gradients and sunlight while visually demonstrating thermal transfer.
+Paths: (a) thermoelectric device clamped between characterized hot and cold surfaces; (b) calibrated PV module; (c) bimetal or shape-memory actuator driving a slow mechanical event. These are separate mechanisms that can share mounting but should retain independent metering.
+Design work: heat-sink geometry, thermal contacts, source impedance, actual hot/cold temperatures, actuator cycle life. No claims about TEG power without measured conditions.
+---
+6. The Harvest Lattice — common electrical architecture
+Do not parallel unlike raw harvesters. Every energy source gets its own electrically characterized front end before the common storage system.
+```text
+Thermal magnetic coil -- AC rectifier / harvester -- local buffer --\
+Convection generator -- rectifier / load match ------- local buffer ---\
+Vibration reed ------ piezo/induction harvester ----- local buffer ----> isolated / protected energy OR-ing
+Ripple generator ---- rectifier / converter -------- local buffer ---/                |
+TEG / PV ------------ matched DC harvest converter - local buffer --/                 v
+                                                                       COMMON SUPERCAP BUFFER
+                                                                                |
+                                                                      regulated charging logic
+                                                                                |
+                                                               protected battery (if justified)
+                                                                                |
+                                                                   switched useful loads
+                                                                                |
+                                                            telemetry / display / beacon / LED
+```
+Input-channel design specification
+Each source channel documents:
+input type (AC / DC / high-impedance pulses), min/max voltage and typical source impedance;
+conditioning method (rectifier, synchronous circuit, impedance match or MPPT where appropriate);
+cold-start behavior and leakage when idle;
+reverse-current prevention so a dormant source cannot drain the others;
+capacitor voltage/current measurement points;
+source ID and calibration information.
+Suggested rail strategy
+Experimental source domain: floating or isolated low-energy source, no fixed universal raw voltage.
+Shared capture domain: supercapacitor buffer with rated cell-balancing and overvoltage protection as needed.
+Output: regulated low-voltage DC rail to intermittently operate the chosen job; 3.3 V electronics is a useful initial target.
+Optional autonomy extension: protected LiFePO4 storage with compatible charge controller, low-temperature charge protection and accessible disconnect. It must not silently become the source of supposed harvested output.
+Important bookkeeping: storage and regulation move energy in time; they are not new energy sources. Each module's contribution is measured before and after its conversion electronics. Decorative LEDs consume part of the harvested energy, so there is always a separate tally for visual output and the useful service.
+Energy accounting
+For a capacitor:
+`E_joules = 0.5 × C_farads × (V_final² − V_initial²)`
+Example: a 10 F test capacitor increasing from 2.0 V to 3.0 V has gained 25 J = 0.00694 Wh, before accounting for losses and measurement error. That small increment is still a successful measurable harvest event if it comes from the identified external input.
+For a useful load:
+`E_load = integral(P_load × dt)`; approximately `P × hours` for steady loads.
+Performance dashboard, displayed per module and total:
+`Input source / measured gradient or motion`
+`Gross transducer output (J or Wh)`
+`Net added to shared storage (J or Wh)`
+`Overhead: controller + converters + sensing + LEDs (J or Wh)`
+`Energy delivered to useful service (J or Wh)`
+`Energy lost in conversion / idle leakage`
+`Runtime supported at selected duty cycle`
+An honest display makes a milliwatt as worth observing as a watt; it also makes future optimization experimentally meaningful.
+---
+7. First build: NEXERATH-B0, the truth rig
+Purpose: demonstrate at least one genuine ambient-to-electric conversion, then combine three source classes onto one monitored storage system. Build a gorgeous exposed demonstration without prematurely making any subsystem untouchable or inaccessible for testing.
+Proposed footprint
+Parameter	Starting choice	Reason
+Total height	600 mm	Desktop-scale gallery apparatus
+Base	250 × 250 mm, weighted	Stable, serviceable frame
+Visible chimney	400–500 mm height, approx. 70–100 mm inner diameter	Removable convection experiment
+Thermal chamber	Approx. 50–150 mL test displacement volume	Initial stroke/pressure characterization, not a certified pressure-vessel specification
+Reed arm	100–200 mm adjustable	Allows resonance tuning
+Magnet-coil cartridge	One removable winding and shuttle fixture	Shared manufacturing method
+Electrical bus	3 input channels plus optional direct PV/TEG	Proves aggregation rather than a single decorative trick
+Storage	Instrumented supercap test module	Reveals small charge events without hiding them in a large battery
+Control	Duty-cycled logger/display, optionally powered from isolated test supply during characterization	Prevents measurement overhead masking harvested results
+Mechanical construction sequence
+Survey salvage stock. Photograph each candidate, remove unsuitable/hazardous parts, assign provisional IDs.
+Make the holding jig. A 250-mm-base fixture with slots and a removable vertical spine provides repeatable test geometry.
+Wind a generator cartridge. Establish wire gauge/turn-count options; record DC resistance and response to a known magnet stroke.
+Prove one source. Begin with controlled vibration or repeatable thermal transients and capture energy into a local capacitor.
+Build the thermal motion demonstration. Instrument actual gradient/displacement; progress toward repeatable cycle and an induction output.
+Build and tune the convection chimney. Characterize flow and turbine drag with heat source and cold sink conditions recorded.
+Connect three sources through independent front ends. Verify no cross-discharge, stable startup and independent contribution.
+Add the sculpture. Reclaimed glass, readable copper, protective transparent panels, historical placards and measured-energy lighting.
+Demonstrate the job. Use stored energy to perform a named service, e.g. one temperature/humidity sample and saved timestamp at an adjustable interval.
+Publish numbers and the provenance ledger. Include failed runs, configuration changes, and what each source contributed.
+Proposed fabrication fixtures and tools
+Custom coil winder and mandrels; magnet shuttle alignment fixture.
+Adjustable reed/tuning jig with marked masses.
+Rotor balancing fixture and detachable turbine blade pitch templates.
+Thermal interface/diaphragm clamp and non-destructive leak-testing arrangement.
+Separate electrical instrumentation board with current sense and guarded test points.
+Mechanical guards for spinning parts and an accessible emergency electrical isolation method.
+---
+8. Prototype BOM — a procurement and salvage map
+Planning allowances only, USD, not quotes; salvage can reduce purchased cost while increasing inspection and fabrication labor. All mission-critical power-storage and pressure components are selected for verified suitability, even if new components are required in the first build.
+Subassembly	Quantity / basis	Preferred reclaimed contribution	Estimated purchased allowance
+Frame, brackets, fasteners, feet	1 set	steel/aluminum/brass stock	$15–50
+Transparent sculpture and guarded panels	1 set	verified panes, remelted cullet decorative sections	$20–90
+Magnet/coil demonstrator	1–3 cartridges	speaker magnets, motor copper, shafts	$15–60
+Thermal motion chamber and metering	1	copper fittings, fins, outer glass	$35–110
+Convection chimney / generator	1	glass, vanes, bearings, motor parts	$20–80
+Tunable vibration reed	1	spring steel, washers, piezo if appropriate	$10–40
+Harvester conditioning front ends	3	housings, connectors, selected reclaimed electronics	$35–120
+Supercap / regulated power	1 instrumented bank	enclosure and conductors	$25–80
+Measurement and controller	1 board + sensors	salvaged display where suitable	$25–100
+LEDs, engraving, provenance plate	1 set	glass lenses, salvaged lettering	$10–50
+Misc. isolation, seals, test supplies	contingency	stock hardware	$25–75
+Estimated purchase envelope	Bench / display-scale demonstrator	Recovered history actively used	$235–855
+Excluded: existing machine-shop tools, specialty glass/pressure certifications, shop labor, site-specific outdoor/public structural design, laboratory measurement equipment if not already owned, and major tooling purchases.
+Recovery-first procurement procedure
+Inventory usable landfill-derived parts from G.E.R.A.L.D.
+Identify missing functional specifications, not missing catalog SKUs.
+Decide for each gap: machine / cast / wind / anneal / print / buy / collaborate.
+Choose the option that achieves verified performance while preserving the historic-art character.
+Record the part's origin and its test results.
+---
+9. Experimental gates — evidence for every ambitious function
+Gate	Demonstration	Record / advancement criterion
+G0 — Authentic source	Identify a real external input	Temperature differential, vibration input, airflow, surface-wave motion, or photon input logged
+G1 — Transduction	Motion/light/heat gradient becomes electrical output	Repeatable waveform under load; baseline/control comparison
+G2 — Storage	Source charges buffer	Before/after capacitor energy gain measured and repeatable
+G3 — Multi-source aggregation	Three independently metered channels charge shared store	No backfeed; each source's incremental contribution identifiable
+G4 — Useful work	Stored harvested energy performs a repeatable task	A real sensor reading, timestamp/log entry, indicator sequence, or similar duty-cycle service completed
+G5 — Material lineage	Salvaged components verified and documented	Traceable passport for every conspicuous historical component
+G6 — Mechanical life	Motion withstands repeated cycling	Defined test cycles, inspection interval, failure logs, replaceable wear parts
+G7 — Gallery/public deployment	People can safely inspect a working machine	Stable structure, protected moving/energized parts, maintained enclosure, site review
+Controls worth doing early
+Compare warmed versus unheated thermal module; distinguish transient one-shot displacement from steady cycle.
+Compare moving versus immobilized reed under the same measurement conditions.
+Compare open generator, resistive load and energy-buffer load to identify electrical loading effects.
+Compare each bus input alone, then combined, to reveal leakage or interference.
+Measure controller overhead separately. For microharvesting, idle draw can determine whether the installation accumulates energy.
+Targeted design intent: aim first for a repeatable positive net charge event and one genuinely self-supported low-power task; numerical output goals will be set from observed source conditions and module behavior, not invented as if already tested.
+---
+10. Safety and durability by design
+NEXERATH invites close viewing, so safety belongs in the sculpture's engineering, not hidden in fine print.
+Unknown reclaimed glass: segregate and characterize before heat treatment; properly anneal and inspect decorative casting. Use rated inner vessels for pressurized fluids and a guarded shell for public displays.
+Low-boiling working fluids: prototype containment and motion first; choose any working fluid through pressure/temperature/flammability/toxicity/material compatibility review. Avoid casual use of toxic solvents or fragile makeshift pressure glass.
+Recovered electronics: test insulation and contamination; retire unverified mains components to safe display roles; remove old cells/capacitors where appropriate.
+Magnets and rotors: contain moving assemblies, retain magnets mechanically, prevent pinch and thrown-part hazards.
+Electrical storage: limit voltage, fused/protected storage, safe service disconnects; handle lithium storage with certified protection and thermal safeguards.
+Public installations: structural, wind, electrical, accessibility and environmental review specific to the site; anti-tamper panels without hiding core visual mechanisms.
+Water modules: keep water and electricity separated through verified seals, drip paths and removable service cartridges.
+Wildlife and ecosystem: no exposed pinch zones near animal access, no uncontrolled leaching from scrap-derived materials.
+A unique salvage object should be more inspectable, not less, because its provenance and material properties are known and recorded.
+---
+11. Data, art, and learning interface
+Instrument panel for visitors
+`HEAT ΔT` · `AIRFLOW` · `VIBRATION` · `WATER MOTION` (only where installed).
+Individual source LEDs that indicate real measured charge events, not decorative simulated production.
+`ENERGY HARVESTED TODAY` and `ENERGY USED TODAY` with clear units.
+One line identifying the useful function the energy is powering.
+Source history rotating on a low-power panel or viewable through a QR-accessible archive.
+Public story example (illustrative)
+NEXERATH / NODE 007 — RECOVERED TIME  
+Glass: reclaimed local bottle and window stream  
+Copper: retired motor windings  
+Historic feature: relay, estimated 1940s — pending provenance confirmation  
+Circuit relic: motherboard, estimated early 1990s — for display, not active control  
+Harvest classes: thermal / convection / vibration  
+Job: periodic microclimate measurements and local display  
+Builder's note: A landfill yielded the glass. A restoration system recovered the metal. A maker taught the pieces to work together.
+This is not merely a QR code on a sculpture. It is an evolving material biography.
+---
+12. What makes the design stronger over time
+Workstream A — Better mechanical-to-electrical capture
+Develop swappable magnet/coil cartridge geometries.
+Compare magnetic circuit efficiency, friction and electrical damping.
+Add mechanical energy storage (spring/flywheel) only where a genuine external source charges it and it improves conversion efficiency or timing.
+Workstream B — Better heat engines
+Develop controlled thermal cycling, high-conductance warm/cold interfaces, displacement amplification and low-friction seals.
+Characterize a closed fluid circuit only once containment and heat rejection are engineered.
+Compare gas piston, fluid displacer, Stirling-like and bimetal approaches experimentally; artwork can accommodate more than one.
+Workstream C — Better aggregation electronics
+Optimize cold-start thresholds and idle leakage.
+Match each transducer's electrical load rather than force all sources through one generic rectifier.
+Duty-cycle sensing, communication and decorative lighting to the energy actually collected.
+Workstream D — Better recovered materials
+Characterize cullet blends and annealing schedules with a glass partner.
+Develop modular glass mounts and replaceable seals; keep patina without compromising electrical contacts or structural integrity.
+Build a local salvage-property database so later sculptures become easier and cheaper to engineer.
+Workstream E — More useful jobs
+Indoor climate sensor / timed data logger.
+Restoration outpost environmental beacon.
+Public demonstration of actual energy conversion and material histories.
+Water-quality logger on a fountain/ripple version.
+Networked low-power nodes where the measured energy budget supports communications.
+---
+13. What still needs to be learned (the productive backlog)
+Which sites present sufficient recurring thermal or mechanical gradients to warrant a continuous-motion sculpture?
+What combination of displacement, coil geometry and switching gives the best low-temperature thermal-module yield?
+What is the minimum-startup turbine geometry for the available chimney height, warm-air flux and electrical load?
+What is the aggregate idle-power floor, and how can it be reduced until every source earns its place?
+Can we make a user-repairable rated thermal cartridge with reclaimed glass as its visible outer body?
+Which recovered alloys and bearings achieve the target fatigue and corrosion performance?
+How should energy output, environmental benefit and educational engagement be reported without conflating them?
+What material genealogy can G.E.R.A.L.D. capture automatically and what requires human archival judgment?
+These are fabrication and test assignments, not vetoes.
+---
+14. Deliverable and release structure
+Suggested repository/Obsidian paths:
+```text
+THE-77/
+  04-NEXERATH/
+    README.md
+    NEXERATH_Engineering_Save_State_v0.2.md
+    01-System-Architecture.md
+    02-Harvest-Modules/
+    03-Electrical-Bus/
+    04-Reclamation-Provenance/
+    05-Prototype-Builds/
+    06-Test-Results/
+    07-Artwork-and-Photography/
+    08-Licensing-and-Contributors/
+```
+Next physical milestone: build one reclaimed-copper magnet/coil cartridge, demonstrate measurable charge from a controlled ambient-driven motion source, then combine it with two differently behaving sources through independent front ends. The first beautiful installation is built around verified mechanisms, not an imagined wattage claim.
+Release checklist: publish photos, annotated drawings, materials passport, circuit or board schematic, firmware where used, BOM with substitutions, construction sequence, measured energy table, failures and revisions, maintenance instructions, and the provenance of significant reclaimed pieces.
+---
+15. Closing doctrine
+Nothing burned to pretend energy appeared. Nothing discarded merely because it was old. No single small input dismissed because it was small.
+G.E.R.A.L.D. takes apart a landfill. NEXERATH turns selected history into an elegant moving system. The system captures real energy from its surroundings and performs a real task. The visitors can see how it works, learn where its pieces came from, and build their own version.
+> **It's not impossible. We just haven't built it yet.**
+>
+> **THE LANDFILL BECOMES THE CATHEDRAL.**
+>
+> **ART WITH A JOB. BEST BUILD WINS.**
+BEKW-CODE · Engineering save state · v0.2 · 2026-11-10
