@@ -1,0 +1,366 @@
+BEKW HTML CRAFT STANDARD — THE HANGMAN BAR
+Version: 1.0  
+Status: Workshop reference / build-and-review standard  
+Date: 2026-11-12  
+Motto: BEST BUILD WINS. The game must earn the player's attention.  
+Delivery: One Markdown file. Intended to be copied into a repo, gist, or project context before building or revising browser games.
+> **Core covenant:** Teach the player the controls. Never play the game for them.  
+> A beautiful interface is an invitation, not a substitute for a good game.  
+> **Our starting quality bar is the Hangman games—not a bare minimum.**
+---
+0. Why this standard exists
+We have learned to make remarkably substantial, playable artifacts from one HTML file. We have also identified one major failure worth preventing: the well-intentioned destruction of difficulty by excessive handholding.
+The French, English–Polish, and German–English language games succeed because they combine actual content, useful learning, independent play, personality, and thoughtful interfaces. They respect the player. Their large, curated vocabularies make continued play worthwhile; a win can lead to a real language insight. Their implementation is sufficiently portable to download and run locally.
+The first improved Z.O.E. Repair Bay looked impressive but made the wrong trade: the puzzle was over-explained, pipes and answers were effectively highlighted, alignment became a sequence of directed button presses, and the added stage made the game longer rather than deeper. The earlier version had unclear controls; the revision fixed those by telegraphing solutions. Neither obscurity nor spoon-feeding is good puzzle design.
+This document is an engineering standard and a creative contract. It is not a demand that every HTML must be Hangman, have 1,000 words, or share one interface. It describes the level of workmanship that our best games established.
+Success is not measured by
+Number of screens, chapters, animations, clicks, or minutes artificially consumed.
+How many green checks the interface can award.
+How polished the screenshots look while the player is bored.
+Claims that a game was tested or verified when it was not.
+How quickly a file can be produced at the expense of the underlying play.
+Success is measured by
+A player understands what actions are possible, then has to think.
+The rules are consistent and the outcomes are explainable.
+Choices matter; experimentation yields evidence.
+Replay reveals new content or new system behavior, not merely repeated chores.
+The software opens reliably on the machines it claims to support.
+A new learner is challenged without being humiliated; an experienced player is not patronized.
+The player leaves with discovery, mastery, delight, useful knowledge, or an interesting story.
+---
+1. The benchmark artifacts — verified from local HTML sources
+These are the reference implementations, not blindly reusable templates.
+Artifact	Measured source content	What to borrow	What not to generalize
+LA FORGE DES MOTS — French Hangman v2	1,212 entries; 1,212 unique answer strings; 13 categories	Grammar lessons, gender/article support, language pronunciation and slow speech, meaningful difficulty, 1,200+-word curriculum depth, word-history management	Not every game needs a dictionary, gender system, or 1,212 items
+SKI'S SEMPER FI WORD CAMP — English ↔ Polish	494 translation pairs; 16 categories (988 directions before filtering)	Audience-specific Marine/Polish lore, authentic thematic voice, bidirectional play, accented-letter assistance, historic fact dispatches, offline portability, optional salty mode	Don't use military lore unless it serves that specific game's audience
+SIGNAL OF TWO HEARTS — German ↔ English	1,318 translation pairs; 22 categories (2,636 directions before filtering)	Two distinct learner profiles, directional modes, gender/context notes, speech, independent progress, carefully used embedded PNG illustration	PNGs alone don't make gameplay good; art supports interaction
+Z.O.E. REPAIR BAY v2 (first attempt)	Three chapters × four stages; embedded image assets	Attractive presentation, coherent character intent, offline packaging, responsive repair-station atmosphere	Not a puzzle benchmark. It added guided interactions and visibly signposted the answers. Rebuild its reasoning, not its cosmetics
+Counts were inspected from the supplied local HTML files on 2026-11-12. Translation direction counts describe possible pair directions, not necessarily that every direction is active under every filter. A future release must re-count rather than inherit these numbers.
+Shared successful pattern
+Personality + systems + content + feedback + portability. Each term must be present, and none can stand in for another.
+Personality: A distinctive, welcoming world: French forge, Marine training camp, German–English bridge, cybernetic repair bay.
+Systems: Rules, progression, difficulty, saves, meaningful interaction.
+Content: Real vocabulary, coherent engineering behavior, interesting facts, a reason to replay.
+Feedback: Explain what happened and why, not what button to press next to win.
+Portability: Prefer one self-contained local HTML artifact without build steps, installation, accounts, or network dependencies.
+---
+2. Non-negotiables for any BEKW browser game
+Craft and player respect
+One clear promise: Within the first 15 seconds, a player should know what kind of game this is and why to care.
+Readable controls: Buttons have honest labels; inputs reveal available actions; touch interaction is intentional.
+No hidden controls as a puzzle: Discovering how to click is not the intended challenge unless the game explicitly makes interface discovery its mechanic.
+No answer-highlighting: Never mark the correct pipes, route, order, socket alignment, frequency, or next move as the player is meant to deduce it.
+No padded work: Ten steps are not better than three if only three require thought.
+No fake complexity: Adding timers, hazards, more stages, or bigger numbers does not automatically create challenge.
+No fake functionality: Every visible feature and button must work or be clearly marked unavailable.
+No fake testing: Tested means exercised in a real or automated browser with results recorded.
+No destructive redesign by default: Preserve working mechanics, content, continuity, and accessibility when revising.
+No coerced accounts/paywalls/telemetry: Games should not need login or external tracking to operate.
+Technical delivery
+Default deliverable: `GAME_NAME_vN.html` — a single UTF-8 file containing HTML, CSS, JavaScript and, where reasonable, embedded artwork and sounds.
+No CDN dependency in the offline edition. No remote fonts, scripts, CSS, images, analytics, or API calls to start or play.
+Relative local resources only where deliberately packaging multiple files. If so, deliver all parts and label the packaging honestly.
+Functional without internet after being saved locally in Chrome/Brave on desktop; test additional browsers/platforms before claiming support.
+Readable on phones and usable with touch, but do not claim universal mobile file-opening compatibility just because the desktop file works.
+Stable save namespace using version-aware `localStorage` keys when needed; gracefully handle browsers that block or clear storage.
+Sound optional, muted by choice, no unexpected blast on first load; use Web Audio or speech synthesis with safe fallbacks.
+No fabricated metrics: If content says "1,318 pairs," count them. If it says "fully offline," actually test offline.
+---
+3. The Golden Split: clarity versus challenge
+A player's cognitive load should go into reasoning about the game world, not deciphering the UI.
+Clarify immediately	Leave to be solved
+What clicking, dragging, turning, or submitting does	Which setting or sequence actually succeeds
+Units and what meters measure	Which measurement is suspicious or causally important
+What constitutes success and failure	How to reach the successful state
+Why an action was invalid as a UI operation	Which hypothesis about the machine is true
+Accessibility options and repeatable controls	The best strategy or design trade-off
+General physical or grammatical rules needed to begin	The particular answer in the current case
+Good instruction: "Turning the bypass valve redistributes coolant between loops. Observe pressure and temperature before running the pump."
+Bad instruction: "Turn Bypass B three clicks, then open Valve 2. The correct route is glowing blue."
+Good failure feedback: "Pressure rose downstream of the filter while flow fell upstream of the radiator."
+Bad failure feedback: "Wrong! Choose the glowing pipe instead."
+Help must come in layers, and remain optional
+Control help: What each control does. Always accessible. It never reveals the answer.
+Principle help: A general concept, e.g. "Flow seeks a connected path; restrictions raise pressure." Offered on demand or after demonstrated difficulty.
+Diagnostic hint: An observation the player could infer from an instrument. Explicitly opt-in, with an honest hint cost if the scoring system uses one.
+Solution reveal: Separate, explicit player choice. No points/achievement for revealing the solution; explain the reasoning after reveal.
+Default: Do not show stages 2–4 automatically. No unsolicited pop-ups that walk the player through the solution.
+Difficulty is not punishment
+Difficulty should come from reasoning depth, interacting constraints, ambiguous evidence that can be resolved, and trade-offs.
+Failure can carry cost when it fits the fiction (time, heat, energy, resource), but must never punish a player for an undocumented control.
+Let players make reasonable experiments; experiments should yield meaningful observations.
+Avoid random damage just because they guessed the wrong dial orientation.
+Prefer progressively richer systems over tighter arbitrary timing or tiny drag targets.
+---
+4. Build a real puzzle, not interactive homework
+A genuinely good puzzle has a model beneath its visuals.
+The six-part puzzle contract
+For every puzzle, document:
+World state: What variables exist? (e.g., coolant temperature, pump pressure, bypass route, sensor calibration, filter resistance.)
+Controls: What may the player actually manipulate? (valve, relay, probe, filter, oscillator.)
+Observations: What evidence is visible? (readings, physical effects, history log, sound, diagnostic trace.)
+Constraints: What must be preserved? (processor cooled, core not starved, pressure below threshold, limited power.)
+Underlying fault and causal logic: What is wrong? Why does an incorrect approach fail?
+Solution(s) and verification: What makes a solution valid? How will the game test it? Are alternate valid strategies accepted?
+If a designer cannot explain all six without saying "click the right one," the puzzle is not ready.
+Generate complexity through interaction, not quantity
+One valve affects two temperatures; one power choice affects three subsystems.
+A meter can misread for a diagnosable reason, but cannot lie arbitrarily.
+A visible symptom can have multiple plausible causes, distinguishable by tests.
+A quick patch may solve the symptom but violate another constraint.
+Correct action under one set of conditions may be wrong under another; explain why through the simulation.
+At least one real aha moment should change the player's understanding of the system.
+Example — coolant case
+Situation: Processor runs hot; pump pressure is high; radiator flow is low.
+Available actions: Inspect temperature upstream/downstream; switch bypass route; test filter differential pressure; reset a questionable sensor; run a brief controlled flow test.
+Causal model: A restricted filter reduces flow, raising pressure before the blockage and starving the radiator. A bypass may cool the processor temporarily but divert too much coolant away from another component. A faulty temperature probe may create a false secondary alarm. These variables must have consistent, modeled relationships.
+Player task: Determine the fault, choose a viable repair, and prove every critical component remains within its operating envelope.
+Not allowed: Illuminating the correct pipe run, displaying a "recommended path," or having the narrator tell the player the broken component unprompted.
+Scoring: Reward sound diagnosis, low unnecessary resource use, and stable final operating condition—not the number of rotations or how quickly the player mashed buttons.
+Example — heart/mind case
+Controls explained clearly: Place modules; rotate contacts; inspect voltage, phase, and continuity; change allowable relay links.
+Puzzle itself: The modules are coupled. Correct placement alone is insufficient; an apparently perfect contact can destabilize a linked channel. Diagnose the mismatched reference signals; choose a configuration that balances multiple readings. Give enough evidence to reason, never a blinking "correct" location.
+Learning: Contact orientation, polarity, and subsystem coupling are mechanics, not merely colors to match.
+Example — resonance case
+Controls: Oscillator frequency, phase, gain; signal isolation; filter select.
+Observations: Frequency readout, waveform phase drift, amplitude, clipping and a short log of prior tests.
+Challenge: Align a stable reference without driving a secondary circuit into oscillation or clipping. A simple two-slider waveform match is a tutorial, not an advanced case.
+Guardrail: The game need not simulate perfect electronics, but must be internally deterministic, consistent, and honest about its simplifications.
+---
+5. Progression architecture — teach once, then trust the player
+Good progression introduces new ideas, not repetitions disguised as levels.
+Recommended structure for a complex puzzle game:
+Case 1 — Learn the instruments: One primary fault, a few meaningful interacting controls, a fair deduction.
+Case 2 — Conflicting evidence: Two subsystems, an identifiable deceptive reading, multiple testable hypotheses.
+Case 3 — Integrated repair: Prior systems interact; several solutions may appear viable until constraints are examined.
+Each new mechanic receives a short control tutorial, not a solution tutorial. Subsequent cases require the player to remember and apply the mechanic independently.
+Difficulty settings change the problem, not just the penalty
+Apprentice: Fewer concurrent variables, clearer diagnostic signal, generous test resources. No answer reveal.
+Technician: Multiple faults, indirect evidence, constrained resources.
+Master Engineer: Coupled systems, misleading but resolvable symptoms, alternate solutions, rigorous stability criteria.
+Do not make higher difficulty only "six lives instead of ten" unless the game is intrinsically a guessing game (Hangman can use this as one control). Engineering puzzles need richer causal structure.
+Playtime is an outcome
+Never set "twelve levels" as a quality target. Three memorable cases can beat twelve trivial ones. Count decisions, discoveries, and tested hypotheses, not clicks.
+---
+6. Content architecture — what Hangman got right
+The language games earn replay value through a large real bank and meaningful feedback. For content-rich games:
+Curate first: Items must actually belong in their category, suit their audience, and be linguistically/contextually defensible.
+Structured records: Store answer, translation/definition, topic, note, optional example, difficulty, pronunciation or grammatical metadata as available.
+Deduplicate deliberately: Normalize for comparison but preserve intended spelling, accents, and case in display. Do not silently merge distinct meanings.
+No-repeat deck: Avoid immediate repeats when unused entries remain. Define explicit behavior when a filtered deck is exhausted.
+Meaningful filtering: Topics and modes should change what the learner studies, not merely recolor the screen.
+Direction-aware learning: English → Polish and Polish → English are different tasks. Track them separately where appropriate.
+After-answer learning: Reveal a short, useful explanation, pronunciation, a grammatical fact, or historical context. Do not just say "Correct."
+Facts have sources or honest caveats: Especially history, regional language, medical or technical statements.
+Audience-specific humor: Marine lore for Ski; language bridge and character identity for Daurig/Cherifee; French forge identity for La Forge.
+Optional edge content: Salty language, slang, and niche categories are opt-in with appropriate labels.
+Data-quality gate
+Before release, verify:
+Total number of source items and actual unique playable prompts.
+Empty/malformed records, duplicate IDs, impossible answers, accents, unsupported characters and punctuation.
+Translation direction and category integrity.
+Correct solution acceptance under strict and forgiving accent modes.
+Every enabled topic and difficulty combination has playable questions; otherwise graceful fallback is explicit.
+Meaningful notes where the UI claims they exist. Don't invent explanations just to fill a field.
+Benchmark lesson: The numbers are the consequence of substance. A corpus of 1,212 useful words is better than an inflated corpus of 10,000 unreviewed strings.
+---
+7. Visual language and art direction
+The successful games are not default grey web forms. Each has a legible, intentional visual identity.
+Recommended layout
+First screen: bold title, one-sentence purpose, primary Play/Start control, immediate readable state.
+Game board: the main interaction gets most of the screen and the strongest visual hierarchy.
+Adjacent instruments/notes: provide relevant measurements, history, hints, or learning—not a second wall of decoration.
+Progress: earned and explained; no endless meaningless XP spam.
+Feedback: specific, brief, informative, with humor that respects the player's intelligence.
+Responsive: one usable column on mobile; no microscopic touch targets.
+Images and PNGs
+The Daurig/Cherifee language game demonstrates embedded PNGs inside a portable HTML file. Z.O.E. Repair Bay v2 also embeds multiple PNG assets. That's a useful technique when art improves atmosphere, understanding or attachment.
+Choose strategically:
+Use original character portraits, tool icons, physical components, background motifs, and meaningful state changes.
+Keep identity/canon consistent across states; do not reinvent established characters as generic glamorous substitutes.
+PNG/WebP can be converted to data URIs in CSS or `<img>` elements for a true standalone HTML file.
+Use SVG/CSS/canvas for diagrams and interactive instruments that benefit from sharp geometry and easy state changes.
+Compress raster assets to keep downloads practical. Embedded assets raise HTML file size.
+Alt text for meaningful images. Decorative images should not repeat adjacent text to screen readers.
+Never let artwork hide control state, replace readable text, or glow the intended answer.
+Motion and sound
+Animate system states and cause/effect (pressure changing, optics reacting, waveforms drifting), not just visual confetti.
+Use small, purposeful transitions; honor `prefers-reduced-motion`.
+Make muted mode available and remember preference if appropriate.
+Audio must enhance feedback, not be required to solve a problem. Give a visual alternative.
+Browser text-to-speech is optional and voice availability varies; keep readable text and pronunciation guides.
+Art rule: A spectacular screenshot earns a click. Mechanics earn the next hour.
+---
+8. Engineering architecture — single-file offline first
+Default structure inside one HTML file
+```text
+<!doctype html>
+<html lang="en">
+  <head>
+    charset, viewport, title, optional description
+    <style>theme tokens + layout + accessibility + responsive rules</style>
+  </head>
+  <body>
+    semantic header / main / footer
+    clear control panel, board, feedback and save affordances
+    optional embedded <script type="application/json">content data</script>
+    <script>
+      constants and validated data
+      pure game model and transition rules
+      renderer and accessibility updates
+      input handlers (mouse, touch, keyboard where relevant)
+      audio and optional speech
+      persistence and recovery
+      startup / self-tests, if appropriate
+    </script>
+  </body>
+</html>
+```
+Separate logic from appearance
+State -> Action -> Validation -> New State -> Render. The renderer must not secretly solve the game. The puzzle generator must not create unsolvable cases. The scoring system must not reward inaccessible or nonexistent actions.
+Good engineering conventions:
+Explicit state shape, state invariants, and reset behavior.
+Pure functions where possible for normalization, puzzle evaluation, answer checks, scoring, and random case generation.
+Deterministic seeded or reproducible puzzles for testing.
+Event handlers that translate pointer/key inputs into actions, not direct arbitrary state corruption.
+Clear distinctions between temporary UI feedback, persistent game progress, and puzzle truth.
+Repeated operations are idempotent where reasonable; button mashing should not break state.
+Defensive handling of browser capability and storage failures.
+No `innerHTML` for untrusted player input; use `textContent` or proper escaping.
+Local storage policy
+Define a versioned key (e.g. `bekw.game-name.v2`, adjust project prefix as intended).
+Store only what is needed: preferences, completed tasks, statistics, nonrepeating history, optional campaign state.
+Do not save giant duplicate content banks if they already ship in the file.
+Provide a user-controlled reset and clear notice about browser-local saves.
+If the structure changes, migrate responsibly or provide deliberate reset with notice.
+Assume private browsing, restricted contexts, cleared storage and old malformed saves may occur.
+No-network audit
+Open DevTools → Network and load a downloaded `file://` copy with network disabled. Confirm gameplay, art, sounds and content still function. Check `fetch`, imported modules, image sources, external CSS, fonts, and analytics. A single file is not fully offline if it silently requests an online resource.
+Public web hosting versus downloaded local file
+A GitHub repository is source storage, not itself the playable website.
+GitHub Pages serves the repository as a playable site once enabled/deployed.
+`index.html` downloaded by itself can look correct while links to other sibling HTML files fail. A local index requires the target files beside it in the expected paths.
+Standalone Hangman and Repair Bay games can be played as local files precisely because all required resources are embedded.
+File names and links are case-sensitive on web hosting; spaces and punctuation need safe URL handling.
+After uploading a new index, test the published Pages URL, not just the downloaded replacement index.
+---
+9. Testing — no release without evidence
+Make a short test report before every user-facing delivery. Automated tests and manual tests are complementary.
+A. Static/source validation
+HTML parses; all brackets/quotes/scripts syntactically valid.
+Required DOM IDs exist; no duplicate IDs that break controls.
+No unexpected external requests; media references are valid.
+Dictionary counts, duplicates, translations and metadata checked.
+Internal links resolve against actual shipped filenames.
+PNG/base64 blobs decode; dimensions reasonable; no broken images.
+File really ends with `.html` (not `.html.txt`).
+B. Gameplay logic validation
+Start, pause if present, reset, next round, victory, loss and endgame paths.
+A valid solution is always accepted; invalid solutions are rejected for a defined reason.
+Generated levels are solvable; variation does not accidentally invalidate them.
+Repeated actions, fast clicks, pointer cancellation and resize do not corrupt state.
+Saves reload in the correct phase; resets do not leave stale flags.
+Hints obey their documented purpose and cost.
+Difficulty levels are meaningfully different without withholding required controls.
+No puzzle visually reveals its solution in default state.
+C. Real browser acceptance
+Launch locally in Chromium/Chrome or Brave with network disabled.
+Test published Pages URL independently if distributed online.
+Exercise pointer, touch and keyboard workflows as appropriate.
+Check layout at desktop, narrow/mobile and zoomed text sizes.
+Inspect browser console for uncaught errors.
+Test sound on/off, optional voices unavailable, and reduced-motion preference.
+Test a fresh save and a resumed save.
+Play at least one full campaign or systematically test every stage of a campaign; don't infer from a single screenshot.
+D. Human playtest — the difficulty gate
+Ask testers who were not involved in implementation:
+What is the objective? Can they state it without being told?
+What actions are available? Can they operate the interface?
+What do you think is wrong? Can they form a testable hypothesis?
+What did the last experiment teach you? Is feedback diagnostic?
+What did you figure out yourself? Is there an actual deduction?
+Would you choose to do another round? Why? Is the game enjoyable rather than merely completable?
+Observe rather than coach. If they cannot use a control, improve the UI. If they can use controls but the game plays itself, improve the puzzle. If they understand and remain engaged, resist the urge to "simplify" it.
+Warning signs in playtests
+Player asks "Where do I click?" repeatedly: interface problem.
+Player says "It shows me the correct path": answer leakage.
+Player frowns through a series of obvious tasks without curiosity: busywork.
+Player brute-forces without learning anything: weak causal model or no useful feedback.
+Player understands rules but considers alternatives and experiments: good difficulty.
+Player finishes and explains why the fix works: design success.
+Stop-ship condition: A technically functioning, beautiful game that automatically telegraphs its solutions is not ready as a thinking puzzle.
+---
+10. Release protocol: no accidental overwrites
+Freeze the known-good version. Preserve its file and repo commit. Never silently replace the posted original.
+Create candidate `vNext`. Keep source assets/editable working notes separately if needed; the delivered playable edition remains one standalone file.
+Run validation and playtests. Repair both functional defects and design defects.
+Record exactly what changed. One-paragraph changelog: mechanics, content, art, saves, compatibility.
+Deliver the file first. Provide a working downloadable HTML and precise launch instructions. Do not promise unverified sizes/counts.
+Publish only when approved. Update GitHub Pages target or arcade index after verifying actual filenames and endpoints.
+Smoke-test the live URL after deployment, not the temporary local file link.
+Keep rollback easy. Original version remains accessible or recoverable.
+GitHub archive checklist
+Correct `index.html` and matching case-sensitive game paths.
+Existing links preserved when adding new entries.
+GitHub Pages deployment shows successful completion.
+Public Pages URL tested from browser.
+README distinguishes play online from download to play offline.
+License/credits respect actual creators, characters, asset sources and dependencies.
+No claims of features that were not demonstrated.
+Packaging rule: Do not turn one self-contained game into a ZIP of extra instructions unless a concrete technical requirement demands it. Simplicity is a feature.
+---
+11. The creative brief template — fill this out BEFORE code
+```text
+PROJECT NAME:
+AUDIENCE / PERSON HONORED:
+PLAYER PROMISE (ONE SENTENCE):
+CORE ACTIONS (WHAT PLAYER CAN DO):
+CORE THINKING (WHAT PLAYER MUST FIGURE OUT):
+CAUSAL SYSTEM OR LEARNING CONTENT:
+WIN CONDITION:
+FAILURE / RECOVERY AND WHAT IT TEACHES:
+THREE EXAMPLE MOMENTS OF DISCOVERY:
+DIFFICULTY ARCHITECTURE:
+OPTIONAL HELP BOUNDARIES:
+REPLAY VALUE:
+VISUAL CANON / ART DIRECTION:
+ACCESSIBILITY REQUIREMENTS:
+OFFLINE/DEVICE REQUIREMENTS:
+DATA SOURCE / CONTENT COUNT VALIDATION:
+SAVE/RESET RULES:
+TEST PLAN & STOP-SHIP CONDITIONS:
+DELIVERABLE: ONE STANDALONE .HTML
+```
+Agent implementation instruction
+> Build this as a **finished playable game**, not a mock-up, scaffold, concept sheet or glorified worksheet. Use the French, Polish, and German Hangman games as benchmarks for content care, personality, portability and replay value. Teach available controls without revealing the puzzle's answer. Implement a coherent internal model, meaningful player choices, diagnostic feedback, real progression, original imagery where beneficial, offline compatibility, save/restart handling, and credible tests. Report what was actually tested; do not claim more. Deliver one verified downloadable `.html` file. If a feature cannot be built reliably, reduce scope rather than fake it.
+---
+12. The final gate: THE HANGMAN BAR
+Release requires all of the following. This is a gate, not a 100-point aesthetics contest.
+[ ] Real game: Player makes meaningful decisions or practices substantive knowledge; not a disguised click-through.
+[ ] Clear interface: Controls understandable without spoiling the answer.
+[ ] Proper challenge: No highlighted answer route, unsolicited solving tutorial or arbitrary gotcha.
+[ ] Honest model: Rules consistent and the results of actions explainable.
+[ ] Content worthy of time: Correct, curated, useful or intrinsically interesting, not just numerous.
+[ ] Personality: Specific voice/theme/character that makes the artifact memorable without overwhelming it.
+[ ] Replay value: More content, new hypotheses, procedural variation or meaningful mastery beyond repeated chores.
+[ ] Thoughtful feedback: Teaches from attempts and celebrates genuine insight.
+[ ] Visual craft: Strong composition, readable states, excellent art when it serves the game.
+[ ] Respectful access: Mouse/touch/keyboard accommodations as appropriate; legibility, reduced motion and optional sound.
+[ ] Portable delivery: The promised standalone, offline file actually works offline.
+[ ] Test evidence: Full critical paths tested; content/asset/link checks passed; limitations disclosed.
+[ ] Safe upgrade: Previously working version preserved, public links verified before promotion.
+Design review, five brutally useful questions
+If I remove all the art, is there still a good game?
+If I remove the hints, are the controls still understandable?
+If I play intelligently, does the system reward understanding rather than obedience?
+If I play a second time, is there a reason besides finishing the same chores?
+Would I send this proudly to a sharp friend without apologizing for its mechanics?
+If the answer to any is no: build again. Do not paper over it with glitter.
+---
+13. Workshop decision record
+KEEP: One-file offline delivery; specific cultural/character themes; carefully curated banks; multiple language modes; accurate grammar/context; pronunciation with fallback; no-repeat history; optional hints; earned progress; rich visual polish; embedded PNGs where they serve the experience; responsive presentation; thoughtful humor; local saves; no paywall; no telemetry; working publish links.
+FIX: Unclear puzzle operations, tiny notches and inaccessible controls. Fix by clarifying the interface, enlarging marks and labeling controls—not by identifying the right answer.
+REJECT: Glowing the correct Pipe Dream path, auto-solving walkthroughs, arbitrarily punitive guesses, matching-shapes-as-engineering, trivial worksheet sequences, time-padding, making the puzzle easier merely because a tester was momentarily frustrated.
+NEXT STANDARD FOR REPAIR BAY: Diagnostic engineering mysteries with coupled subsystems, testable hypotheses, instrument feedback and meaningful decisions. Three excellent cases can beat twelve easy chores.
+DESIGN LAW: CLARITY OF ACTION. UNCERTAINTY OF SOLUTION. HONEST CONSEQUENCES. EARNED DISCOVERY.
+END OF STANDARD — BEST BUILD WINS.
